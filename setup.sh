@@ -61,7 +61,6 @@ echo "export PKG_CONFIG_PATH=\"/usr/local/lib64/pkgconfig:\$PKG_CONFIG_PATH\"" >
 cd /tmp
 git clone https://github.com/mr-torgue/coredns
 cd coredns
-sed -i '/^file:file$/i resolver:github.com/mr-torgue/resolver' plugin.cfg
 make
 sudo mkdir -p /opt/coredns
 sudo mv coredns /opt/coredns
