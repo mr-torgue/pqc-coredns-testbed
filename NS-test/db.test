@@ -1,0 +1,15 @@
+$TTL	604800
+@		IN		SOA		ns1.test. hostmaster.test. (
+															    6	 ; Serial
+															    604800	 ; Refresh
+															    86400	 ; Retry
+															    2419200	 ; Expire
+															    604800 )	 ; Negative Cache TTL
+; name servers - NS records
+@		IN		NS		ns1.test.
+; name servers - A records
+ns1		IN		A		52.63.60.206
+
+example.test.	IN	NS	ns1.example.test.
+
+ns1.example.test.	IN	A	54.66.155.134
