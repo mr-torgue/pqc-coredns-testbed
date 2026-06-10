@@ -58,7 +58,7 @@ echo "export PATH=\$PATH:/usr/local/go/bin" | sudo tee -a /etc/profile > /dev/nu
 # Install CoreDNS
 export PKG_CONFIG_PATH="/usr/local/lib64/pkgconfig:$PKG_CONFIG_PATH"
 echo "export PKG_CONFIG_PATH=\"/usr/local/lib64/pkgconfig:\$PKG_CONFIG_PATH\"" >> ~/.bashrc
-cd /~
+cd ~
 git clone https://github.com/mr-torgue/coredns
 cd coredns
 make
