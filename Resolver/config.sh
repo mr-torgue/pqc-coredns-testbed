@@ -3,7 +3,9 @@ DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 CONFIG_DIR="config-${DATE_TIME}"
 mkdir -p "${CONFIG_DIR}"
 
+
 DSSET="dsset-."
+TLS_DS="rsa:2048"
 OUTPUT_FILE="${CONFIG_DIR}/trust-anchors.xml"
 
 if [ -f "$DSSET" ]; then
@@ -32,6 +34,15 @@ if [ -f "$DSSET" ]; then
 
     echo "</TrustAnchor>" >> "$OUTPUT_FILE"
     echo "Found $count entries in DS file."
+
+    # generate TLS key
+    sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=resolver"
+
+    # copy files
+    cp CoreFile ${CONFIG_DIR}
+    mv key.pem ${CONFIG_DIR}
+    mv cert.pem ${CONFIG_DIR}
+    mv ${DSSET} ${CONFIG_DIR}
 else
     echo "DS file not found: $DSSET"
 fi
