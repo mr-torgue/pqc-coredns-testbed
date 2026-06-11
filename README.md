@@ -44,10 +44,10 @@ resolver {
 ```
 
 # To Do
-1. Automate key generation and signing for both TLS and DNSSEC
-2. Create a script that automatically convert a root anchor (DS record) into an XML file that can be parsed by the resolver
-3. Create options for the ciphers/digital signature schemes
-4. Display key and zone information in showinfo.sh
+1. Display key and zone information in showinfo.sh
+2. Add nameserver script that adds NS information for child zones
+
+One major issue is that one typo in the db means the whole zone has to be signed again.
 
 # Trouble Shooting
 Run `showinfo.sh` to show some basic information.
