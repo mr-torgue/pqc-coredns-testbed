@@ -37,9 +37,18 @@ echo "Copying files to /opt/coredns..."
 sudo cp "$1/cert.pem" "$1/key.pem" "$1/db.root.signed" "$1/CoreFile" /opt/coredns/
 
 # Step 3: Print sha256sum of dsset-.
+if [ -f "$1/dsset-test." ]; then
+    echo "SHA256 sum of dsset-test.:"
+    sha256sum "$1/dsset-test."
+else
+    echo "Error: dsset-test. does not exist in the specified directory."
+    exit 1
+fi
 if [ -f "$1/dsset-." ]; then
     echo "SHA256 sum of dsset-.:"
     sha256sum "$1/dsset-."
+    echo "Contents of dsset-.:"
+    cat "$1/dsset-."
 else
     echo "Error: dsset-. does not exist in the specified directory."
     exit 1

@@ -30,6 +30,7 @@ mv Ktest* ${CONFIG_DIR}
 cp CoreFile ${CONFIG_DIR}
 cp db.test ${CONFIG_DIR}
 mv db.test.signed ${CONFIG_DIR}
+mv ${DSSET} ${CONFIG_DIR}
 mv dsset-test. ${CONFIG_DIR}
 mv key.pem ${CONFIG_DIR}
 mv cert.pem ${CONFIG_DIR}
