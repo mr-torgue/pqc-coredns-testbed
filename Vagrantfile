@@ -13,9 +13,7 @@ Vagrant.configure("2") do |config|
       vb.memory = "2048"
       vb.cpus = 2
     end
-    config.vm.provision "shell", path: "setup.sh"
-    config.vm.provision "file", source: "NS-Root/CoreFile", destination: "/tmp"
-    config.vm.provision "file", source: "NS-Root/db.root", destination: "/tmp"
+    config.vm.provision "shell", path: "scripts/setup.sh"
   end
   
   config.vm.define "test-ns" do |vm|
@@ -25,9 +23,7 @@ Vagrant.configure("2") do |config|
       vb.memory = "2048"
       vb.cpus = 2
     end
-    config.vm.provision "shell", path: "setup.sh"
-    config.vm.provision "file", source: "NS-test/CoreFile", destination: "/tmp"
-    config.vm.provision "file", source: "NS-test/db.test", destination: "/tmp"
+    config.vm.provision "shell", path: "scripts/setup.sh"
   end
 
   config.vm.define "example-test-ns" do |vm|
@@ -37,9 +33,7 @@ Vagrant.configure("2") do |config|
       vb.memory = "2048"
       vb.cpus = 2
     end
-    config.vm.provision "shell", path: "setup.sh"
-    config.vm.provision "file", source: "NS-example.test/CoreFile", destination: "/tmp"
-    config.vm.provision "file", source: "NS-example.test/db.example.test", destination: "/tmp"
+    config.vm.provision "shell", path: "scripts/setup.sh"
   end
 
   config.vm.define "resolver" do |vm|
@@ -49,6 +43,6 @@ Vagrant.configure("2") do |config|
       vb.memory = "2048"
       vb.cpus = 2
     end
-    config.vm.provision "shell", path: "setup.sh"
+    config.vm.provision "shell", path: "scripts/setup.sh"
   end
 end

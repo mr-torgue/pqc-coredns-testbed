@@ -1,7 +1,10 @@
 #!/bin/bash
+DATE_TIME=$(date +"%Y%m%d-%H%M%S")
+CONFIG_DIR="config-${DATE_TIME}"
+mkdir -p "${CONFIG_DIR}"
 
 DSSET="dsset-."
-OUTPUT_FILE="trust-anchors-$(date +%Y%m%d).xml"
+OUTPUT_FILE="${CONFIG_DIR}/trust-anchors.xml"
 
 if [ -f "$DSSET" ]; then
     echo "Found DS file: $DSSET"
@@ -10,11 +13,11 @@ if [ -f "$DSSET" ]; then
 
     count=0
     while IFS= read -r line; do
-        if [[ $line =~ ^[[:space:]]*[.][[:space:]]+IN[[:space:]]+DS[[:space:]]+([0-9]+)[[:space:]]+([0-9]+)[[:space:]]+([0-9]+)[[:space:]]+([0-9A-Fa-f]+)[[:space:]]+([0-9A-Fa-f]+) ]]; then
+        if [[ $line =~ ^[[:space:]]*[.][[:space:]]+IN[[:space:]]+DS[[:space:]]+([0-9]+)[[:space:]]+([0-9]+)[[:space:]]+([0-9]+)[[:space:]]+(.*) ]]; then
             keytag=${BASH_REMATCH[1]}
             algorithm=${BASH_REMATCH[2]}
             digesttype=${BASH_REMATCH[3]}
-            digest=${BASH_REMATCH[4]}
+            digest=$(echo "${BASH_REMATCH[4]}" | tr -d ' ')
             id=$(openssl rand -hex 4)
 
             echo "    <KeyDigest id=\"$id\" validFrom=\"$(date +%Y-%m-%dT%H:%M:%S+00:00)\" validUntil=\"2035-01-01T00:00:00+00:00\">" >> "$OUTPUT_FILE"

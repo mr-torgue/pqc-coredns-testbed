@@ -1,6 +1,8 @@
 Creates a testbed that sets up a resolver and three name servers using CoreDNS.
 
 For testing, use Vagrant: `vagrant up`.
+In the VM run `git clone https://github.com/mr-torgue/pqc-coredns-testbed.git` to get all the scripts.
+
 For production, run `setup.sh` to install the components and copy the `CoreFile` and `zone` to `/opt/coredns`.
 Run coredns with `coredns -conf CoreFile`.
 
