@@ -26,6 +26,7 @@ if [ -n "$DSFILE" ]; then
         exit 1
     fi
     cp "$ZONEFILE" "${ZONEFILE}.tmp"
+    echo -e "\n" >> "${ZONEFILE}.tmp"
     cat "$DSFILE" >> "${ZONEFILE}.tmp"
     ZONEFILE="${ZONEFILE}.tmp"
 fi
@@ -38,5 +39,6 @@ else
 fi
 
 if [ -n "$DSFILE" ]; then
+    mv "${ZONEFILE}.signed" "${ZONEFILE%.tmp}.signed"
     rm -f "$ZONEFILE"
 fi

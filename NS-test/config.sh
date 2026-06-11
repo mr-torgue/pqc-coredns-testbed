@@ -4,13 +4,15 @@ DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 CONFIG_DIR="config-${DATE_TIME}"
 mkdir -p "${CONFIG_DIR}"
 
-DOMAIN="example.test."
+DSSET="dsset-example.test."
+DOMAIN="test."
 TLS_DS="rsa:2048"
 DNSSEC_DS="P256_FALCON512"
-ZONEFILE="db.example.test"
+ZONEFILE="db.test"
 
 while getopts "d:t:a:z:" opt; do
   case $opt in
+    d) DSSET="$OPTARG" ;;
     t) TLS_DS="$OPTARG" ;;
     a) DNSSEC_DS="$OPTARG" ;;
     z) ZONEFILE="$OPTARG" ;;
@@ -20,13 +22,14 @@ done
 
 
 ../scripts/genkey.sh -f "${DOMAIN}" -t "${TLS_DS}" -d "${DNSSEC_DS}" 
-../scripts/signzone.sh -z "${ZONEFILE}" -f "${DOMAIN}"
+../scripts/signzone.sh -z "${ZONEFILE}" -f "${DOMAIN}" -d "${DSSET}"
+
 
 # copy files
-mv Kexample* ${CONFIG_DIR}
+mv Ktest* ${CONFIG_DIR}
 cp CoreFile ${CONFIG_DIR}
-cp db.example.test ${CONFIG_DIR}
-mv db.example.test.signed ${CONFIG_DIR}
+cp db.test ${CONFIG_DIR}
+mv db.test.signed ${CONFIG_DIR}
 
 cat > "${CONFIG_DIR}/config.json" <<EOF
 {
