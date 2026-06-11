@@ -48,6 +48,7 @@ resolver {
 2. Add nameserver script that adds NS information for child zones
 
 One major issue is that one typo in the db means the whole zone has to be signed again.
+Also, lots of redundancy in the scripts...
 
 # Trouble Shooting
 Run `showinfo.sh` to show some basic information.
