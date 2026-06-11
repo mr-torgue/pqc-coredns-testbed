@@ -37,3 +37,4 @@ sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out c
 echo "Generating DNSSEC keys for FQDN: $FQDN"
 echo "DNSSEC digital signature scheme: $DNSSEC_DS"
 sudo dnssec-keygen -a ${DNSSEC_DS} -n ZONE ${FQDN}
+sudo dnssec-keygen -a ${DNSSEC_DS} -n ZONE -f KSK ${FQDN}

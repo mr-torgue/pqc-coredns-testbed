@@ -27,6 +27,9 @@ mv Kexample* ${CONFIG_DIR}
 cp CoreFile ${CONFIG_DIR}
 cp db.example.test ${CONFIG_DIR}
 mv db.example.test.signed ${CONFIG_DIR}
+mv dsset-example.test. ${CONFIG_DIR}
+mv key.pem ${CONFIG_DIR}
+mv cert.pem ${CONFIG_DIR}
 
 cat > "${CONFIG_DIR}/config.json" <<EOF
 {

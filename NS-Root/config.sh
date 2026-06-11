@@ -30,6 +30,10 @@ mv K.* ${CONFIG_DIR}
 cp CoreFile ${CONFIG_DIR}
 cp db.root ${CONFIG_DIR}
 mv db.root.signed ${CONFIG_DIR}
+mv dsset-. ${CONFIG_DIR}
+mv key.pem ${CONFIG_DIR}
+mv cert.pem ${CONFIG_DIR}
+
 
 cat > "${CONFIG_DIR}/config.json" <<EOF
 {
