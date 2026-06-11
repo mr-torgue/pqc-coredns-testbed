@@ -29,6 +29,9 @@ if [ -n "$DSFILE" ]; then
     echo -e "\n" >> "${ZONEFILE}.tmp"
     cat "$DSFILE" >> "${ZONEFILE}.tmp"
     ZONEFILE="${ZONEFILE}.tmp"
+
+    echo "SHA256 sum of ${DSFILE}:"
+    sha256sum "${DSFILE}"
 fi
 
 # Only use -o if origin is set through the domain variable 
