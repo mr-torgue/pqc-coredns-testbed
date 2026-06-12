@@ -66,6 +66,22 @@ make
 sudo mkdir -p /opt/coredns
 sudo mv coredns /opt/coredns
 
+# Install prometheus, node_exported, and Grafana
+sudo apt install prometheus prometheus-node-exporter prometheus-bind-exporter -y
+sudo systemctl enable prometheus
+sudo systemctl start prometheus
+sudo systemctl start node_exporter
+sudo systemctl enable node_exporter
+sudo apt-get install -y apt-transport-https wget gnupg
+sudo mkdir -p /etc/apt/keyrings/
+wget -q -O - https://apt.grafana.com/gpg.key --no-check-certificate | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+sudo apt-get update
+sudo apt-get install grafana -y
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable grafana-server
+sudo /bin/systemctl start grafana-server
+
 
 # Stop our own stub resolver, we need that port!
 sudo systemctl stop systemd-resolved
