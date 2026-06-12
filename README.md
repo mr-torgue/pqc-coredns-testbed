@@ -1,11 +1,18 @@
 Creates a testbed that sets up a resolver and three name servers using CoreDNS.
 
+# Installation
+There are two methods of installation: 
+1. Vagrant: for local testing
+2. Bare metal
+
+## Vagrant
 For testing, use Vagrant: `vagrant up`.
 In the VM run `git clone https://github.com/mr-torgue/pqc-coredns-testbed.git` to get all the scripts.
 
 For production, run `setup.sh` to install the components and copy the `CoreFile` and `zone` to `/opt/coredns`.
 Run coredns with `coredns -conf CoreFile`.
 
+# Configuration
 
 # Using DoQ and DoT
 DoT and DoQ require TLS certificates. Which can be generated with `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem`. 
