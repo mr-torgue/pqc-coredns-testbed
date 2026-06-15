@@ -3,19 +3,26 @@ DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 CONFIG_DIR="config-${DATE_TIME}"
 mkdir -p "${CONFIG_DIR}"
 
-if [ $# -eq 0 ]; then
-    echo "Error: Please provide the root zone file as a parameter" >&2
-    exit 1
-fi
-ZONEFILE=$1
+DSSET="dsset-."
+TLS_DS="rsa:2048"
+OUTPUT_FILE="${CONFIG_DIR}/trust-anchors.xml"
+CONFIG_NAME="config"
+ZONEFILE="named.root"
+
+while getopts "d:t:a:z:n:" opt; do
+  case $opt in
+    d) DSSET="$OPTARG" ;;
+    t) TLS_DS="$OPTARG" ;;
+    z) ZONEFILE="$OPTARG" ;;
+    n) CONFIG_NAME="$OPTARG" ;;
+    *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-a <dnssec_ds>] [-z <zonefile>]" >&2; exit 1 ;;
+  esac
+done
+
 if [ ! -f "$ZONEFILE" ]; then
     echo "Error: The specified root zone file does not exist" >&2
     exit 1
 fi
-
-DSSET="dsset-."
-TLS_DS="rsa:2048"
-OUTPUT_FILE="${CONFIG_DIR}/trust-anchors.xml"
 
 if [ -f "$DSSET" ]; then
     echo "Found DS file: $DSSET"
@@ -54,11 +61,17 @@ if [ -f "$DSSET" ]; then
     mv cert.pem ${CONFIG_DIR}
     mv ${DSSET} ${CONFIG_DIR}
 
-    cat > "${CONFIG_DIR}/config.json" <<EOF
-    {
-        "Config Directory": "${CONFIG_DIR}"
-    }
-    EOF
+    jq -n \
+        --arg tls_ds "$TLS_DS" \
+        --arg config_dir "$CONFIG_DIR" \
+        --arg date_time "$DATE_TIME" \
+        --arg config_name "$CONFIG_NAME" \
+        '{
+            "TLS Signature Scheme": $tls_ds,
+            "Config Directory": $config_dir,
+            "Date": $date_time,
+            "Config Name": $config_name
+        }' > "${CONFIG_DIR}/config.json"
     
 else
     echo "DS file not found: $DSSET"

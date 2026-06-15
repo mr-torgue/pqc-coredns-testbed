@@ -9,13 +9,15 @@ DOMAIN="."
 TLS_DS="rsa:2048"
 DNSSEC_DS="P256_FALCON512"
 ZONEFILE="db.root"
+CONFIG_NAME="config"
 
-while getopts "d:t:a:z:" opt; do
+while getopts "d:t:a:z:n:" opt; do
   case $opt in
     d) DSSET="$OPTARG" ;;
     t) TLS_DS="$OPTARG" ;;
     a) DNSSEC_DS="$OPTARG" ;;
     z) ZONEFILE="$OPTARG" ;;
+    n) CONFIG_NAME="$OPTARG" ;;
     *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-a <dnssec_ds>] [-z <zonefile>]" >&2; exit 1 ;;
   esac
 done
@@ -41,7 +43,9 @@ cat > "${CONFIG_DIR}/config.json" <<EOF
   "domain": "${DOMAIN}",
   "TLS Signature Scheme": "${TLS_DS}",
   "DNSSEC Algorithm": "${DNSSEC_DS}",
-  "Config Directory": "${CONFIG_DIR}"
+  "Config Directory": "${CONFIG_DIR}",
+  "Date": "${DATE_TIME}",
+  "Config Name": "${CONFIG_NAME}"
 }
 EOF
 

@@ -191,8 +191,15 @@ run_query() {
 }
 
 # write the info to file
-printf "\"label\",\"description\",\"algorithm\",\"strategy\",\"delay\",\"rate\"\n" >> "$CSV_FILE"
-printf "\"$LABEL\",\"$DESCRIPTION\",\"$ALGORITHM\",\"$STRATEGY\",\"$DELAY\",\"$RATE\"\n" >> "$CSV_FILE"
+jq -n \
+    --arg label "$LABEL" \
+    --arg description "$DESCRIPTION" \
+    --arg algorithm "$ALGORITHM" \
+    --arg strategy "$STRATEGY" \
+    --arg delay "$DELAY" \
+    --arg rate "$RATE" \
+    '{label: $label, description: $description, algorithm: $algorithm, strategy: $strategy, delay: $delay, rate: $rate}' \
+    >> "$JSON_FILE"
 # write headers
 printf "\"Domain\",\"Timestamp\",\"Resolver\",\"Status\",\"Query Time\"\n" >> "$CSV_FILE"
 

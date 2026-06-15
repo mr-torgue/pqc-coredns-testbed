@@ -8,15 +8,19 @@ DOMAIN="example.test."
 TLS_DS="rsa:2048"
 DNSSEC_DS="P256_FALCON512"
 ZONEFILE="db.example.test"
+CONFIG_NAME="config"
 
-while getopts "d:t:a:z:" opt; do
+while getopts "d:t:a:z:n:" opt; do
   case $opt in
     t) TLS_DS="$OPTARG" ;;
     a) DNSSEC_DS="$OPTARG" ;;
     z) ZONEFILE="$OPTARG" ;;
-    *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-a <dnssec_ds>] [-z <zonefile>]" >&2; exit 1 ;;
+    n) CONFIG_NAME="$OPTARG" ;;
+    *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-a <dnssec_ds>] [-z <zonefile>] [-n <config_name>]" >&2; exit 1 ;;
   esac
 done
+
+CONFIG_DIR="${CONFIG_NAME}-${DATE_TIME}"
 
 
 ../scripts/genkey.sh -f "${DOMAIN}" -t "${TLS_DS}" -d "${DNSSEC_DS}" 
@@ -36,7 +40,9 @@ cat > "${CONFIG_DIR}/config.json" <<EOF
   "domain": "${DOMAIN}",
   "TLS Signature Scheme": "${TLS_DS}",
   "DNSSEC Algorithm": "${DNSSEC_DS}",
-  "Config Directory": "${CONFIG_DIR}"
+  "Config Directory": "${CONFIG_DIR}",
+  "Date": "${DATE_TIME}",
+  "Config Name": "${CONFIG_NAME}"
 }
 EOF
 
