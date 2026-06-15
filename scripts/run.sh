@@ -56,7 +56,7 @@ else
     exit
 fi
 
-dir=/opt/coredns/
+dir=$(jq -r '.directory' /opt/coredns/config.json)
 echo -e "---------------------------"
 echo -e "|     Available Keys      |"
 echo -e "---------------------------"
