@@ -43,6 +43,13 @@ if [ -f "$DSSET" ]; then
     mv key.pem ${CONFIG_DIR}
     mv cert.pem ${CONFIG_DIR}
     mv ${DSSET} ${CONFIG_DIR}
+
+    cat > "${CONFIG_DIR}/config.json" <<EOF
+    {
+        "Config Directory": "${CONFIG_DIR}"
+    }
+    EOF
+    
 else
     echo "DS file not found: $DSSET"
 fi

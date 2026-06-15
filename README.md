@@ -1,18 +1,38 @@
 Creates a testbed that sets up a resolver and three name servers using CoreDNS.
 
 # Installation
-There are two methods of installation: 
-1. Vagrant: for local testing
-2. Bare metal
-
+```
+curl -L -O https://github.com/mr-torgue/pqc-coredns-testbed/setup.sh
+./setup [nameserver/resolver]
+```
 ## Vagrant
-For testing, use Vagrant: `vagrant up`.
-In the VM run `git clone https://github.com/mr-torgue/pqc-coredns-testbed.git` to get all the scripts.
+Use Vagrant to spanw VM's locally: `vagrant up`.
+In the VM run the instllation script.
 
-For production, run `setup.sh` to install the components and copy the `CoreFile` and `zone` to `/opt/coredns`.
-Run coredns with `coredns -conf CoreFile`.
+## Configuration 
+Configurations can be setup
 
-# Configuration
+
+Run coredns with `cd /opt/coredns && ./coredns -conf CoreFile`.
+
+## Enabling Prometheus and Grafana
+Add the following to `/etc/prometheus/prometheus.yml` to enable CoreDNS logging in Prometheus:
+```
+  - job_name: coredns
+    honor_timestamps: true
+    scrape_interval: 15s
+    scrape_timeout: 10s
+    metrics_path: /metrics
+    scheme: http
+    follow_redirects: true
+    enable_http2: true
+    static_configs:
+    - targets:
+      - localhost:9153 
+```
+Go to the Grafana instance (IP:3000) and add Prometheus as a data source.
+Install the [node-exporter](https://grafana.com/grafana/dashboards/1860-node-exporter-full/) and [CoreDNS](https://grafana.com/grafana/dashboards/14981-coredns/) dashboards.
+
 
 # Using DoQ and DoT
 DoT and DoQ require TLS certificates. Which can be generated with `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem`. 

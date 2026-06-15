@@ -6,6 +6,15 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+# Step 1: Check if config.json exists and print its output
+if [ -f "$1/config.json" ]; then
+    echo "Contents of config.json:"
+    cat "$1/config.json"
+else
+    echo "Error: config.json does not exist in the specified directory."
+    exit 1
+fi
+
 required_files=("cert.pem" "key.pem" "CoreFile")
 missing_files=()
 
@@ -24,7 +33,7 @@ if [ ${#missing_files[@]} -ne 0 ]; then
 fi
 
 echo "Copying files to /opt/coredns..."
-sudo cp "$1/cert.pem" "$1/key.pem" "$1/CoreFile" /opt/coredns/
+sudo cp "$1/cert.pem" "$1/key.pem" "$1/CoreFile" "$1/config.json" /opt/coredns/ 
 
 # print root DS hash
 if [ -f "$1/dsset-." ]; then
