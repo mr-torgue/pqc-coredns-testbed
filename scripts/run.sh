@@ -39,6 +39,9 @@ else
 fi
 
 # print /opt/coredns/config.json
+echo -e "-------------------------------------"
+echo -e "|          config.json              |"
+echo -e "-------------------------------------"
 if [ -f "/opt/coredns/config.json" ]; then
     echo -e "\nContents of /opt/coredns/config.json:"
     cat "/opt/coredns/config.json"
@@ -48,6 +51,9 @@ else
 fi
 
 # print /opt/coredns/CoreFile
+echo -e "-------------------------------------"
+echo -e "|          Core File                 |"
+echo -e "-------------------------------------"
 if [ -f "/opt/coredns/CoreFile" ]; then
     echo -e "\nContents of /opt/coredns/CoreFile:"
     cat "/opt/coredns/CoreFile"
@@ -56,10 +62,10 @@ else
     exit
 fi
 
-dir=$(jq -r '.directory' /opt/coredns/config.json)
-echo -e "---------------------------"
-echo -e "|     Available Keys      |"
-echo -e "---------------------------"
+dir=$(jq -r '.Config Directory' /opt/coredns/config.json)
+echo -e "-------------------------------------"
+echo -e "|          Available Keys           |"
+echo -e "-------------------------------------"
 while read -r file; do
     FILE_ALG=$(sed -n '2p' "$file" | awk -F'[()]' '{print $2}') 
     # check if key file exists
