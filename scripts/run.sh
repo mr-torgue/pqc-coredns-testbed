@@ -3,11 +3,17 @@
 runs coredns and displays debug information
 '
 
-if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <DEBUG>" >&2
+# Check if directory name is provided
+if [ -z "$1" ]; then
+    echo "Error: Please provide a directory name as an argument."
     exit 1
 fi
-DEBUG=$1
+
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 config-dir debug" >&2
+    exit 1
+fi
+DEBUG=$2
 
 # Print OpenSSL version
 echo "OpenSSL version:"
@@ -38,31 +44,32 @@ else
     echo "CoreDNS not found at /opt/coredns/coredns"
 fi
 
-# print /opt/coredns/config.json
+# print $1/config.json
 echo -e "-------------------------------------"
 echo -e "|          config.json              |"
 echo -e "-------------------------------------"
-if [ -f "/opt/coredns/config.json" ]; then
-    echo -e "\nContents of /opt/coredns/config.json:"
-    cat "/opt/coredns/config.json"
+if [ -f "$1/config.json" ]; then
+    echo -e "\nContents of $1/config.json:"
+    cat "$1/config.json"
 else 
     echo "config.json not found!"
     exit
 fi
 
-# print /opt/coredns/CoreFile
+# print $1/CoreFile
 echo -e "-------------------------------------"
 echo -e "|          Core File                |"
 echo -e "-------------------------------------"
-if [ -f "/opt/coredns/CoreFile" ]; then
-    echo -e "\nContents of /opt/coredns/CoreFile:"
-    cat "/opt/coredns/CoreFile"
+if [ -f "$1/CoreFile" ]; then
+    echo -e "\nContents of $1/CoreFile:"
+    cat "$1/CoreFile"
 else 
     echo "CoreFile not found!"
     exit
 fi
 
-dir=$(jq -r '."Config Directory"' /opt/coredns/config.json)
+#dir=$(jq -r '."Config Directory"' /opt/coredns/config.json)
+dir=$1
 echo -e "-------------------------------------"
 echo -e "|          Available Keys           |"
 echo -e "-------------------------------------"
@@ -95,10 +102,10 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
     if [ "$DEBUG" = "true" ]; then
         echo "DEBUG MODE"
         tcpdump -i any 'port 53 and (udp or tcp)' -w capture.pcap &
-        gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf /opt/coredns/CoreFile
+        gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf $1/CoreFile
     else
         named -d 3
-        /opt/coredns/coredns -conf /opt/coredns/CoreFile
+        /opt/coredns/coredns -conf $1/CoreFile
     fi
 else
     echo "aborting..."
