@@ -34,7 +34,7 @@ if [ ${#missing_files[@]} -ne 0 ]; then
 fi
 
 echo "Copying files to /opt/coredns..."
-sudo cp "$1/cert.pem" "$1/key.pem" "$1/db.root.signed" "$1/CoreFile" /opt/coredns/
+sudo cp "$1/cert.pem" "$1/key.pem" "$1/db.root.signed" "$1/CoreFile" "$1/config.json" /opt/coredns/
 
 # Step 3: Print sha256sum of dsset-.
 if [ -f "$1/dsset-test." ]; then
