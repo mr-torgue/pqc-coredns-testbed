@@ -31,6 +31,7 @@ DELAY=0
 REPEAT=1
 NR_PROCESSES=1
 CLIENT="UDP"
+CONFIGNAME=""
 
 # Help function
 usage() {
@@ -50,6 +51,7 @@ usage() {
     echo "  --delay          Network delay, docker only (default: 0)"
     echo "  --repeat         The number of times this experiment is repeated (default: 1)"
     echo "  -c, --client     Client protocol (DoQ, DoT, UDP, or TCP, default: UDP)"
+    echo "  -f, --config     Configuration name (default: \"\")"
     echo "  -h, --help       Show this help message"
     exit 1
 }
@@ -70,6 +72,7 @@ while [[ "$#" -gt 0 ]]; do
         --delay) DELAY="$2"; shift ;;
         --repeat) REPEAT="$2"; shift ;;
         -c|--client) CLIENT="$2"; shift ;;
+        -f|--config) CONFIGNAME="$2"; shift ;;
         -h|--help) usage ;;
         *) echo "Unknown parameter passed: $1"; usage ;;
     esac
@@ -103,6 +106,7 @@ echo "  Rate:        $RATE"
 echo "  Delay:       $DELAY"
 echo "  Repeat:      $REPEAT"
 echo "  Client:      $CLIENT"
+echo "  Configname:  $CONFIGNAME"
 
 read -p "do you want to run the experiment with these settings? (Y/N): " choice
 
@@ -123,8 +127,15 @@ esac
 
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 FILENAME="${LABEL}-${STRATEGY}-${ALGORITHM}-${TIMESTAMP}"
-CSV_FILE="${FILENAME}.csv"
-TXT_FILE="${FILENAME}.txt"
+# Generate a random hex string
+RANDOM_HEX=$(openssl rand -hex 4)
+# Create directory name
+DIR_NAME="${CONFIGNAME}-$(date +%Y-%m-%d)-${RANDOM_HEX}"
+# Create directory
+mkdir -p "$DIR_NAME"
+# Set file paths
+CSV_FILE="${DIR_NAME}/${FILENAME}.csv"
+TXT_FILE="${DIR_NAME}/${FILENAME}.txt"
 
 
 parse_dig_result() {
@@ -191,7 +202,7 @@ run_query "$DOMAIN"
 # Run concurrent queries
 for ((r = 0; r < REPEAT; r++)); do
     # Create an array to hold PIDs
-    local pids=()
+    pids=()
 
     for ((i = 0; i < COUNT; i++)); do 
         prefix="${DOMAIN%%.*}${i}"
