@@ -52,7 +52,7 @@ fi
 
 # print /opt/coredns/CoreFile
 echo -e "-------------------------------------"
-echo -e "|          Core File                 |"
+echo -e "|          Core File                |"
 echo -e "-------------------------------------"
 if [ -f "/opt/coredns/CoreFile" ]; then
     echo -e "\nContents of /opt/coredns/CoreFile:"
@@ -95,10 +95,10 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
     if [ "$DEBUG" = "true" ]; then
         echo "DEBUG MODE"
         tcpdump -i any 'port 53 and (udp or tcp)' -w capture.pcap &
-        gdb --batch -ex "run" -ex "bt" -ex "quit" --args $dir/coredns -conf $dir/CoreFile
+        gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf /opt/coredns/CoreFile
     else
         named -d 3
-        $dir/coredns -conf $dir/CoreFile
+        /opt/coredns/coredns -conf /opt/coredns/CoreFile
     fi
 else
     echo "aborting..."
