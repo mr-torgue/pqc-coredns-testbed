@@ -3,6 +3,15 @@ DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 CONFIG_DIR="config-${DATE_TIME}"
 mkdir -p "${CONFIG_DIR}"
 
+if [ $# -eq 0 ]; then
+    echo "Error: Please provide the root zone file as a parameter" >&2
+    exit 1
+fi
+ZONEFILE=$1
+if [ ! -f "$ZONEFILE" ]; then
+    echo "Error: The specified root zone file does not exist" >&2
+    exit 1
+fi
 
 DSSET="dsset-."
 TLS_DS="rsa:2048"
@@ -40,6 +49,7 @@ if [ -f "$DSSET" ]; then
 
     # copy files
     cp CoreFile ${CONFIG_DIR}
+    cp $ZONEFILE ${CONFIG_DIR}/named.root
     mv key.pem ${CONFIG_DIR}
     mv cert.pem ${CONFIG_DIR}
     mv ${DSSET} ${CONFIG_DIR}
