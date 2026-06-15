@@ -1,4 +1,5 @@
 . {
+    prometheus
     errors
     log
     debug
@@ -11,6 +12,7 @@
 }
 
 quic://.:853 {
+    prometheus
     errors
     log
     debug
