@@ -96,16 +96,17 @@ echo -e "---------------------------"
 read -p "do you want to run bind with these settings? (Y/N): " choice
 
 # Check the user's input
+cd $1
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     pkill coredns
     pkill tcpdump
     if [ "$DEBUG" = "true" ]; then
         echo "DEBUG MODE"
         tcpdump -i any 'port 53 and (udp or tcp)' -w capture.pcap &
-        gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf $1/CoreFile
+        gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
     else
         named -d 3
-        /opt/coredns/coredns -conf $1/CoreFile
+        /opt/coredns/coredns -conf CoreFile
     fi
 else
     echo "aborting..."
