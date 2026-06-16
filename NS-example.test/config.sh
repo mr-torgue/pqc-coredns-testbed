@@ -1,8 +1,6 @@
 #!/bin/bash
 
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
-CONFIG_DIR="config-${DATE_TIME}"
-mkdir -p "${CONFIG_DIR}"
 
 DOMAIN="example.test."
 TLS_DS="rsa:2048"
@@ -21,6 +19,7 @@ while getopts "d:t:a:z:n:" opt; do
 done
 
 CONFIG_DIR="${CONFIG_NAME}-${DATE_TIME}"
+mkdir -p "${CONFIG_DIR}"
 
 
 ../scripts/genkey.sh -f "${DOMAIN}" -t "${TLS_DS}" -d "${DNSSEC_DS}" 

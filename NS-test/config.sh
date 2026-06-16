@@ -1,8 +1,6 @@
 #!/bin/bash
 
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
-CONFIG_DIR="config-${DATE_TIME}"
-mkdir -p "${CONFIG_DIR}"
 
 DSSET="dsset-example.test."
 DOMAIN="test."
@@ -21,6 +19,8 @@ while getopts "d:t:a:z:n:" opt; do
     *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-a <dnssec_ds>] [-z <zonefile>]" >&2; exit 1 ;;
   esac
 done
+CONFIG_DIR="${CONFIG_NAME}-${DATE_TIME}"
+mkdir -p "${CONFIG_DIR}"
 
 
 ../scripts/genkey.sh -f "${DOMAIN}" -t "${TLS_DS}" -d "${DNSSEC_DS}" 

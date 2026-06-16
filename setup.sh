@@ -73,13 +73,9 @@ sudo systemctl enable prometheus
 sudo systemctl start prometheus
 sudo systemctl start node_exporter
 sudo systemctl enable node_exporter
-sudo apt-get install -y apt-transport-https wget gnupg
-sudo mkdir -p /etc/apt/keyrings
-sudo wget -O /etc/apt/keyrings/grafana.asc https://apt.grafana.com/gpg-full.key
-sudo chmod 644 /etc/apt/keyrings/grafana.asc
-echo "deb [signed-by=/etc/apt/keyrings/grafana.asc] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
-sudo apt-get update
-sudo apt-get install grafana -y
+sudo apt-get install -y adduser libfontconfig1 musl
+wget https://dl.grafana.com/grafana-enterprise/release/13.0.2/grafana-enterprise_13.0.2_26816849631_linux_amd64.deb
+sudo dpkg -i grafana-enterprise_13.0.2_26816849631_linux_amd64.deb
 sudo /bin/systemctl daemon-reload
 sudo /bin/systemctl enable grafana-server
 sudo /bin/systemctl start grafana-server

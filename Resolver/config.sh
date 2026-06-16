@@ -1,7 +1,5 @@
 #!/bin/bash
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
-CONFIG_DIR="config-${DATE_TIME}"
-mkdir -p "${CONFIG_DIR}"
 
 DSSET="dsset-."
 TLS_DS="rsa:2048"
@@ -18,6 +16,8 @@ while getopts "d:t:a:z:n:" opt; do
     *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-a <dnssec_ds>] [-z <zonefile>]" >&2; exit 1 ;;
   esac
 done
+CONFIG_DIR="${CONFIG_NAME}-${DATE_TIME}"
+mkdir -p "${CONFIG_DIR}"
 
 if [ ! -f "$ZONEFILE" ]; then
     echo "Error: The specified root zone file does not exist" >&2
