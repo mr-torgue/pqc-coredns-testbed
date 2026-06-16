@@ -3,7 +3,6 @@ DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
 DSSET="dsset-."
 TLS_DS="rsa:2048"
-OUTPUT_FILE="${CONFIG_DIR}/trust-anchors.xml"
 CONFIG_NAME="config"
 ZONEFILE="named.root"
 
@@ -18,6 +17,7 @@ while getopts "d:t:a:z:n:" opt; do
 done
 CONFIG_DIR="${CONFIG_NAME}-${DATE_TIME}"
 mkdir -p "${CONFIG_DIR}"
+OUTPUT_FILE="${CONFIG_DIR}/trust-anchors.xml"
 
 if [ ! -f "$ZONEFILE" ]; then
     echo "Error: The specified root zone file does not exist" >&2
