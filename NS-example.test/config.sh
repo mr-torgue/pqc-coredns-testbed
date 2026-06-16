@@ -26,7 +26,7 @@ mkdir -p "${CONFIG_DIR}"
 ../scripts/signzone.sh -z "${ZONEFILE}" -f "${DOMAIN}"
 
 # export DS record for easy import
-$DSRR="dsset-example.test."
+DSRR="dsset-example.test."
 if [ ! -f "$DSRR" ]; then
     echo "Error: File '$file' not found." >&2
     exit 1
