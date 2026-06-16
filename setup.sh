@@ -5,8 +5,9 @@ COREDNS_VERSION=1.14.3
 GO_VERSION=1.26.4
 
 # Install pre-requisites
-sudo apt update && sudo apt upgrade -y
-sudo apt install nano cmake gcc pkg-config autoconf automake git ninja-build build-essential doxygen libtool libjemalloc-dev libcmocka-dev libxml2-dev libjson-c-dev binutils liburcu-dev libnetfilter-queue-dev libpcap-dev net-tools traceroute iperf libnl-3-dev libnl-genl-3-dev binutils-dev libreadline6-dev libuv1-dev libnghttp2-dev libcap-dev -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt install valgrind nano gdb tcpdump ssh curl cmake gcc pkg-config autoconf automake git build-essential ninja-build libnghttp2-dev libcap-dev libtool libtool-bin libuv1-dev unzip iputils-ping iptables iproute2 liburcu-dev libnetfilter-queue-dev libpcap-dev net-tools traceroute iperf libnl-3-dev libnl-genl-3-dev binutils-dev libreadline6-dev libjemalloc-dev libcmocka-dev libxml2-dev libjson-c-dev binutils -y
 
 # Install OpenSSL
 cd ~
@@ -66,16 +67,17 @@ make
 sudo mkdir -p /opt/coredns
 sudo mv coredns /opt/coredns
 
-# Install prometheus, node_exported, and Grafana
+# Install prometheus, node_exporter, and Grafana
 sudo apt install prometheus prometheus-node-exporter prometheus-bind-exporter -y
 sudo systemctl enable prometheus
 sudo systemctl start prometheus
 sudo systemctl start node_exporter
 sudo systemctl enable node_exporter
 sudo apt-get install -y apt-transport-https wget gnupg
-sudo mkdir -p /etc/apt/keyrings/
-wget -q -O - https://apt.grafana.com/gpg.key --no-check-certificate | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
-echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+sudo mkdir -p /etc/apt/keyrings
+sudo wget -O /etc/apt/keyrings/grafana.asc https://apt.grafana.com/gpg-full.key
+sudo chmod 644 /etc/apt/keyrings/grafana.asc
+echo "deb [signed-by=/etc/apt/keyrings/grafana.asc] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
 sudo apt-get update
 sudo apt-get install grafana -y
 sudo /bin/systemctl daemon-reload
