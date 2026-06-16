@@ -1,3 +1,7 @@
+# Only one can be active at any point.
+# Comment out the ones you are not using
+
+# UDP Resolver
 . {
     prometheus
     errors
@@ -11,20 +15,50 @@
     }
 }
 
-quic://.:853 {
-    prometheus
-    errors
-    log
-    debug
-    tls cert.pem key.pem
-    quic {
-        max_streams 16
-        worker_pool_size 65536
-    }
-    resolver {
-        hints "named.root"
-        anchor "trust-anchors.xml"
-        clientType "doq"
-        nofallback
-    }
-}
+# TCP Resolver
+#. {
+#    prometheus
+#    errors
+#    log
+#    debug
+#    resolver {
+#        hints "named.root"
+#        anchor "trust-anchors.xml"
+#        clientType "tcp"
+#        nofallback
+#    }
+#}
+
+# QUIC Resolver
+#quic://.:853 {
+#    prometheus
+#    errors
+#    log
+#    debug
+#    tls cert.pem key.pem
+#    quic {
+#        max_streams 16
+#        worker_pool_size 65536
+#    }
+#    resolver {
+#        hints "named.root"
+#        anchor "trust-anchors.xml"
+#        clientType "doq"
+#        nofallback
+#    }
+#}
+
+# TLS Resolver
+#tls://.:853 {
+#    prometheus
+#    errors
+#    log
+#    debug
+#    tls cert.pem key.pem
+#    resolver {
+#        hints "named.root"
+#        anchor "trust-anchors.xml"
+#        clientType "dot"
+#        nofallback
+#    }
+#}

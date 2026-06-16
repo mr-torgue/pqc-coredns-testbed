@@ -18,3 +18,12 @@ quic://.:853 {
     }
     file db.example.test.signed example.test.
 }
+
+#tls://.:853 {
+#    prometheus
+#    errors
+#    log
+#    debug
+#    tls cert.pem key.pem
+#    file db.example.test.signed example.test.
+#}
