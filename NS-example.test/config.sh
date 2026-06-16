@@ -25,12 +25,26 @@ mkdir -p "${CONFIG_DIR}"
 ../scripts/genkey.sh -f "${DOMAIN}" -t "${TLS_DS}" -d "${DNSSEC_DS}" 
 ../scripts/signzone.sh -z "${ZONEFILE}" -f "${DOMAIN}"
 
+# export DS record for easy import
+$DSRR="dsset-example.test."
+if [ ! -f "$DSRR" ]; then
+    echo "Error: File '$file' not found." >&2
+    exit 1
+fi
+
+checksum=$(sha256sum "$DSRR" | awk '{print $1}')
+
+echo "cat > $DSRR << 'EOF'"
+cat "$DSRR"
+echo "EOF"
+echo "echo '$checksum  $DSRR' | sha256sum --check"
+
 # copy files
 mv Kexample* ${CONFIG_DIR}
 cp CoreFile ${CONFIG_DIR}
 cp db.example.test ${CONFIG_DIR}
 mv db.example.test.signed ${CONFIG_DIR}
-mv dsset-example.test. ${CONFIG_DIR}
+mv $DSRR ${CONFIG_DIR}
 mv key.pem ${CONFIG_DIR}
 mv cert.pem ${CONFIG_DIR}
 
