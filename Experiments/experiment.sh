@@ -32,6 +32,7 @@ REPEAT=1
 NR_PROCESSES=1
 CLIENT="UDP"
 CONFIGNAME=""
+NODNSSEC=false
 
 # Help function
 usage() {
@@ -52,6 +53,7 @@ usage() {
     echo "  --repeat         The number of times this experiment is repeated (default: 1)"
     echo "  -c, --client     Client protocol (DoQ, DoT, UDP, or TCP, default: UDP)"
     echo "  -f, --config     Configuration name (default: \"\")"
+    echo "  --nodnssec       Disable DNSSEC validation (default: false)"
     echo "  -h, --help       Show this help message"
     exit 1
 }
@@ -73,6 +75,7 @@ while [[ "$#" -gt 0 ]]; do
         --repeat) REPEAT="$2"; shift ;;
         -c|--client) CLIENT="$2"; shift ;;
         -f|--config) CONFIGNAME="$2"; shift ;;
+        --nodnssec) NODNSSEC="true"; shift ;;
         -h|--help) usage ;;
         *) echo "Unknown parameter passed: $1"; usage ;;
     esac
@@ -107,6 +110,7 @@ echo "  Delay:       $DELAY"
 echo "  Repeat:      $REPEAT"
 echo "  Client:      $CLIENT"
 echo "  Configname:  $CONFIGNAME"
+echo "  DNSSEC disabled:  $NODNSSEC"
 
 read -p "do you want to run the experiment with these settings? (Y/N): " choice
 
@@ -130,7 +134,7 @@ FILENAME="${LABEL}-${STRATEGY}-${ALGORITHM}-${TIMESTAMP}"
 # Generate a random hex string
 RANDOM_HEX=$(openssl rand -hex 4)
 # Create directory name
-DIR_NAME="${CONFIGNAME}-$(date +%Y-%m-%d)-${RANDOM_HEX}"
+DIR_NAME="${CONFIGNAME}-${LABEL}-$(date +%Y-%m-%d)-${RANDOM_HEX}"
 # Create directory
 mkdir -p "$DIR_NAME"
 # Set file paths
@@ -196,7 +200,11 @@ parse_dig_result() {
 run_query() {
     local domain="$1"
     local output
-    output=$((time kdig @$RESOLVER -p $PORT +timeout=10 +dnssec $kdigclient $domain) 2>&1)
+    if [[ "$NODNSSEC" == "true" ]]; then
+        output=$((time kdig @$RESOLVER -p $PORT +timeout=10 $kdigclient $domain) 2>&1)
+    else
+        output=$((time kdig @$RESOLVER -p $PORT +timeout=10 +dnssec $kdigclient $domain) 2>&1)
+    fi
     printf "$output\n" >> "$TXT_FILE"
     parse_dig_result "$output" "$domain"
 }
