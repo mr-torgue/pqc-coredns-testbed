@@ -32,7 +32,11 @@ fi
 
 echo "Generating TLS certificates for FQDN: $FQDN"
 echo "TLS digital signature scheme: $TLS_DS"
-sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=${FQDN}" -addext "subjectAltName=DNS:${FQDN},DNS:ns.${FQDN},DNS:ns1.${FQDN}"
+if [[ "$FQDN" == "." ]]; then
+    sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=${FQDN}" -addext "subjectAltName=DNS:${FQDN},DNS:ns.${FQDN},DNS:ns1.${FQDN},DNS:ns1.root"
+else
+    sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=${FQDN}" -addext "subjectAltName=DNS:${FQDN},DNS:ns.${FQDN},DNS:ns1.${FQDN}"
+fi
 
 echo "Generating DNSSEC keys for FQDN: $FQDN"
 echo "DNSSEC digital signature scheme: $DNSSEC_DS"

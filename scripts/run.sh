@@ -102,7 +102,7 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
     pkill tcpdump
     if [ "$DEBUG" = "true" ]; then
         echo "DEBUG MODE"
-        tcpdump -i any '(port 53 or port 853) and (udp or tcp)' -w capture.pcap &
+        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w capture.pcap &
         gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
     else
         named -d 3
