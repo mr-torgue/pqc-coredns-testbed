@@ -19,11 +19,11 @@ quic://.:853 {
     file db.test.signed test.
 }
 
-#tls://.:853 {
-#    prometheus
-#    errors
-#    log
-#    debug
-#    tls cert.pem key.pem
-#    file db.test.signed test.
-#}
+tls://.:8853 {
+    prometheus
+    errors
+    log
+    debug
+    tls cert.pem key.pem
+    file db.test.signed test.
+}
