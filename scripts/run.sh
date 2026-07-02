@@ -30,6 +30,9 @@ while getopts ":d:p:" opt; do
   esac
 done
 
+echo "DEBUG: $DEBUG"
+echo "PCAP_FILE: $PCAP_FILE"
+
 
 # Print OpenSSL version
 echo "OpenSSL version:"
@@ -44,12 +47,6 @@ echo -e "\nGo version:"
 go version
 
 # print information before running
-version_file=/OQS-bind/VERSION
-version=0
-if [[ -f $version_file ]]; then
-    version=$(<$version_file)
-fi
-echo "bind version: $version"
 echo "named version: $(named -v)"
 
 # Print CoreDNS version
