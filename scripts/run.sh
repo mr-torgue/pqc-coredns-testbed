@@ -9,6 +9,8 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+DEBUG="false"
+PCAP_FILE=""
 while getopts ":d:p:" opt; do
   case $opt in
     d)
@@ -28,10 +30,6 @@ while getopts ":d:p:" opt; do
   esac
 done
 
-if [ -z "$DEBUG" ] && [ -z "$PCAP_FILE" ]; then
-  echo "Usage: $0 [-d] [-p pcap_file]" >&2
-  exit 1
-fi
 
 # Print OpenSSL version
 echo "OpenSSL version:"
