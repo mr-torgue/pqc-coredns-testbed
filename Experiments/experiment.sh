@@ -94,6 +94,18 @@ if [[ ! "$CLIENT" =~ ^(UDP|TCP|DoQ|DoT)$ ]]; then
     usage
 fi
 
+# Set kdigclient based on CLIENT protocol
+kdigclient=""
+case "$CLIENT" in
+    TCP) kdigclient="+tcp" ;;
+    DoT) kdigclient="+tls" ;;
+    DoQ) kdigclient="+quic" ;;
+    *) kdigclient="" ;;
+esac
+
+# Generate a random hex string
+RANDOM_HEX=$(openssl rand -hex 4)
+
 # Print configuration
 echo "Configuration:"
 echo "  Resolver:    $RESOLVER"
@@ -109,8 +121,10 @@ echo "  Rate:        $RATE"
 echo "  Delay:       $DELAY"
 echo "  Repeat:      $REPEAT"
 echo "  Client:      $CLIENT"
+echo "  kdigclient:  $kdigclient"
 echo "  Configname:  $CONFIGNAME"
 echo "  DNSSEC disabled:  $NODNSSEC"
+echo "  RANDOM_HEX:  $RANDOM_HEX"
 
 read -p "do you want to run the experiment with these settings? (Y/N): " choice
 
@@ -120,19 +134,9 @@ if [[ ! "$choice" =~ ^[Yy]$ ]]; then
     exit 1
 fi
 
-# Set kdigclient based on CLIENT protocol
-kdigclient=""
-case "$CLIENT" in
-    TCP) kdigclient="+tcp" ;;
-    DoT) kdigclient="+tls" ;;
-    DoQ) kdigclient="+quic" ;;
-    *) kdigclient="" ;;
-esac
 
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 FILENAME="${LABEL}-${STRATEGY}-${ALGORITHM}-${TIMESTAMP}"
-# Generate a random hex string
-RANDOM_HEX=$(openssl rand -hex 4)
 # Create directory name
 DIR_NAME="${CONFIGNAME}-${LABEL}-$(date +%Y-%m-%d)-${RANDOM_HEX}"
 # Create directory
