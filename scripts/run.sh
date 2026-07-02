@@ -3,11 +3,13 @@
 runs coredns and displays debug information
 '
 
-
 DEBUG="false"
 PCAP_FILE=""
 while getopts ":c:d:p:" opt; do
   case $opt in
+    c)
+      CONFIG_DIR="$OPTARG"
+      ;;
     d)
       DEBUG="true"
       ;;
