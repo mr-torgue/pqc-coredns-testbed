@@ -9,11 +9,29 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 config-dir debug" >&2
-    exit 1
+while getopts ":d:p:" opt; do
+  case $opt in
+    d)
+      DEBUG="true"
+      ;;
+    p)
+      PCAP_FILE="$OPTARG"
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      exit 1
+      ;;
+  esac
+done
+
+if [ -z "$DEBUG" ] && [ -z "$PCAP_FILE" ]; then
+  echo "Usage: $0 [-d] [-p pcap_file]" >&2
+  exit 1
 fi
-DEBUG=$2
 
 # Print OpenSSL version
 echo "OpenSSL version:"
@@ -100,12 +118,15 @@ cd $1
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     pkill coredns
     pkill tcpdump
+    if [ -n "$PCAP_FILE" ]; then
+        echo "PCAP file specified: $PCAP_FILE"
+        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$PCAP_FILE" &
+    fi
+
     if [ "$DEBUG" = "true" ]; then
         echo "DEBUG MODE"
-        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w capture.pcap &
         gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
     else
-        named -d 3
         /opt/coredns/coredns -conf CoreFile
     fi
 else
