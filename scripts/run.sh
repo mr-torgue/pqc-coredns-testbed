@@ -52,11 +52,6 @@ go version
 # print information before running
 echo "named version: $(named -v)"
 
-if command -v sudo >/dev/null 2>&1; then
-    echo "named version: $(sudo named -v)"
-else
-    echo "named version: $(named -v)"
-fi
 
 # Print CoreDNS version
 echo -e "\nCoreDNS version:"
