@@ -3,15 +3,10 @@
 runs coredns and displays debug information
 '
 
-# Check if directory name is provided
-if [ -z "$1" ]; then
-    echo "Error: Please provide a directory name as an argument."
-    exit 1
-fi
 
 DEBUG="false"
 PCAP_FILE=""
-while getopts ":d:p:" opt; do
+while getopts ":c:d:p:" opt; do
   case $opt in
     d)
       DEBUG="true"
@@ -30,6 +25,12 @@ while getopts ":d:p:" opt; do
   esac
 done
 
+if [ -z "$CONFIG_DIR" ]; then
+    echo "Error: Please provide a directory name with -c option."
+    exit 1
+fi
+
+echo "CONFIG_DIR: $CONFIG_DIR"
 echo "DEBUG: $DEBUG"
 echo "PCAP_FILE: $PCAP_FILE"
 
@@ -49,6 +50,12 @@ go version
 # print information before running
 echo "named version: $(named -v)"
 
+if command -v sudo >/dev/null 2>&1; then
+    echo "named version: $(sudo named -v)"
+else
+    echo "named version: $(named -v)"
+fi
+
 # Print CoreDNS version
 echo -e "\nCoreDNS version:"
 if [ -x /opt/coredns/coredns ]; then
@@ -57,32 +64,31 @@ else
     echo "CoreDNS not found at /opt/coredns/coredns"
 fi
 
-# print $1/config.json
+# print $CONFIG_DIR/config.json
 echo -e "-------------------------------------"
 echo -e "|          config.json              |"
 echo -e "-------------------------------------"
-if [ -f "$1/config.json" ]; then
-    echo -e "\nContents of $1/config.json:"
-    cat "$1/config.json"
+if [ -f "$CONFIG_DIR/config.json" ]; then
+    echo -e "\nContents of $CONFIG_DIR/config.json:"
+    cat "$CONFIG_DIR/config.json"
 else 
     echo "config.json not found!"
     exit
 fi
 
-# print $1/CoreFile
+# print $CONFIG_DIR/CoreFile
 echo -e "-------------------------------------"
 echo -e "|          Core File                |"
 echo -e "-------------------------------------"
-if [ -f "$1/CoreFile" ]; then
-    echo -e "\nContents of $1/CoreFile:"
-    cat "$1/CoreFile"
+if [ -f "$CONFIG_DIR/CoreFile" ]; then
+    echo -e "\nContents of $CONFIG_DIR/CoreFile:"
+    cat "$CONFIG_DIR/CoreFile"
 else 
     echo "CoreFile not found!"
     exit
 fi
 
 #dir=$(jq -r '."Config Directory"' /opt/coredns/config.json)
-dir=$1
 echo -e "-------------------------------------"
 echo -e "|          Available Keys           |"
 echo -e "-------------------------------------"
@@ -104,12 +110,12 @@ while read -r file; do
         echo "Error: '$key_file' is neither a KSK or ZSK"
         exit 1
     fi
-done < <(find "$dir" -type f -name "K*.private")
+done < <(find "$CONFIG_DIR" -type f -name "K*.private")
 echo -e "---------------------------"
 read -p "do you want to run bind with these settings? (Y/N): " choice
 
 # Check the user's input
-cd $1
+cd $CONFIG_DIR
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     pkill coredns
     pkill tcpdump
