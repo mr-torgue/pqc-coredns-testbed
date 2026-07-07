@@ -11,7 +11,6 @@
         hints "named.root"
         anchor "trust-anchors.xml"
         clientType "udp"
-        nofallback
     }
 }
 
@@ -45,6 +44,7 @@ quic://.:853 {
         anchor "trust-anchors.xml"
         clientType "doq"
         nofallback
+        notlsverify
     }
 }
 
@@ -60,5 +60,6 @@ tls://.:8853 {
         anchor "trust-anchors.xml"
         clientType "dot"
         nofallback
+        notlsverify
     }
 }
