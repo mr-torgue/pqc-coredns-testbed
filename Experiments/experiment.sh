@@ -205,9 +205,9 @@ run_query() {
     local domain="$1"
     local output
     if [[ "$NODNSSEC" == "true" ]]; then
-        output=$((time kdig @$RESOLVER -p $PORT +ignore +timeout=10 $kdigclient $domain) 2>&1)
+        output=$((time kdig @$RESOLVER -p $PORT +timeout=10 $kdigclient $domain) 2>&1)
     else
-        output=$((time kdig @$RESOLVER -p $PORT +ignore +timeout=10 +dnssec $kdigclient $domain) 2>&1)
+        output=$((time kdig @$RESOLVER -p $PORT +timeout=10 +dnssec $kdigclient $domain) 2>&1)
     fi
     printf "$output\n" >> "$TXT_FILE"
     parse_dig_result "$output" "$domain"

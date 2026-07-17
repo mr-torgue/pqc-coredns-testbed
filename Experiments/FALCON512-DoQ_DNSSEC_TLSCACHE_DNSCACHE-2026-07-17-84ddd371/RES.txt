@@ -1,0 +1,585 @@
+ubuntu@ip-172-31-20-134:~/pqc-coredns-testbed/Resolver$ sudo ../scripts/run.sh -p RES-QUIC-DNSSEC-TLSCACHE-DNSCACHE.pcap -c FALCON512-20260717-105914/
+CONFIG_DIR: FALCON512-20260717-105914/
+DEBUG: false
+PCAP_FILE: RES-QUIC-DNSSEC-TLSCACHE-DNSCACHE.pcap
+OpenSSL version:
+OpenSSL 3.6.2 7 Apr 2026 (Library: OpenSSL 3.6.2 7 Apr 2026)
+
+Active OpenSSL providers:
+Providers:
+  default
+    name: OpenSSL Default Provider
+    version: 3.6.2
+    status: active
+  oqsprovider
+    name: OpenSSL OQS Provider
+    version: 0.11.0
+    status: active
+
+Go version:
+/home/ubuntu/pqc-coredns-testbed/scripts/run.sh: line 50: go: command not found
+named version: BIND 9.19.17 (v1.2.1 OQS-BIND) <id:3429e76>
+
+CoreDNS version:
+CoreDNS-1.14.3
+linux/amd64, go1.26.3, 9585f7219-dirty
+-------------------------------------
+|          config.json              |
+-------------------------------------
+
+Contents of FALCON512-20260717-105914//config.json:
+{
+  "TLS Signature Scheme": "ED25519",
+  "Config Directory": "FALCON512-20260717-105914",
+  "Date": "20260717-105914",
+  "Config Name": "FALCON512"
+}
+-------------------------------------
+|          Core File                |
+-------------------------------------
+
+Contents of FALCON512-20260717-105914//CoreFile:
+# Only one can be active at any point.
+# Comment out the ones you are not using
+
+# UDP Resolver
+. {
+    prometheus
+    errors
+    log
+    debug
+    resolver {
+        hints "named.root"
+        anchor "trust-anchors.xml"
+        clientType "doq"
+        nofallback
+        notlsverify
+    }
+}
+
+# TCP Resolver
+#. {
+#    prometheus
+#    errors
+#    log
+#    debug
+#    resolver {
+#        hints "named.root"
+#        anchor "trust-anchors.xml"
+#        clientType "tcp"
+#        nofallback
+#    }
+#}
+
+# QUIC Resolver
+quic://.:853 {
+    prometheus
+    errors
+    log
+    debug
+    tls cert.pem key.pem
+    quic {
+        max_streams 16
+        worker_pool_size 65536
+    }
+    resolver {
+        hints "named.root"
+        anchor "trust-anchors.xml"
+        clientType "doq"
+        nofallback
+        notlsverify
+    }
+}
+
+# TLS Resolver
+tls://.:8853 {
+    prometheus
+    errors
+    log
+    debug
+    tls cert.pem key.pem
+    resolver {
+        hints "named.root"
+        anchor "trust-anchors.xml"
+        clientType "dot"
+        nofallback
+        notlsverify
+    }
+}
+-------------------------------------
+|          Available Keys           |
+-------------------------------------
+---------------------------
+do you want to run bind with these settings? (Y/N): Y
+PCAP file specified: RES-QUIC-DNSSEC-TLSCACHE-DNSCACHE.pcap
+tcpdump: WARNING: any: That device doesn't support promiscuous mode
+(Promiscuous mode not supported on the "any" device)
+tcpdump: listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+maxprocs: Leaving GOMAXPROCS=2: CPU quota undefined
+.:53
+quic://.:853
+tls://.:8853
+CoreDNS-1.14.3
+linux/amd64, go1.26.3, 9585f7219-dirty
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38002
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.example.test. A
+[INFO] 3.26.213.36:36130 - 38002 "A IN test.example.test. udp 46 false 1232" NOERROR qr,aa,tc,rd,ra 79 0.088488609s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38002
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.example.test. A
+[INFO] 3.26.213.36:38627 - 38002 "A IN test.example.test. tcp 46 false 65535" NOERROR qr,aa,tc,rd,ra 79 0.014955653s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35028
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test0.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.example.test. A
+[INFO] 3.26.213.36:49354 - 35028 "A IN test0.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.015041543s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35028
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test0.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.example.test. A
+[INFO] 3.26.213.36:34859 - 35028 "A IN test0.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.014684855s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61155
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test1.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test1.example.test. A
+[INFO] 3.26.213.36:51479 - 61155 "A IN test1.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.016932855s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61155
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test1.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test1.example.test. A
+[INFO] 3.26.213.36:36407 - 61155 "A IN test1.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.017019934s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64096
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test2.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test2.example.test. A
+[INFO] 3.26.213.36:49517 - 64096 "A IN test2.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.017853429s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64096
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test2.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test2.example.test. A
+[INFO] 3.26.213.36:37597 - 64096 "A IN test2.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.016234825s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33160
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test3.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test3.example.test. A
+[INFO] 3.26.213.36:42794 - 33160 "A IN test3.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.015266068s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33160
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test3.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test3.example.test. A
+[INFO] 3.26.213.36:34293 - 33160 "A IN test3.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.01521882s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15933
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test4.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test4.example.test. A
+[INFO] 3.26.213.36:47777 - 15933 "A IN test4.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.014620176s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15933
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test4.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test4.example.test. A
+[INFO] 3.26.213.36:42253 - 15933 "A IN test4.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.014556863s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5687
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test5.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test5.example.test. A
+[INFO] 3.26.213.36:42675 - 5687 "A IN test5.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.016698834s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5687
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test5.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test5.example.test. A
+[INFO] 3.26.213.36:52253 - 5687 "A IN test5.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.015184076s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9712
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test6.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test6.example.test. A
+[INFO] 3.26.213.36:56346 - 9712 "A IN test6.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.014706712s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9712
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test6.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test6.example.test. A
+[INFO] 3.26.213.36:46883 - 9712 "A IN test6.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.015569385s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13949
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test7.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test7.example.test. A
+[INFO] 3.26.213.36:37448 - 13949 "A IN test7.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.015048547s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13949
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test7.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test7.example.test. A
+[INFO] 3.26.213.36:54177 - 13949 "A IN test7.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.015396786s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9727
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test8.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test8.example.test. A
+[INFO] 3.26.213.36:42966 - 9727 "A IN test8.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.015142001s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9727
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test8.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test8.example.test. A
+[INFO] 3.26.213.36:35523 - 9727 "A IN test8.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.017299179s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15790
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test9.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test9.example.test. A
+[INFO] 3.26.213.36:53731 - 15790 "A IN test9.example.test. udp 47 false 1232" NOERROR qr,aa,tc,rd,ra 81 0.014785088s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15790
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test9.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test9.example.test. A
+[INFO] 3.26.213.36:54103 - 15790 "A IN test9.example.test. tcp 47 false 65535" NOERROR qr,aa,tc,rd,ra 81 0.015619425s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60296
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test10.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test10.example.test. A
+[INFO] 3.26.213.36:33258 - 60296 "A IN test10.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.014919091s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60296
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test10.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test10.example.test. A
+[INFO] 3.26.213.36:39687 - 60296 "A IN test10.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.017584685s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52919
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test11.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test11.example.test. A
+[INFO] 3.26.213.36:58832 - 52919 "A IN test11.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.014946291s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52919
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test11.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test11.example.test. A
+[INFO] 3.26.213.36:36269 - 52919 "A IN test11.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.015575948s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38178
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test12.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test12.example.test. A
+[INFO] 3.26.213.36:37106 - 38178 "A IN test12.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.017631595s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38178
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test12.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test12.example.test. A
+[INFO] 3.26.213.36:40567 - 38178 "A IN test12.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.017924868s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55630
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test13.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test13.example.test. A
+[INFO] 3.26.213.36:56125 - 55630 "A IN test13.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.015390492s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55630
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test13.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test13.example.test. A
+[INFO] 3.26.213.36:52095 - 55630 "A IN test13.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.014925051s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46474
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test14.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test14.example.test. A
+[INFO] 3.26.213.36:34765 - 46474 "A IN test14.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.016454627s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46474
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test14.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test14.example.test. A
+[INFO] 3.26.213.36:55615 - 46474 "A IN test14.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.014715957s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51649
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test15.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test15.example.test. A
+[INFO] 3.26.213.36:54387 - 51649 "A IN test15.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.018255375s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51649
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test15.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test15.example.test. A
+[INFO] 3.26.213.36:51413 - 51649 "A IN test15.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.016664489s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9958
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test16.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test16.example.test. A
+[INFO] 3.26.213.36:54508 - 9958 "A IN test16.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.016557257s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9958
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test16.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test16.example.test. A
+[INFO] 3.26.213.36:43317 - 9958 "A IN test16.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.014527714s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 444
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test17.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test17.example.test. A
+[INFO] 3.26.213.36:48313 - 444 "A IN test17.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.017875084s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 444
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test17.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test17.example.test. A
+[INFO] 3.26.213.36:55897 - 444 "A IN test17.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.014467484s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32212
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test18.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test18.example.test. A
+[INFO] 3.26.213.36:42170 - 32212 "A IN test18.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.016227393s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32212
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test18.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test18.example.test. A
+[INFO] 3.26.213.36:59103 - 32212 "A IN test18.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.016874029s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60033
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test19.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test19.example.test. A
+[INFO] 3.26.213.36:45052 - 60033 "A IN test19.example.test. udp 48 false 1232" NOERROR qr,aa,tc,rd,ra 83 0.01652654s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60033
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test19.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test19.example.test. A
+[INFO] 3.26.213.36:40811 - 60033 "A IN test19.example.test. tcp 48 false 65535" NOERROR qr,aa,tc,rd,ra 83 0.015883672s
