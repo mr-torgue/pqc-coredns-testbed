@@ -5,7 +5,8 @@ runs coredns and displays debug information
 
 DEBUG="false"
 PCAP_FILE=""
-while getopts ":c:d:p:" opt; do
+INTERVAL=0
+while getopts ":c:d:p:i:" opt; do
   case $opt in
     c)
       CONFIG_DIR="$OPTARG"
@@ -15,6 +16,9 @@ while getopts ":c:d:p:" opt; do
       ;;
     p)
       PCAP_FILE="$OPTARG"
+      ;;
+    i)
+      INTERVAL="$OPTARG"
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -35,6 +39,7 @@ fi
 echo "CONFIG_DIR: $CONFIG_DIR"
 echo "DEBUG: $DEBUG"
 echo "PCAP_FILE: $PCAP_FILE"
+echo "INTERVAL: $INTERVAL"
 
 
 # Print OpenSSL version
@@ -112,13 +117,30 @@ echo -e "---------------------------"
 read -p "do you want to run bind with these settings? (Y/N): " choice
 
 # Check the user's input
-cd $CONFIG_DIR
+cd "$CONFIG_DIR"
+run_folder="run_$(date +%Y%m%d_%H%M%S)"
+mkdir -p "$run_folder"
+echo "Created run folder: $CONFIG_DIR/$run_folder"
 if [[ "$choice" =~ ^[Yy]$ ]]; then
+    killall sar
     pkill coredns
     pkill tcpdump
+
+    # start monitoring
+    if [ "$INTERVAL" -ne 0 ]; then
+        echo "Start CPU, Network, and Memory monitoring using sar with interval $INTERVAL"
+        current_date=$(date +%d-%m-%y)
+        echo "Start time: $(date)" > cpu-$current_date.log
+        echo "Start time: $(date)" > mem-$current_date.log
+        echo "Start time: $(date)" > net-$current_date.log
+        (sar -u $INTERVAL >> $run_folder/cpu-$current_date.log &); (sar -n DEV $INTERVAL --iface=ens5 >> $run_folder/net-$current_date.log &); (sar -r $INTERVAL >> $run_folder/mem-$current_date.log &)
+    else
+        echo "Monitoring disabled (interval set to 0)"
+    fi
+
     if [ -n "$PCAP_FILE" ]; then
         echo "PCAP file specified: $PCAP_FILE"
-        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$PCAP_FILE" &
+        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$run_folder/$PCAP_FILE" &
     fi
 
     if [ "$DEBUG" = "true" ]; then
