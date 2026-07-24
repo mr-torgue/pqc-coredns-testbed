@@ -5,7 +5,8 @@ runs coredns and displays debug information
 
 DEBUG="false"
 PCAP_FILE=""
-while getopts ":c:d:p:" opt; do
+INTERVAL=0
+while getopts ":c:d:p:i:" opt; do
   case $opt in
     c)
       CONFIG_DIR="$OPTARG"
@@ -15,6 +16,9 @@ while getopts ":c:d:p:" opt; do
       ;;
     p)
       PCAP_FILE="$OPTARG"
+      ;;
+    i)
+      INTERVAL="$OPTARG"
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -35,6 +39,7 @@ fi
 echo "CONFIG_DIR: $CONFIG_DIR"
 echo "DEBUG: $DEBUG"
 echo "PCAP_FILE: $PCAP_FILE"
+echo "INTERVAL: $INTERVAL"
 
 
 # Print OpenSSL version
@@ -119,12 +124,16 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
     pkill tcpdump
 
     # start monitoring
-    echo "Start CPU, Network, and Memory monitoring using sar"
-    current_date=$(date +%d-%m-%y)
-    echo "Start time: $(date)" > cpu-$current_date.log
-    echo "Start time: $(date)" > mem-$current_date.log
-    echo "Start time: $(date)" > net-$current_date.log
-    (sar -u 1 >> cpu-$current_date.log &); (sar -n DEV 1 --iface=ens5 >> net-$current_date.log &); (sar -r 1 >> mem-$current_date.log &)
+    if [ "$INTERVAL" -ne 0 ]; then
+        echo "Start CPU, Network, and Memory monitoring using sar with interval $INTERVAL"
+        current_date=$(date +%d-%m-%y)
+        echo "Start time: $(date)" > cpu-$current_date.log
+        echo "Start time: $(date)" > mem-$current_date.log
+        echo "Start time: $(date)" > net-$current_date.log
+        (sar -u $INTERVAL >> cpu-$current_date.log &); (sar -n DEV $INTERVAL --iface=ens5 >> net-$current_date.log &); (sar -r $INTERVAL >> mem-$current_date.log &)
+    else
+        echo "Monitoring disabled (interval set to 0)"
+    fi
 
     if [ -n "$PCAP_FILE" ]; then
         echo "PCAP file specified: $PCAP_FILE"
