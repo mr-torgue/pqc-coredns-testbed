@@ -117,9 +117,10 @@ echo -e "---------------------------"
 read -p "do you want to run bind with these settings? (Y/N): " choice
 
 # Check the user's input
+cd "$CONFIG_DIR"
 datetime_folder="run_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$datetime_folder"
-cd "$CONFIG_DIR/$datetime_folder"
+cd "$datetime_folder"
 echo "Created and changed to directory: $CONFIG_DIR/$datetime_folder"
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     killall sar
