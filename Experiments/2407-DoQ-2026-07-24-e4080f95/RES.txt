@@ -1,0 +1,2741 @@
+ubuntu@ip-172-31-20-134:~/pqc-coredns-testbed/Resolver$ sudo ../scripts/run.sh -p RES-DoT-NODNSSEC-NOTLSCACHE-DNSCACHE.pcap -c 2407-20260724-155612/ -i 1
+CONFIG_DIR: 2407-20260724-155612/
+DEBUG: false
+PCAP_FILE: RES-DoT-NODNSSEC-NOTLSCACHE-DNSCACHE.pcap
+INTERVAL: 1
+OpenSSL version:
+OpenSSL 3.6.2 7 Apr 2026 (Library: OpenSSL 3.6.2 7 Apr 2026)
+
+Active OpenSSL providers:
+Providers:
+  default
+    name: OpenSSL Default Provider
+    version: 3.6.2
+    status: active
+  oqsprovider
+    name: OpenSSL OQS Provider
+    version: 0.11.0
+    status: active
+
+Go version:
+/home/ubuntu/pqc-coredns-testbed/scripts/run.sh: line 55: go: command not found
+named version: BIND 9.19.17 (v1.2.1 OQS-BIND) <id:3429e76>
+
+CoreDNS version:
+CoreDNS-1.14.3
+linux/amd64, go1.26.3, 6e2828e52-dirty
+-------------------------------------
+|          config.json              |
+-------------------------------------
+
+Contents of 2407-20260724-155612//config.json:
+{
+  "TLS Signature Scheme": "ED25519",
+  "Config Directory": "2407-20260724-155612",
+  "Date": "20260724-155612",
+  "Config Name": "2407"
+}
+-------------------------------------
+|          Core File                |
+-------------------------------------
+
+Contents of 2407-20260724-155612//CoreFile:
+# Only one can be active at any point.
+# Comment out the ones you are not using
+
+# UDP Resolver
+. {
+    prometheus
+    errors
+    log
+    debug
+    resolver {
+        hints "named.root"
+        anchor "trust-anchors.xml"
+        clientType "udp"
+    }
+}
+
+# TCP Resolver
+#. {
+#    prometheus
+#    errors
+#    log
+#    debug
+#    resolver {
+#        hints "named.root"
+#        anchor "trust-anchors.xml"
+#        clientType "tcp"
+#        nofallback
+#    }
+#}
+
+# QUIC Resolver
+quic://.:853 {
+    prometheus
+    errors
+    log
+    debug
+    tls cert.pem key.pem
+    quic {
+        max_streams 16
+        worker_pool_size 65536
+    }
+    resolver {
+        hints "named.root"
+        anchor "trust-anchors.xml"
+        clientType "doq"
+        nofallback
+        notlsverify
+    }
+}
+
+# TLS Resolver
+tls://.:8853 {
+    prometheus
+    errors
+    log
+    debug
+    tls cert.pem key.pem
+    resolver {
+        hints "named.root"
+        anchor "trust-anchors.xml"
+        clientType "dot"
+        nofallback
+        notlsverify
+    }
+}-------------------------------------
+|          Available Keys           |
+-------------------------------------
+---------------------------
+do you want to run bind with these settings? (Y/N): Y
+Created run folder: 2407-20260724-155612//run_20260724_162120
+sar: no process found
+Start CPU, Network, and Memory monitoring using sar with interval 1
+PCAP file specified: RES-DoT-NODNSSEC-NOTLSCACHE-DNSCACHE.pcap
+tcpdump: WARNING: any: That device doesn't support promiscuous mode
+(Promiscuous mode not supported on the "any" device)
+tcpdump: listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+maxprocs: Leaving GOMAXPROCS=2: CPU quota undefined
+tls://.:8853
+.:53
+quic://.:853
+CoreDNS-1.14.3
+linux/amd64, go1.26.3, 6e2828e52-dirty
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.example.test. A
+[INFO] 13.236.69.47:54751 - 0 "A IN test.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 161 0.084214136s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test0.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.example.test. A
+[INFO] 13.236.69.47:60032 - 0 "A IN test0.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.014754014s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test1.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test1.example.test. A
+[INFO] 13.236.69.47:59813 - 0 "A IN test1.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.017363917s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test2.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test2.example.test. A
+[INFO] 13.236.69.47:46680 - 0 "A IN test2.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.015624376s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test3.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test3.example.test. A
+[INFO] 13.236.69.47:41610 - 0 "A IN test3.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.018282163s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test4.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test4.example.test. A
+[INFO] 13.236.69.47:42271 - 0 "A IN test4.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.015592925s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test5.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test5.example.test. A
+[INFO] 13.236.69.47:46765 - 0 "A IN test5.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.014781782s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test6.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test6.example.test. A
+[INFO] 13.236.69.47:50395 - 0 "A IN test6.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.015062503s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test7.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test7.example.test. A
+[INFO] 13.236.69.47:36534 - 0 "A IN test7.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.014754382s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test8.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test8.example.test. A
+[INFO] 13.236.69.47:56236 - 0 "A IN test8.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.015982752s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test9.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test9.example.test. A
+[INFO] 13.236.69.47:53259 - 0 "A IN test9.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 162 0.018045816s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test10.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test10.example.test. A
+[INFO] 13.236.69.47:49748 - 0 "A IN test10.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015425475s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test11.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test11.example.test. A
+[INFO] 13.236.69.47:36206 - 0 "A IN test11.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014567814s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test12.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test12.example.test. A
+[INFO] 13.236.69.47:57374 - 0 "A IN test12.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015462721s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test13.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test13.example.test. A
+[INFO] 13.236.69.47:38549 - 0 "A IN test13.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.020695524s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test14.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test14.example.test. A
+[INFO] 13.236.69.47:35901 - 0 "A IN test14.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014591851s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test15.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test15.example.test. A
+[INFO] 13.236.69.47:50185 - 0 "A IN test15.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016498661s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test16.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test16.example.test. A
+[INFO] 13.236.69.47:40162 - 0 "A IN test16.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.017346068s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test17.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test17.example.test. A
+[INFO] 13.236.69.47:43937 - 0 "A IN test17.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01690733s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test18.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test18.example.test. A
+[INFO] 13.236.69.47:37761 - 0 "A IN test18.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016973396s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test19.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test19.example.test. A
+[INFO] 13.236.69.47:40034 - 0 "A IN test19.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016305082s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test20.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test20.example.test. A
+[INFO] 13.236.69.47:56909 - 0 "A IN test20.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015455172s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test21.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test21.example.test. A
+[INFO] 13.236.69.47:47976 - 0 "A IN test21.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.018299744s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test22.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test22.example.test. A
+[INFO] 13.236.69.47:40279 - 0 "A IN test22.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016738036s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test23.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test23.example.test. A
+[INFO] 13.236.69.47:57464 - 0 "A IN test23.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016007484s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test24.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test24.example.test. A
+[INFO] 13.236.69.47:58539 - 0 "A IN test24.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016510269s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test25.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test25.example.test. A
+[INFO] 13.236.69.47:48613 - 0 "A IN test25.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016644755s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test26.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test26.example.test. A
+[INFO] 13.236.69.47:39588 - 0 "A IN test26.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016040866s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test27.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test27.example.test. A
+[INFO] 13.236.69.47:41432 - 0 "A IN test27.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014662447s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test28.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test28.example.test. A
+[INFO] 13.236.69.47:59184 - 0 "A IN test28.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.017945421s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test29.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test29.example.test. A
+[INFO] 13.236.69.47:40378 - 0 "A IN test29.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016264159s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test30.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test30.example.test. A
+[INFO] 13.236.69.47:37814 - 0 "A IN test30.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016828596s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test31.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test31.example.test. A
+[INFO] 13.236.69.47:38897 - 0 "A IN test31.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015138722s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test32.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test32.example.test. A
+[INFO] 13.236.69.47:33026 - 0 "A IN test32.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.017305348s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test33.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test33.example.test. A
+[INFO] 13.236.69.47:60609 - 0 "A IN test33.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015862172s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test34.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test34.example.test. A
+[INFO] 13.236.69.47:33841 - 0 "A IN test34.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.017265266s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test35.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test35.example.test. A
+[INFO] 13.236.69.47:40160 - 0 "A IN test35.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015948513s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test36.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test36.example.test. A
+[INFO] 13.236.69.47:56824 - 0 "A IN test36.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015546858s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test37.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test37.example.test. A
+[INFO] 13.236.69.47:47172 - 0 "A IN test37.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015566939s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test38.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test38.example.test. A
+[INFO] 13.236.69.47:44286 - 0 "A IN test38.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.017856926s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test39.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test39.example.test. A
+[INFO] 13.236.69.47:33529 - 0 "A IN test39.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01564644s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test40.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test40.example.test. A
+[INFO] 13.236.69.47:45191 - 0 "A IN test40.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016688653s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test41.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test41.example.test. A
+[INFO] 13.236.69.47:58113 - 0 "A IN test41.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.019534382s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test42.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test42.example.test. A
+[INFO] 13.236.69.47:38610 - 0 "A IN test42.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.02003212s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test43.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test43.example.test. A
+[INFO] 13.236.69.47:54894 - 0 "A IN test43.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.018428776s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test44.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test44.example.test. A
+[INFO] 13.236.69.47:55065 - 0 "A IN test44.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015333772s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test45.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test45.example.test. A
+[INFO] 13.236.69.47:58723 - 0 "A IN test45.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01677838s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test46.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test46.example.test. A
+[INFO] 13.236.69.47:36326 - 0 "A IN test46.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.017807539s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test47.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test47.example.test. A
+[INFO] 13.236.69.47:54214 - 0 "A IN test47.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.017219482s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test48.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test48.example.test. A
+[INFO] 13.236.69.47:37224 - 0 "A IN test48.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01446442s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test49.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test49.example.test. A
+[INFO] 13.236.69.47:33491 - 0 "A IN test49.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.020801652s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test50.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test50.example.test. A
+[INFO] 13.236.69.47:34762 - 0 "A IN test50.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.018235949s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test51.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test51.example.test. A
+[INFO] 13.236.69.47:47961 - 0 "A IN test51.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015983706s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test52.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test52.example.test. A
+[INFO] 13.236.69.47:48248 - 0 "A IN test52.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014281513s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test53.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test53.example.test. A
+[INFO] 13.236.69.47:47746 - 0 "A IN test53.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015934824s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test54.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test54.example.test. A
+[INFO] 13.236.69.47:51710 - 0 "A IN test54.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014371938s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test55.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test55.example.test. A
+[INFO] 13.236.69.47:59146 - 0 "A IN test55.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016987753s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test56.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test56.example.test. A
+[INFO] 13.236.69.47:50683 - 0 "A IN test56.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014582372s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test57.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test57.example.test. A
+[INFO] 13.236.69.47:34743 - 0 "A IN test57.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015468784s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test58.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test58.example.test. A
+[INFO] 13.236.69.47:42702 - 0 "A IN test58.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.017093254s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test59.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test59.example.test. A
+[INFO] 13.236.69.47:52467 - 0 "A IN test59.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015363555s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test60.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test60.example.test. A
+[INFO] 13.236.69.47:52904 - 0 "A IN test60.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016532953s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test61.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test61.example.test. A
+[INFO] 13.236.69.47:37997 - 0 "A IN test61.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01471431s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test62.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test62.example.test. A
+[INFO] 13.236.69.47:46970 - 0 "A IN test62.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01461503s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test63.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test63.example.test. A
+[INFO] 13.236.69.47:42783 - 0 "A IN test63.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016365837s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test64.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test64.example.test. A
+[INFO] 13.236.69.47:36533 - 0 "A IN test64.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.018763386s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test65.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test65.example.test. A
+[INFO] 13.236.69.47:58479 - 0 "A IN test65.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.019233679s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test66.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test66.example.test. A
+[INFO] 13.236.69.47:50550 - 0 "A IN test66.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01502303s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test67.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test67.example.test. A
+[INFO] 13.236.69.47:37010 - 0 "A IN test67.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.017576324s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test68.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test68.example.test. A
+[INFO] 13.236.69.47:56953 - 0 "A IN test68.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01448087s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test69.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test69.example.test. A
+[INFO] 13.236.69.47:42883 - 0 "A IN test69.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.021238126s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test70.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test70.example.test. A
+[INFO] 13.236.69.47:59511 - 0 "A IN test70.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.018392911s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test71.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test71.example.test. A
+[INFO] 13.236.69.47:35290 - 0 "A IN test71.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016450912s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test72.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test72.example.test. A
+[INFO] 13.236.69.47:53476 - 0 "A IN test72.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.018367609s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test73.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test73.example.test. A
+[INFO] 13.236.69.47:43900 - 0 "A IN test73.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.018014741s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test74.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test74.example.test. A
+[INFO] 13.236.69.47:50159 - 0 "A IN test74.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015682462s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test75.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test75.example.test. A
+[INFO] 13.236.69.47:44736 - 0 "A IN test75.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016912368s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test76.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test76.example.test. A
+[INFO] 13.236.69.47:34622 - 0 "A IN test76.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01685865s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test77.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test77.example.test. A
+[INFO] 13.236.69.47:43513 - 0 "A IN test77.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015020288s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test78.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test78.example.test. A
+[INFO] 13.236.69.47:37982 - 0 "A IN test78.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016034957s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test79.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test79.example.test. A
+[INFO] 13.236.69.47:48729 - 0 "A IN test79.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.018725635s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test80.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test80.example.test. A
+[INFO] 13.236.69.47:46157 - 0 "A IN test80.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016543161s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test81.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test81.example.test. A
+[INFO] 13.236.69.47:42821 - 0 "A IN test81.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015542539s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test82.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test82.example.test. A
+[INFO] 13.236.69.47:43768 - 0 "A IN test82.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016772238s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test83.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test83.example.test. A
+[INFO] 13.236.69.47:46464 - 0 "A IN test83.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015914612s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test84.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test84.example.test. A
+[INFO] 13.236.69.47:51617 - 0 "A IN test84.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014696158s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test85.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test85.example.test. A
+[INFO] 13.236.69.47:53334 - 0 "A IN test85.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016183894s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test86.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test86.example.test. A
+[INFO] 13.236.69.47:33616 - 0 "A IN test86.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015598591s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test87.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test87.example.test. A
+[INFO] 13.236.69.47:47916 - 0 "A IN test87.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016934703s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test88.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test88.example.test. A
+[INFO] 13.236.69.47:35906 - 0 "A IN test88.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01738369s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test89.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test89.example.test. A
+[INFO] 13.236.69.47:39084 - 0 "A IN test89.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016229274s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test90.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test90.example.test. A
+[INFO] 13.236.69.47:53331 - 0 "A IN test90.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014507964s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test91.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test91.example.test. A
+[INFO] 13.236.69.47:44491 - 0 "A IN test91.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016276372s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test92.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test92.example.test. A
+[INFO] 13.236.69.47:38849 - 0 "A IN test92.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.016339274s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test93.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test93.example.test. A
+[INFO] 13.236.69.47:53965 - 0 "A IN test93.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014878709s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test94.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test94.example.test. A
+[INFO] 13.236.69.47:60719 - 0 "A IN test94.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014827311s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test95.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test95.example.test. A
+[INFO] 13.236.69.47:35507 - 0 "A IN test95.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.01791023s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test96.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test96.example.test. A
+[INFO] 13.236.69.47:47569 - 0 "A IN test96.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014563864s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test97.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test97.example.test. A
+[INFO] 13.236.69.47:54323 - 0 "A IN test97.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015285448s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test98.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test98.example.test. A
+[INFO] 13.236.69.47:41445 - 0 "A IN test98.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.014541375s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test99.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test99.example.test. A
+[INFO] 13.236.69.47:40955 - 0 "A IN test99.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 163 0.015921756s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test100.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test100.example.test. A
+[INFO] 13.236.69.47:45784 - 0 "A IN test100.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016343398s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test101.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test101.example.test. A
+[INFO] 13.236.69.47:32901 - 0 "A IN test101.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014698382s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test102.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test102.example.test. A
+[INFO] 13.236.69.47:35648 - 0 "A IN test102.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014727178s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test103.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test103.example.test. A
+[INFO] 13.236.69.47:60586 - 0 "A IN test103.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015798921s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test104.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test104.example.test. A
+[INFO] 13.236.69.47:59974 - 0 "A IN test104.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017521462s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test105.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test105.example.test. A
+[INFO] 13.236.69.47:50284 - 0 "A IN test105.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.01489452s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test106.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test106.example.test. A
+[INFO] 13.236.69.47:47502 - 0 "A IN test106.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015118171s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test107.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test107.example.test. A
+[INFO] 13.236.69.47:46386 - 0 "A IN test107.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016428691s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test108.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test108.example.test. A
+[INFO] 13.236.69.47:35936 - 0 "A IN test108.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017580232s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test109.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test109.example.test. A
+[INFO] 13.236.69.47:39367 - 0 "A IN test109.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016895544s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test110.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test110.example.test. A
+[INFO] 13.236.69.47:57154 - 0 "A IN test110.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015216998s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test111.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test111.example.test. A
+[INFO] 13.236.69.47:37590 - 0 "A IN test111.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016025769s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test112.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test112.example.test. A
+[INFO] 13.236.69.47:51840 - 0 "A IN test112.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017880033s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test113.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test113.example.test. A
+[INFO] 13.236.69.47:33540 - 0 "A IN test113.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016556092s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test114.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test114.example.test. A
+[INFO] 13.236.69.47:43522 - 0 "A IN test114.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014948742s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test115.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test115.example.test. A
+[INFO] 13.236.69.47:59567 - 0 "A IN test115.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015668791s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test116.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test116.example.test. A
+[INFO] 13.236.69.47:48064 - 0 "A IN test116.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016922313s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test117.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test117.example.test. A
+[INFO] 13.236.69.47:59369 - 0 "A IN test117.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016584293s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test118.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test118.example.test. A
+[INFO] 13.236.69.47:46953 - 0 "A IN test118.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017617861s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test119.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test119.example.test. A
+[INFO] 13.236.69.47:38986 - 0 "A IN test119.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016582535s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test120.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test120.example.test. A
+[INFO] 13.236.69.47:42001 - 0 "A IN test120.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017633204s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test121.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test121.example.test. A
+[INFO] 13.236.69.47:36959 - 0 "A IN test121.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015016434s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test122.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test122.example.test. A
+[INFO] 13.236.69.47:56336 - 0 "A IN test122.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016079308s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test123.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test123.example.test. A
+[INFO] 13.236.69.47:42747 - 0 "A IN test123.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.018217035s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test124.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test124.example.test. A
+[INFO] 13.236.69.47:42598 - 0 "A IN test124.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016433046s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test125.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test125.example.test. A
+[INFO] 13.236.69.47:33793 - 0 "A IN test125.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016616988s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test126.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test126.example.test. A
+[INFO] 13.236.69.47:45312 - 0 "A IN test126.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014479402s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test127.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test127.example.test. A
+[INFO] 13.236.69.47:50377 - 0 "A IN test127.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015458298s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test128.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test128.example.test. A
+[INFO] 13.236.69.47:37315 - 0 "A IN test128.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014188219s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test129.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test129.example.test. A
+[INFO] 13.236.69.47:50342 - 0 "A IN test129.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016268017s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test130.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test130.example.test. A
+[INFO] 13.236.69.47:42551 - 0 "A IN test130.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015305376s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test131.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test131.example.test. A
+[INFO] 13.236.69.47:35070 - 0 "A IN test131.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016586667s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test132.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test132.example.test. A
+[INFO] 13.236.69.47:53235 - 0 "A IN test132.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014659584s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test133.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test133.example.test. A
+[INFO] 13.236.69.47:47554 - 0 "A IN test133.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014781729s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test134.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test134.example.test. A
+[INFO] 13.236.69.47:54785 - 0 "A IN test134.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016968042s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test135.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test135.example.test. A
+[INFO] 13.236.69.47:53046 - 0 "A IN test135.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.018158141s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test136.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test136.example.test. A
+[INFO] 13.236.69.47:45250 - 0 "A IN test136.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014987812s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test137.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test137.example.test. A
+[INFO] 13.236.69.47:51799 - 0 "A IN test137.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015214037s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test138.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test138.example.test. A
+[INFO] 13.236.69.47:38787 - 0 "A IN test138.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014186685s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test139.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test139.example.test. A
+[INFO] 13.236.69.47:38495 - 0 "A IN test139.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015654107s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test140.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test140.example.test. A
+[INFO] 13.236.69.47:41524 - 0 "A IN test140.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015818456s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test141.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test141.example.test. A
+[INFO] 13.236.69.47:50713 - 0 "A IN test141.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016471041s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test142.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test142.example.test. A
+[INFO] 13.236.69.47:49199 - 0 "A IN test142.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015614624s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test143.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test143.example.test. A
+[INFO] 13.236.69.47:47940 - 0 "A IN test143.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015623955s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test144.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test144.example.test. A
+[INFO] 13.236.69.47:38615 - 0 "A IN test144.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015645097s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test145.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test145.example.test. A
+[INFO] 13.236.69.47:42890 - 0 "A IN test145.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015507607s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test146.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test146.example.test. A
+[INFO] 13.236.69.47:47427 - 0 "A IN test146.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014691751s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test147.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test147.example.test. A
+[INFO] 13.236.69.47:55489 - 0 "A IN test147.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015837606s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test148.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test148.example.test. A
+[INFO] 13.236.69.47:48756 - 0 "A IN test148.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.01740078s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test149.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test149.example.test. A
+[INFO] 13.236.69.47:42231 - 0 "A IN test149.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014890725s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test150.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test150.example.test. A
+[INFO] 13.236.69.47:52530 - 0 "A IN test150.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016348482s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test151.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test151.example.test. A
+[INFO] 13.236.69.47:39681 - 0 "A IN test151.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017046865s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test152.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test152.example.test. A
+[INFO] 13.236.69.47:44191 - 0 "A IN test152.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014732104s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test153.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test153.example.test. A
+[INFO] 13.236.69.47:34634 - 0 "A IN test153.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014573022s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test154.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test154.example.test. A
+[INFO] 13.236.69.47:50735 - 0 "A IN test154.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014697622s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test155.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test155.example.test. A
+[INFO] 13.236.69.47:55551 - 0 "A IN test155.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014803318s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test156.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test156.example.test. A
+[INFO] 13.236.69.47:33942 - 0 "A IN test156.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.01645351s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test157.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test157.example.test. A
+[INFO] 13.236.69.47:43010 - 0 "A IN test157.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017901806s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test158.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test158.example.test. A
+[INFO] 13.236.69.47:42339 - 0 "A IN test158.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016385242s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test159.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test159.example.test. A
+[INFO] 13.236.69.47:48367 - 0 "A IN test159.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015755297s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test160.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test160.example.test. A
+[INFO] 13.236.69.47:48994 - 0 "A IN test160.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016252042s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test161.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test161.example.test. A
+[INFO] 13.236.69.47:55302 - 0 "A IN test161.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017239862s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test162.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test162.example.test. A
+[INFO] 13.236.69.47:45233 - 0 "A IN test162.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016038574s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test163.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test163.example.test. A
+[INFO] 13.236.69.47:51299 - 0 "A IN test163.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014947108s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test164.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test164.example.test. A
+[INFO] 13.236.69.47:47446 - 0 "A IN test164.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017227703s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test165.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test165.example.test. A
+[INFO] 13.236.69.47:42172 - 0 "A IN test165.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016221685s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test166.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test166.example.test. A
+[INFO] 13.236.69.47:46801 - 0 "A IN test166.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.01465459s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test167.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test167.example.test. A
+[INFO] 13.236.69.47:35692 - 0 "A IN test167.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016311743s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test168.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test168.example.test. A
+[INFO] 13.236.69.47:34636 - 0 "A IN test168.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014662825s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test169.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test169.example.test. A
+[INFO] 13.236.69.47:43296 - 0 "A IN test169.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016623172s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test170.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test170.example.test. A
+[INFO] 13.236.69.47:36103 - 0 "A IN test170.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015752048s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test171.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test171.example.test. A
+[INFO] 13.236.69.47:47800 - 0 "A IN test171.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016999082s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test172.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test172.example.test. A
+[INFO] 13.236.69.47:43493 - 0 "A IN test172.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017135597s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test173.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test173.example.test. A
+[INFO] 13.236.69.47:58822 - 0 "A IN test173.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016075946s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test174.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test174.example.test. A
+[INFO] 13.236.69.47:32797 - 0 "A IN test174.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015222896s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test175.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test175.example.test. A
+[INFO] 13.236.69.47:42066 - 0 "A IN test175.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015005265s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test176.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test176.example.test. A
+[INFO] 13.236.69.47:53223 - 0 "A IN test176.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016596446s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test177.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test177.example.test. A
+[INFO] 13.236.69.47:34326 - 0 "A IN test177.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017102863s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test178.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test178.example.test. A
+[INFO] 13.236.69.47:53035 - 0 "A IN test178.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014751214s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test179.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test179.example.test. A
+[INFO] 13.236.69.47:39676 - 0 "A IN test179.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.018322582s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test180.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test180.example.test. A
+[INFO] 13.236.69.47:45642 - 0 "A IN test180.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017852589s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test181.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test181.example.test. A
+[INFO] 13.236.69.47:51926 - 0 "A IN test181.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.017143584s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test182.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test182.example.test. A
+[INFO] 13.236.69.47:42474 - 0 "A IN test182.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014538489s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test183.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test183.example.test. A
+[INFO] 13.236.69.47:41418 - 0 "A IN test183.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.019222916s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test184.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test184.example.test. A
+[INFO] 13.236.69.47:49458 - 0 "A IN test184.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016184551s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test185.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test185.example.test. A
+[INFO] 13.236.69.47:33990 - 0 "A IN test185.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015354298s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test186.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test186.example.test. A
+[INFO] 13.236.69.47:33367 - 0 "A IN test186.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.018441524s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test187.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test187.example.test. A
+[INFO] 13.236.69.47:33047 - 0 "A IN test187.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.018397094s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test188.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test188.example.test. A
+[INFO] 13.236.69.47:36392 - 0 "A IN test188.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016596516s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test189.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test189.example.test. A
+[INFO] 13.236.69.47:52497 - 0 "A IN test189.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.022191635s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test190.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test190.example.test. A
+[INFO] 13.236.69.47:57397 - 0 "A IN test190.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.014804373s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test191.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test191.example.test. A
+[INFO] 13.236.69.47:43724 - 0 "A IN test191.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016699963s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test192.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test192.example.test. A
+[INFO] 13.236.69.47:36893 - 0 "A IN test192.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015855547s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test193.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test193.example.test. A
+[INFO] 13.236.69.47:52795 - 0 "A IN test193.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016045003s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test194.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test194.example.test. A
+[INFO] 13.236.69.47:36983 - 0 "A IN test194.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016187478s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test195.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test195.example.test. A
+[INFO] 13.236.69.47:51620 - 0 "A IN test195.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015668043s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test196.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test196.example.test. A
+[INFO] 13.236.69.47:58819 - 0 "A IN test196.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.01503452s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test197.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test197.example.test. A
+[INFO] 13.236.69.47:43263 - 0 "A IN test197.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015338913s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test198.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test198.example.test. A
+[INFO] 13.236.69.47:51870 - 0 "A IN test198.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.015943353s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 0
+;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; PADDING: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+;; QUESTION SECTION:
+;test199.example.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test199.example.test. A
+[INFO] 13.236.69.47:38564 - 0 "A IN test199.example.test. quic 128 false 65535" NOERROR qr,aa,rd,ra 164 0.016242898s
+[DEBUG] closing quic conn 172.31.20.134:853 with code 1
+^C4032 packets captured
+4033 packets received by filter
+0 packets dropped by kernel
+[INFO] SIGINT: Shutting down
