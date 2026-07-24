@@ -118,10 +118,9 @@ read -p "do you want to run bind with these settings? (Y/N): " choice
 
 # Check the user's input
 cd "$CONFIG_DIR"
-datetime_folder="run_$(date +%Y%m%d_%H%M%S)"
-mkdir -p "$datetime_folder"
-cd "$datetime_folder"
-echo "Created and changed to directory: $CONFIG_DIR/$datetime_folder"
+run_folder="run_$(date +%Y%m%d_%H%M%S)"
+mkdir -p "$run_folder"
+echo "Created run folder: $CONFIG_DIR/$run_folder"
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     killall sar
     pkill coredns
@@ -134,14 +133,14 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
         echo "Start time: $(date)" > cpu-$current_date.log
         echo "Start time: $(date)" > mem-$current_date.log
         echo "Start time: $(date)" > net-$current_date.log
-        (sar -u $INTERVAL >> cpu-$current_date.log &); (sar -n DEV $INTERVAL --iface=ens5 >> net-$current_date.log &); (sar -r $INTERVAL >> mem-$current_date.log &)
+        (sar -u $INTERVAL >> $run_folder/cpu-$current_date.log &); (sar -n DEV $INTERVAL --iface=ens5 >> $run_folder/net-$current_date.log &); (sar -r $INTERVAL >> $run_folder/mem-$current_date.log &)
     else
         echo "Monitoring disabled (interval set to 0)"
     fi
 
     if [ -n "$PCAP_FILE" ]; then
         echo "PCAP file specified: $PCAP_FILE"
-        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$PCAP_FILE" &
+        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$run_folder/$PCAP_FILE" &
     fi
 
     if [ "$DEBUG" = "true" ]; then
