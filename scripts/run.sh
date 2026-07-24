@@ -114,8 +114,18 @@ read -p "do you want to run bind with these settings? (Y/N): " choice
 # Check the user's input
 cd $CONFIG_DIR
 if [[ "$choice" =~ ^[Yy]$ ]]; then
+    killall sar
     pkill coredns
     pkill tcpdump
+
+    # start monitoring
+    echo "Start CPU, Network, and Memory monitoring using sar"
+    current_date=$(date +%d-%m-%y)
+    echo "Start time: $(date)" > cpu-$current_date.log
+    echo "Start time: $(date)" > mem-$current_date.log
+    echo "Start time: $(date)" > net-$current_date.log
+    (sar -u 1 >> cpu-$current_date.log &); (sar -n DEV 1 --iface=ens5 >> net-$current_date.log &); (sar -r 1 >> mem-$current_date.log &)
+
     if [ -n "$PCAP_FILE" ]; then
         echo "PCAP file specified: $PCAP_FILE"
         tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$PCAP_FILE" &
