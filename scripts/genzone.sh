@@ -5,7 +5,6 @@ LOCATION=""
 ALGORITHM=""
 NUM_RECORDS=0
 WILDCARD=false
-NS_IP="127.0.0.1"
 
 # Parse command line arguments
 while getopts "l:a:n:wi:" opt; do
@@ -20,8 +19,8 @@ while getopts "l:a:n:wi:" opt; do
 done
 
 # Check if required parameters are set
-if [[ -z "$LOCATION" || -z "$ALGORITHM" ]]; then
-    echo "Usage: $0 -l [LOCATION] -a [ALGORITHM] -n [number of records] [-w] [-i IP_ADDRESS]"
+if [[ -z "$LOCATION" || -z "$ALGORITHM" || -z "$NS_IP" ]]; then
+    echo "Usage: $0 -l [LOCATION] -a [ALGORITHM] -n [number of records] [-w] -i [IP_ADDRESS]"
     exit 1
 fi
 
