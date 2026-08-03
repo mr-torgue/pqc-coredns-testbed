@@ -30,8 +30,8 @@ DOMAINS=()
 IMPORT_SCRIPT=""
 for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
     # generate zone file
-    DOMAIN="${DNSSEC_DS}-${LOC}.test"
-    ZONEFILE="db.${DNSSEC_DS}-${LOC}.test"
+    DOMAIN=$(echo "${DNSSEC_DS}-${LOC}.test" | tr '[:upper:]' '[:lower:]')
+    ZONEFILE="db.${DOMAIN}"
     ../scripts/genzone.sh -a "$DNSSEC_DS" -l "$LOC" -i "$NS_IP" -n 1000 -w > $ZONEFILE
 
     if [ "$DNSSEC_DS" != "NA" ]; then
@@ -41,7 +41,7 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
 		# export DS record for easy import
 		DSRR="dsset-${DOMAIN}."
 		if [ ! -f "$DSRR" ]; then
-			echo "Error: File '$file' not found." >&2
+			echo "Error: File '$DOMAIN' not found." >&2
 			exit 1
 		fi
 		checksum=$(sha256sum "$DSRR" | awk '{print $1}')
