@@ -1,8 +1,9 @@
-OPENSSL_VERSION=3.6.2
-LIBOQS_VERSION=0.15.0
+OPENSSL_VERSION=3.6.3
+LIBOQS_VERSION=0.16.0
 OQSPROVIDER_VERSION=0.11.0
 COREDNS_VERSION=1.14.3
 GO_VERSION=1.26.4
+OQS_BIND_VERSION=v1.2.2
 
 # Install pre-requisites
 sudo apt update
@@ -42,7 +43,7 @@ cmake -S . -B _build && cmake --build _build && sudo cmake --install _build
 
 # Install OQS-bind for PQC dnssec tools
 cd ~
-git clone https://github.com/mr-torgue/OQS-bind.git --branch v1.2.1
+git clone https://github.com/mr-torgue/OQS-bind.git --branch ${OQS_BIND_VERSION}
 cd OQS-bind
 autoreconf -fi
 ./configure

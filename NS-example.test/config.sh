@@ -61,7 +61,7 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
 		IMPORT_SCRIPT+=$(echo "fi\n")
 
 		# copy dnssec files
-		mv K{$DOMAIN}* ${CONFIG_DIR}
+		mv K${DOMAIN}* ${CONFIG_DIR}
 		mv db.${DOMAIN} ${CONFIG_DIR}
 		mv db.${DOMAIN}.signed ${CONFIG_DIR}
 		mv $DSRR ${CONFIG_DIR}
