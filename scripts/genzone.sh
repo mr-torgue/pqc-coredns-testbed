@@ -24,6 +24,12 @@ if [[ -z "$LOCATION" || -z "$ALGORITHM" || -z "$NS_IP" ]]; then
     exit 1
 fi
 
+# Check if NUM_RECORDS exceeds 2000
+if [ "$NUM_RECORDS" -gt 2000 ]; then
+    echo "Error: Number of records cannot exceed 2000" >&2
+    exit 1
+fi
+
 # Generate the Zone File Header
 cat <<EOF
 \$TTL    604800
@@ -53,6 +59,8 @@ echo "; Test A records"
 # Generate the test records
 for (( i=0; i<$NUM_RECORDS; i++ ))
 do
-    printf "test%d.%s-%s.test.            0            IN              A               42.42.42.%d\n" \
-    "$i" "$ALGORITHM" "$LOCATION" "$i"
+    octet1=$((i / 256))
+    octet2=$((i % 256))
+    printf "test%d.%s-%s.test.            0            IN              A               42.42.%d.%d\n" \
+    "$i" "$ALGORITHM" "$LOCATION" "$octet1" "$octet2"
 done
