@@ -32,7 +32,7 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
     # generate zone file
     DOMAIN="${DNSSEC_DS}-${LOC}.test"
     ZONEFILE="db.${DNSSEC_DS}-${LOC}.test"
-    ../scripts/genzone -a "$DNSSEC_DS" -l "$LOC" -n 1000 -w > $ZONEFILE
+    ../scripts/genzone.sh -a "$DNSSEC_DS" -l "$LOC" -i "$NS_IP" -n 1000 -w > $ZONEFILE
 
     if [ "$DNSSEC_DS" != "NA" ]; then
       	../scripts/gendnskey.sh -f "${DOMAIN}" -d "${DNSSEC_DS}"
@@ -61,7 +61,8 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
 		IMPORT_SCRIPT+=$(echo "fi\n")
 
 		# copy dnssec files
-		cp db.${DOMAIN} ${CONFIG_DIR}
+		mv K{$DOMAIN}* ${CONFIG_DIR}
+		mv db.${DOMAIN} ${CONFIG_DIR}
 		mv db.${DOMAIN}.signed ${CONFIG_DIR}
 		mv $DSRR ${CONFIG_DIR}
     fi
@@ -72,7 +73,6 @@ done
 ../scripts/gentlskey.sh -f "${DOMAINS}" -t "${TLS_DS}"
 
 # copy files
-mv Kexample* ${CONFIG_DIR}
 cp CoreFile ${CONFIG_DIR}
 mv key.pem ${CONFIG_DIR}
 mv cert.pem ${CONFIG_DIR}
