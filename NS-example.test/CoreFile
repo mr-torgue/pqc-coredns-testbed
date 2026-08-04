@@ -3,7 +3,10 @@
     errors
     log
     debug
-    file db.example.test.signed example.test.
+#   file db.example.test.signed example.test.
+    auto {
+        directory .
+    }
 }
 
 quic://.:853 {
@@ -16,7 +19,10 @@ quic://.:853 {
         max_streams 16
         worker_pool_size 65536
     }
-    file db.example.test.signed example.test.
+#   file db.example.test.signed example.test.
+    auto {
+        directory .
+    }
 }
 
 tls://.:8853 {
@@ -25,5 +31,8 @@ tls://.:8853 {
     log
     debug
     tls cert.pem key.pem
-    file db.example.test.signed example.test.
+#   file db.example.test.signed example.test.
+    auto {
+        directory .
+    }
 }

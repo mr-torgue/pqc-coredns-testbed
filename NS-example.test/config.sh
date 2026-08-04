@@ -48,14 +48,10 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
 
 		# import into a variable
 		read -r -d '' NEW_BLOCK <<EOF
-# verifies DSSET on .test NS
 cat > $DSRR << 'INNER_EOF'
 $(cat "$DSRR")
 INNER_EOF
-
 echo '$checksum  $DSRR' | sha256sum --check
-
-# changes the NS and A record on the .test NS
 if grep -q "ns1.${DOMAIN}.\s*IN\s*NS" db.test; then
     sed -i "/ns1.${DOMAIN}.\s*IN\s*A/c ns1.${DOMAIN}.	IN	A	${NS_IP}" db.test
 else
