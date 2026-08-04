@@ -32,7 +32,7 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
     # generate zone file
     DOMAIN=$(echo "${DNSSEC_DS}-${LOC}.test" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
     ZONEFILE="db.${DOMAIN}"
-    ../scripts/genzone.sh -a "$DNSSEC_DS" -l "$LOC" -i "$NS_IP" -n 1000 -w > $ZONEFILE
+    ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n 1000 -w > $ZONEFILE
 
     if [ "$DNSSEC_DS" != "NA" ]; then
       	../scripts/gendnskey.sh -f "${DOMAIN}" -d "${DNSSEC_DS}"
@@ -46,7 +46,8 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
 		fi
 		checksum=$(sha256sum "$DSRR" | awk '{print $1}')
 
-		read -r -d '' IMPORT_SCRIPT <<EOF
+		# import into a variable
+		read -r -d '' NEW_BLOCK <<EOF
 # verifies DSSET on .test NS
 cat > $DSRR << 'INNER_EOF'
 $(cat "$DSRR")
@@ -62,6 +63,7 @@ else
     echo "ns1.${DOMAIN}.	IN	A	${NS_IP}" >> db.test
 fi
 EOF
+		IMPORT_SCRIPT+="$NEW_BLOCK"
 
 		# copy dnssec files
 		mv K${DOMAIN}* ${CONFIG_DIR}
