@@ -22,7 +22,8 @@ CONFIG_DIR="${CONFIG_NAME}-${DATE_TIME}"
 mkdir -p "${CONFIG_DIR}"
 
 
-../scripts/genkey.sh -f "${DOMAIN}" -t "${TLS_DS}" -d "${DNSSEC_DS}" 
+../scripts/gendnskey.sh -f "${DOMAIN}" -d "${DNSSEC_DS}"
+../scripts/gentlskey.sh -f "${DOMAIN}" -t "${TLS_DS}"
 ../scripts/signzone.sh -z "${ZONEFILE}" -f "${DOMAIN}"
 
 # export DS record for easy import
