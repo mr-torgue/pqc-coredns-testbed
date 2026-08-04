@@ -5,7 +5,7 @@
     debug
 #   file db.example.test.signed example.test.
     auto {
-        directory .
+        directory . db\.(.*)\.signed {1}
     }
 }
 
@@ -21,7 +21,7 @@ quic://.:853 {
     }
 #   file db.example.test.signed example.test.
     auto {
-        directory .
+        directory . db\.(.*)\.signed {1}
     }
 }
 
@@ -33,6 +33,6 @@ tls://.:8853 {
     tls cert.pem key.pem
 #   file db.example.test.signed example.test.
     auto {
-        directory .
+        directory . db\.(.*)\.signed {1}
     }
 }
