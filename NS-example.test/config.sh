@@ -2,8 +2,8 @@
 
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
-TLS_DS="rsa:2048"
-DNSSEC_DS_LIST=("FALCON512" "P256_FALCON512" "DILITHIUM2" "P256_DILITHIUM" "SPHICS" "P256_SPHINCS" "P256" "NA")
+TLS_DS="ED25519"
+DNSSEC_DS_LIST=("FALCON512" "P256_FALCON512" "MLDSA44" "P256_MLDSA44" "RSA3072_MLDSA44" "SLHDSASHA2128S" "P256_SLHDSASHA2128S" "RSA3072_SLHDSASHA2128S" "MAYO1" "P256_MAYO1" "SNOVA2454" "P256_SNOVA2454" "ECDSAP256SHA256" "ED25519" "NA") 
 CONFIG_NAME="config"
 
 while getopts "t:a:l:i:n:" opt; do
@@ -30,7 +30,7 @@ DOMAINS=()
 IMPORT_SCRIPT=""
 for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
     # generate zone file
-    DOMAIN=$(echo "${DNSSEC_DS}-${LOC}.test" | tr '[:upper:]' '[:lower:]')
+    DOMAIN=$(echo "${DNSSEC_DS}-${LOC}.test" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
     ZONEFILE="db.${DOMAIN}"
     ../scripts/genzone.sh -a "$DNSSEC_DS" -l "$LOC" -i "$NS_IP" -n 1000 -w > $ZONEFILE
 
@@ -46,19 +46,22 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
 		fi
 		checksum=$(sha256sum "$DSRR" | awk '{print $1}')
 
-		# verifies DSSET on .test NS
-		IMPORT_SCRIPT+=$(echo "cat > $DSRR << 'EOF'\n")
-		IMPORT_SCRIPT+=$(cat "$DSRR")
-		IMPORT_SCRIPT+=$(echo "EOF")
-		IMPORT_SCRIPT+=$(echo "echo '$checksum  $DSRR' | sha256sum --check")
+		read -r -d '' IMPORT_SCRIPT <<EOF
+# verifies DSSET on .test NS
+cat > $DSRR << 'INNER_EOF'
+$(cat "$DSRR")
+INNER_EOF
 
-		# changes the NS and A record on the .test NS
-		IMPORT_SCRIPT+=$(echo "if grep -q \"ns1.${DOMAIN}.\s*IN\s*NS\" db.test; then\n")
-		IMPORT_SCRIPT+=$(echo "    sed -i \"/ns1.${DOMAIN}.\s*IN\s*A/c ns1.${DOMAIN}.	IN	A	${NS_IP}\" db.test\n")
-		IMPORT_SCRIPT+=$(echo "else\n")
-		IMPORT_SCRIPT+=$(echo "    echo \"ns1.${DOMAIN}.	IN	NS	ns1.${DOMAIN}.\" >> db.test\n")
-		IMPORT_SCRIPT+=$(echo "    echo \"ns1.${DOMAIN}.	IN	A	${NS_IP}\" >> db.test\n")
-		IMPORT_SCRIPT+=$(echo "fi\n")
+echo '$checksum  $DSRR' | sha256sum --check
+
+# changes the NS and A record on the .test NS
+if grep -q "ns1.${DOMAIN}.\s*IN\s*NS" db.test; then
+    sed -i "/ns1.${DOMAIN}.\s*IN\s*A/c ns1.${DOMAIN}.	IN	A	${NS_IP}" db.test
+else
+    echo "ns1.${DOMAIN}.	IN	NS	ns1.${DOMAIN}." >> db.test
+    echo "ns1.${DOMAIN}.	IN	A	${NS_IP}" >> db.test
+fi
+EOF
 
 		# copy dnssec files
 		mv K${DOMAIN}* ${CONFIG_DIR}
