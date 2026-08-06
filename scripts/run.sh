@@ -126,15 +126,16 @@ echo -e "---------------------------"
 read -p "do you want to run bind with these settings? (Y/N): " choice
 
 # Check the user's input
-cd "$CONFIG_DIR"
-if [ -n "$LABEL" ]; then
-    run_folder="run_$LABEL_$(date +%Y%m%d_%H%M%S)"
-else
-    run_folder="run_$(date +%Y%m%d_%H%M%S)"
-fi
-mkdir -p "$run_folder"
-echo "Created run folder: $CONFIG_DIR/$run_folder"
 if [[ "$choice" =~ ^[Yy]$ ]]; then
+    cd "$CONFIG_DIR"
+    if [ -n "$LABEL" ]; then
+        run_folder="run_$LABEL_$(date +%Y%m%d_%H%M%S)"
+    else
+        run_folder="run_$(date +%Y%m%d_%H%M%S)"
+    fi
+    mkdir -p "$run_folder"
+    echo "Created run folder: $CONFIG_DIR/$run_folder"
+
     pkill sar
     pkill coredns
     pkill tcpdump
