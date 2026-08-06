@@ -6,7 +6,9 @@ runs coredns and displays debug information
 DEBUG="false"
 PCAP_FILE=""
 INTERVAL=0
-while getopts ":c:d:p:i:" opt; do
+LABEL=""
+REDIRECT_OUTPUT="false"
+while getopts ":c:d:p:i:l:o" opt; do
   case $opt in
     c)
       CONFIG_DIR="$OPTARG"
@@ -19,6 +21,12 @@ while getopts ":c:d:p:i:" opt; do
       ;;
     i)
       INTERVAL="$OPTARG"
+      ;;
+    l)
+      LABEL="$OPTARG"
+      ;;
+    o)
+      REDIRECT_OUTPUT="true"
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -118,7 +126,11 @@ read -p "do you want to run bind with these settings? (Y/N): " choice
 
 # Check the user's input
 cd "$CONFIG_DIR"
-run_folder="run_$(date +%Y%m%d_%H%M%S)"
+if [ -n "$LABEL" ]; then
+    run_folder="run_$LABEL_$(date +%Y%m%d_%H%M%S)"
+else
+    run_folder="run_$(date +%Y%m%d_%H%M%S)"
+fi
 mkdir -p "$run_folder"
 echo "Created run folder: $CONFIG_DIR/$run_folder"
 if [[ "$choice" =~ ^[Yy]$ ]]; then
@@ -147,7 +159,11 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
         echo "DEBUG MODE"
         gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
     else
-        /opt/coredns/coredns -conf CoreFile
+        if [ "$REDIRECT_OUTPUT" = "true" ]; then
+            /opt/coredns/coredns -conf CoreFile > "$run_folder/coredns.txt" 2>&1
+        else
+            /opt/coredns/coredns -conf CoreFile
+        fi
     fi
 else
     echo "aborting..."
