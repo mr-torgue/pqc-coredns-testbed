@@ -82,11 +82,22 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
+# Set default domain if not provided
+if [[ -z "$DOMAIN" ]]; then
+    if [[ -n "$ALGORITHM" && -n "$LABEL" ]]; then
+        DOMAIN="test.${ALGORITHM//_/-}-${LABEL//_/-}.test"
+    else
+        DOMAIN="test.example.test"
+    fi
+fi
+
 # Validate required parameters
 if [[ -z "$RESOLVER" || -z "$ALGORITHM" || -z "$STRATEGY" || -z "$DOMAIN" ]]; then
     echo "Error: Missing required parameter(s)."
     usage
 fi
+
+
 
 # Validate client protocol
 if [[ ! "$CLIENT" =~ ^(UDP|TCP|DoQ|DoT)$ ]]; then
