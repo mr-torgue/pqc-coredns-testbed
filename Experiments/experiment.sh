@@ -24,7 +24,6 @@ RESOLVER=localhost
 PORT=53
 LABEL=""
 DESCRIPTION=""
-DOMAIN="test.example.test"
 COUNT=20
 RATE=0
 DELAY=0
