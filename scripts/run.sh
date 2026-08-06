@@ -129,7 +129,7 @@ read -p "do you want to run bind with these settings? (Y/N): " choice
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     cd "$CONFIG_DIR"
     if [ -n "$LABEL" ]; then
-        run_folder="run_$LABEL_$(date +%Y%m%d_%H%M%S)"
+        run_folder="run_${LABEL}_$(date +%Y%m%d_%H%M%S)"
     else
         run_folder="run_$(date +%Y%m%d_%H%M%S)"
     fi

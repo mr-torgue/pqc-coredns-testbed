@@ -148,7 +148,7 @@ fi
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 FILENAME="${LABEL}-${STRATEGY}-${ALGORITHM}-${TIMESTAMP}"
 # Create directory name
-DIR_NAME="${CONFIGNAME}-${LABEL}-$(date +%Y-%m-%d)-${RANDOM_HEX}"
+DIR_NAME="${CONFIGNAME}-${LABEL}-${ALGORITHM}-$(date +%Y-%m-%d)-${RANDOM_HEX}"
 # Create directory
 mkdir -p "$DIR_NAME"
 # Set file paths
