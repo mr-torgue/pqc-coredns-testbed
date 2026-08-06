@@ -4,11 +4,11 @@ runs coredns and displays debug information
 '
 
 DEBUG="false"
-PCAP_FILE=""
+PCAP_FILE="true"
 INTERVAL=0
-LABEL=""
+LABEL="default"
 REDIRECT_OUTPUT="false"
-while getopts ":c:d:p:i:l:o" opt; do
+while getopts ":c:dpi:l:o" opt; do
   case $opt in
     c)
       CONFIG_DIR="$OPTARG"
@@ -17,7 +17,7 @@ while getopts ":c:d:p:i:l:o" opt; do
       DEBUG="true"
       ;;
     p)
-      PCAP_FILE="$OPTARG"
+      PCAP_FILE="true"
       ;;
     i)
       INTERVAL="$OPTARG"
@@ -47,8 +47,9 @@ fi
 echo "CONFIG_DIR: $CONFIG_DIR"
 echo "DEBUG: $DEBUG"
 echo "PCAP_FILE: $PCAP_FILE"
+echo "REDIRECT_OUTPUT: $REDIRECT_OUTPUT"
 echo "INTERVAL: $INTERVAL"
-
+echo "LABEL: $LABEL"
 
 # Print OpenSSL version
 echo "OpenSSL version:"
@@ -134,7 +135,7 @@ fi
 mkdir -p "$run_folder"
 echo "Created run folder: $CONFIG_DIR/$run_folder"
 if [[ "$choice" =~ ^[Yy]$ ]]; then
-    killall sar
+    pkill sar
     pkill coredns
     pkill tcpdump
 
@@ -150,9 +151,9 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
         echo "Monitoring disabled (interval set to 0)"
     fi
 
-    if [ -n "$PCAP_FILE" ]; then
-        echo "PCAP file specified: $PCAP_FILE"
-        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$run_folder/$PCAP_FILE" &
+    if [ "$PCAP_FILE" = "true" ]; then
+        echo "PCAP will be stored in $run_folder/$LABEL"
+        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$run_folder/$LABEL" &
     fi
 
     if [ "$DEBUG" = "true" ]; then
