@@ -52,7 +52,7 @@ cat > $DSRR << 'INNER_EOF'
 $(cat "$DSRR")
 INNER_EOF
 echo '$checksum  $DSRR' | sha256sum --check
-if grep -q "ns1.${DOMAIN}.\s*IN\s*NS" db.test; then
+if grep -q "${DOMAIN}.\s*IN\s*NS" db.test; then
     sed -i "/ns1.${DOMAIN}.\s*IN\s*A/c ns1.${DOMAIN}.	IN	A	${NS_IP}" db.test
 else
     echo "${DOMAIN}.	IN	NS	ns1.${DOMAIN}." >> db.test
