@@ -6,8 +6,8 @@ After that it iterates over test0.example.test to test19.example.test and stores
 Variables can be set trough the CLI.
 
 It generates two files:
-    1. [label]-[strategy]-[algorithm]-[timestamp].csv : contains the data in csv format
-    2. [label]-[strategy]-[algorithm]-[timestamp].txt : contains the raw output from the kdig command
+    1. [label]-[client]-[algorithm]-[timestamp].csv : contains the data in csv format
+    2. [label]-[client]-[algorithm]-[timestamp].txt : contains the raw output from the kdig command
 
 Example dig outcome:
 ;; Query time: 26 msec
@@ -43,7 +43,6 @@ usage() {
     echo "  -l, --label      Label for the filename (default: \"\")"
     echo "  -d, --description Description for the query (default: \"\")"
     echo "  -a, --algorithm  Algorithm that is used (required)"
-    echo "  -s, --strategy   Strategy that is used (required)"
     echo "  -n, --processes  The number of processes (default: 1)"
     echo "  --domain         Domain to query (default: test.example.test)"
     echo "  --count          number of queries (default: 20)"
@@ -65,7 +64,6 @@ while [[ "$#" -gt 0 ]]; do
         -l|--label) LABEL="$2"; shift ;;
         -d|--description) DESCRIPTION="$2"; shift ;;
         -a|--algorithm) ALGORITHM="$2"; shift ;;
-        -s|--strategy) STRATEGY="$2"; shift ;;
         -n|--processes) NR_PROCESSES="$2"; shift ;;
         --domain) DOMAIN="$2"; shift ;;
         --count) COUNT="$2"; shift ;;
@@ -91,7 +89,7 @@ if [[ -z "$DOMAIN" ]]; then
 fi
 
 # Validate required parameters
-if [[ -z "$RESOLVER" || -z "$ALGORITHM" || -z "$STRATEGY" || -z "$DOMAIN" ]]; then
+if [[ -z "$RESOLVER" || -z "$ALGORITHM" || -z "$DOMAIN" ]]; then
     echo "Error: Missing required parameter(s)."
     usage
 fi
@@ -123,7 +121,6 @@ echo "  Port:        $PORT"
 echo "  Label:       $LABEL"
 echo "  Description: $DESCRIPTION"
 echo "  Algorithm:   $ALGORITHM"
-echo "  Strategy:    $STRATEGY"
 echo "  Processes:   $NR_PROCESSES"
 echo "  Domain:      $DOMAIN"
 echo "  Count:       $COUNT"
@@ -146,9 +143,9 @@ fi
 
 
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-FILENAME="${LABEL}-${STRATEGY}-${ALGORITHM}-${TIMESTAMP}"
+FILENAME="${LABEL}-${CLIENT}-${ALGORITHM}-${TIMESTAMP}"
 # Create directory name
-DIR_NAME="${CONFIGNAME}-${LABEL}-${ALGORITHM}-$(date +%Y-%m-%d)-${RANDOM_HEX}"
+DIR_NAME="${CONFIGNAME}-${LABEL}-${CLIENT}-${ALGORITHM}-$(date +%Y-%m-%d)-${RANDOM_HEX}"
 # Create directory
 mkdir -p "$DIR_NAME"
 # Set file paths
@@ -228,12 +225,11 @@ jq -n \
     --arg label "$LABEL" \
     --arg description "$DESCRIPTION" \
     --arg algorithm "$ALGORITHM" \
-    --arg strategy "$STRATEGY" \
     --arg delay "$DELAY" \
     --arg rate "$RATE" \
     --arg client "$CLIENT" \
     --arg configname "$CONFIGNAME" \
-    '{label: $label, description: $description, algorithm: $algorithm, strategy: $strategy, delay: $delay, rate: $rate, client: $client, configname: $configname}' \
+    '{label: $label, description: $description, algorithm: $algorithm, delay: $delay, rate: $rate, client: $client, configname: $configname}' \
     >> "$JSON_FILE"
 # write headers
 printf "\"Domain\",\"Timestamp\",\"Resolver\",\"Status\",\"Query Time\"\n" >> "$CSV_FILE"
