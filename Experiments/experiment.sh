@@ -32,6 +32,7 @@ NR_PROCESSES=1
 CLIENT="UDP"
 CONFIGNAME=""
 NODNSSEC=false
+NORETRY=false
 
 # Help function
 usage() {
@@ -52,6 +53,7 @@ usage() {
     echo "  -c, --client     Client protocol (DoQ, DoT, UDP, or TCP, default: UDP)"
     echo "  -f, --config     Configuration name (default: \"\")"
     echo "  --nodnssec       Disable DNSSEC validation (default: false)"
+    echo "  --noretry       Disable TCP Retransmission (default: false)"
     echo "  -h, --help       Show this help message"
     exit 1
 }
@@ -131,6 +133,7 @@ echo "  Client:      $CLIENT"
 echo "  kdigclient:  $kdigclient"
 echo "  Configname:  $CONFIGNAME"
 echo "  DNSSEC disabled:  $NODNSSEC"
+echo "  TCP Retransmission disabled:  $NORETRY"
 echo "  RANDOM_HEX:  $RANDOM_HEX"
 
 read -p "do you want to run the experiment with these settings? (Y/N): " choice
@@ -212,9 +215,17 @@ run_query() {
     local domain="$1"
     local output
     if [[ "$NODNSSEC" == "true" ]]; then
-        output=$((time kdig @$RESOLVER -p $PORT +ignore +timeout=10 $kdigclient $domain) 2>&1)
+        if [[ "$NORETRY" == "true" ]]; then
+            output=$((time kdig @$RESOLVER -p $PORT +timeout=10 $kdigclient +ignore $domain) 2>&1)
+        else
+            output=$((time kdig @$RESOLVER -p $PORT +timeout=10 $kdigclient $domain) 2>&1)
+        fi
     else
-        output=$((time kdig @$RESOLVER -p $PORT +ignore +timeout=10 +dnssec $kdigclient $domain) 2>&1)
+        if [[ "$NORETRY" == "true" ]]; then
+            output=$((time kdig @$RESOLVER -p $PORT +timeout=10 +dnssec $kdigclient +ignore $domain) 2>&1)
+        else
+            output=$((time kdig @$RESOLVER -p $PORT +timeout=10 +dnssec $kdigclient $domain) 2>&1)
+        fi
     fi
     printf "$output\n" >> "$TXT_FILE"
     parse_dig_result "$output" "$domain"
