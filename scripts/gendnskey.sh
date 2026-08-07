@@ -26,5 +26,10 @@ fi
 
 echo "Generating DNSSEC keys for FQDN: $FQDN"
 echo "DNSSEC digital signature scheme: $DNSSEC_DS"
-sudo dnssec-keygen -a ${DNSSEC_DS} -n ZONE ${FQDN}
-sudo dnssec-keygen -a ${DNSSEC_DS} -n ZONE -f KSK ${FQDN}
+if [[ "$DNSSEC_DS" == "RSASHA256" ]]; then
+    sudo dnssec-keygen -a ${DNSSEC_DS} -n ZONE -b 3072 ${FQDN}
+    sudo dnssec-keygen -a ${DNSSEC_DS} -n ZONE -f KSK -b 3072 ${FQDN}
+else
+    sudo dnssec-keygen -a ${DNSSEC_DS} -n ZONE ${FQDN}
+    sudo dnssec-keygen -a ${DNSSEC_DS} -n ZONE -f KSK ${FQDN}
+fi
