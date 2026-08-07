@@ -151,6 +151,10 @@ FILENAME="${LABEL}-${CLIENT}-${ALGORITHM}-${TIMESTAMP}"
 DIR_NAME="${CONFIGNAME}-${LABEL}-${CLIENT}-${ALGORITHM}-$(date +%Y-%m-%d)-${RANDOM_HEX}"
 # Create directory
 mkdir -p "$DIR_NAME"
+# Create NS and Res folders
+mkdir -p "${DIR_NAME}/NS"
+mkdir -p "${DIR_NAME}/Res"
+
 # Set file paths
 CSV_FILE="${DIR_NAME}/${FILENAME}.csv"
 JSON_FILE="${DIR_NAME}/${FILENAME}.json"
@@ -276,3 +280,25 @@ for ((r = 0; r < REPEAT; r++)); do
     # Wait for all background processes to complete
     wait
 done
+
+# Calculate average and standard deviation of query times (excluding the first query)
+awk -F',' '
+NR > 1 {
+    query_times[NR-1] = $5
+    sum += $5
+    count++
+}
+END {
+    if (count > 0) {
+        avg = sum / count
+        for (i in query_times) {
+            diff = query_times[i] - avg
+            sum_sq += diff * diff
+        }
+        std_dev = sqrt(sum_sq / count)
+        printf "Average Query Time (excluding first query): %.2f ms\n", avg
+        printf "Standard Deviation (excluding first query): %.2f ms\n", std_dev
+    } else {
+        printf "No query times to calculate.\n"
+    }
+}' "$CSV_FILE"
