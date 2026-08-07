@@ -81,8 +81,8 @@ done
 
 # Set default domain if not provided
 if [[ -z "$DOMAIN" ]]; then
-    if [[ -n "$ALGORITHM" && -n "$LABEL" ]]; then
-        DOMAIN="test.${ALGORITHM//_/-}-${LABEL//_/-}.test"
+    if [[ -n "$ALGORITHM" && -n "$CONFIGNAME" ]]; then
+        DOMAIN="test.${ALGORITHM//_/-}-${CONFIGNAME//_/-}.test"
     else
         DOMAIN="test.example.test"
     fi
@@ -229,7 +229,12 @@ jq -n \
     --arg rate "$RATE" \
     --arg client "$CLIENT" \
     --arg configname "$CONFIGNAME" \
-    '{label: $label, description: $description, algorithm: $algorithm, delay: $delay, rate: $rate, client: $client, configname: $configname}' \
+    --arg nodnssec "$NODNSSEC" \
+    --arg random_hex "$RANDOM_HEX" \
+    --arg domain "$DOMAIN" \
+    --arg count "$COUNT" \
+    --arg repeat "$REPEAT" \
+    '{label: $label, description: $description, algorithm: $algorithm, delay: $delay, rate: $rate, client: $client, configname: $configname, nodnssec: $nodnssec, random_hex: $random_hex, domain: $domain, count: $count, repeat: $repeat}' \
     >> "$JSON_FILE"
 # write headers
 printf "\"Domain\",\"Timestamp\",\"Resolver\",\"Status\",\"Query Time\"\n" >> "$CSV_FILE"

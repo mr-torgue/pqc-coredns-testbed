@@ -4,7 +4,7 @@ runs coredns and displays debug information
 '
 
 DEBUG="false"
-PCAP_FILE="true"
+PCAP_FILE="false"
 INTERVAL=0
 LABEL="default"
 REDIRECT_OUTPUT="false"
