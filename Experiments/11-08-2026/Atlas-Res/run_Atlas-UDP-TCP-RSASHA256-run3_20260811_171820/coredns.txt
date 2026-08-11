@@ -1,0 +1,4386 @@
+maxprocs: Leaving GOMAXPROCS=2: CPU quota undefined
+.:53
+quic://.:853
+tls://.:8853
+CoreDNS-1.14.3
+linux/amd64, go1.26.3, cd93f6051-dirty
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5713
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 180.181.251.177:12122 - 5713 "A IN test.rsasha256-sydney0608.test. udp 59 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.080549725s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59109
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19305
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.29.65.11:59084 - 19305 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008737s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.29.65.11:35090 - 59109 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028399728s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33962
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48769
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 114.31.201.91:40914 - 48769 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.006946038s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 114.31.201.91:60440 - 33962 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025796926s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28821
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.119.111.139:53384 - 28821 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008169417s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.119.111.139:34477 - 4219 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027655001s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31317
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 119.17.129.223:38717 - 31317 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007093702s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 119.17.129.223:32994 - 61096 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027639754s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46983
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22902
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 146.185.214.58:42819 - 46983 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008113085s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2853
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64365
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 27.131.108.126:38517 - 64365 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008945201s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 146.185.214.58:50990 - 22902 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026936539s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 27.131.108.126:51906 - 2853 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025560114s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50330
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14028
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.126.192.48:59130 - 50330 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008040994s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.126.192.48:42543 - 14028 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025714594s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31790
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42743
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.41.0.43:54171 - 42743 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.011752459s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.41.0.43:52380 - 31790 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028453014s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29577
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58649
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.41.0.51:56197 - 58649 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007829461s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.41.0.51:40742 - 29577 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026214389s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15741
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 180.150.114.56:26350 - 47696 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007424778s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27100
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63361
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 128.0.115.66:36609 - 63361 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007613879s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 180.150.114.56:26593 - 15741 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027329499s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 128.0.115.66:40108 - 27100 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027592805s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15178
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3392
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 45.76.118.140:51966 - 3392 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.006742417s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33810
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45655
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41675
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15246
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64310
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42076
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 152.69.190.132:46274 - 33810 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.012821096s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.126.52.180:57887 - 41675 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.011931593s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 45.76.118.140:57426 - 15178 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02511894s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41555
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64957
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 160.250.144.229:56817 - 64310 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.015654659s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.126.52.180:35049 - 15246 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024207762s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 152.69.190.132:35254 - 45655 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028958953s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.87.175.244:49617 - 41555 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.013441189s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40461
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 160.250.144.229:37813 - 42076 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025385983s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9669
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.87.175.244:37721 - 64957 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025885591s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 51.161.193.12:35739 - 9669 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008511581s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43660
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28880
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10413
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10413
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.129.26.187:42058 - 55679 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008173576s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 51.161.193.12:42372 - 40461 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025139158s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.153.212.36:44675 - 55679 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.021195791s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.41.0.250:36858 - 43660 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.023697453s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.153.212.36:11831 - 10413 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024858684s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.41.0.250:36904 - 28880 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02802969s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60594
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.129.26.187:45956 - 10413 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024914733s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10300
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 194.146.114.1:44854 - 60594 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.005484597s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 738
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54917
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 194.146.114.1:44035 - 10300 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02490717s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36112
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26301
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 163.227.185.15:46913 - 738 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009911778s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 63.222.191.5:56260 - 26301 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008026917s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 163.227.185.15:50232 - 54917 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028651035s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 63.222.191.5:36530 - 36112 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025753152s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29231
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45120
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.73.64.201:53068 - 45120 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.0082632s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22551
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34121
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 157.20.113.125:35544 - 34121 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007461932s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48925
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26979
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16144
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55454
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.73.64.201:42199 - 29231 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028481481s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.52.117.1:50318 - 48925 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009012408s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51183
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39118
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 157.20.113.125:51793 - 22551 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.030382105s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.52.117.1:41587 - 26979 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025880768s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 119.17.170.244:59465 - 16144 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.025720525s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 119.17.170.244:37789 - 55454 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.029754249s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.12.1.50:37642 - 55679 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026184248s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 180.149.228.48:51961 - 39118 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.025414087s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 180.149.228.48:27198 - 51183 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028450883s
+[INFO] 203.12.1.50:56563 - 19997 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.019449969s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10840
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58474
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.153.153.254:54319 - 10840 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.006660395s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24408
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4857
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 129.78.96.2:43640 - 24408 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009047305s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31709
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42300
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.153.153.254:56636 - 58474 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02523106s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.72.63.19:34330 - 31709 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.006601106s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10840
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58474
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3392
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15178
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 49.192.104.188:43077 - 10840 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.011034756s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 129.78.96.2:55284 - 4857 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028741198s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43873
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50194
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[INFO] 203.100.61.93:34918 - 3392 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.011900654s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.72.63.19:41433 - 42300 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026300182s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34628
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20140
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27058
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21939
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 49.192.104.188:38464 - 58474 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025859558s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12428
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5192
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10437
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.100.61.93:34446 - 15178 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026791968s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23306
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59985
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59122
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42751
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.126.193.94:36436 - 43873 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.03321401s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4614
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44544
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26267
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.126.193.94:33591 - 50194 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.035857935s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 14.202.193.210:39202 - 45218 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.038813984s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 159.196.2.158:54094 - 21939 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.03642043s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 150.228.243.231:9114 - 34628 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.051538832s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52475
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 150.228.243.231:60977 - 12428 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.055200295s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 159.196.2.158:40384 - 10437 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.052463045s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 159.196.161.65:20779 - 27058 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.057353354s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5198
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.153.238.101:33547 - 4614 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.033910382s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13180
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 159.196.161.65:20780 - 20140 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.060569808s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 45.249.116.219:52686 - 42751 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.053431218s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 49.255.158.255:51081 - 23306 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.058191534s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 14.202.193.210:43121 - 24788 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.067972988s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10413
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.119.76.130:46166 - 5192 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.066257926s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 65150
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57244
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12023
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 49.255.158.255:46827 - 59122 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.066764817s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.119.76.130:46134 - 59985 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.068223436s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 45.249.116.219:52505 - 44544 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.052804116s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62643
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38711
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10840
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18172
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17603
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42342
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58474
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.153.238.101:52175 - 26267 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.065367104s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.87.12.152:40429 - 52475 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.040259478s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 140.238.205.157:60785 - 10413 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.037857864s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 27.131.79.106:51265 - 12023 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.034397484s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 27.131.79.106:44358 - 65150 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.042807421s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10413
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 27.33.9.176:54214 - 18172 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.035463134s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64544
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36483
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 27.33.9.176:33026 - 57244 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.048297608s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.232.160.89:59302 - 5198 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.067213933s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 116.255.5.183:36923 - 62643 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.043484896s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 116.255.5.183:36185 - 38711 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.043903763s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45215
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46502
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 140.238.205.157:51761 - 55679 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.064389777s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 160.222.157.211:45693 - 58474 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.041132345s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.232.160.89:55844 - 13180 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.07596917s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.87.12.152:59888 - 13218 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.077573453s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 157.211.20.241:42059 - 42342 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.050618269s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 157.211.20.241:51716 - 17603 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.055939737s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64038
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 160.222.157.211:44787 - 10840 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.063403024s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13206
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 180.150.36.30:33993 - 36483 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.034148205s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 180.150.36.30:34166 - 64544 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.035641428s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.138.94.66:48496 - 45215 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.032674607s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 158.179.20.157:35869 - 10413 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.043248766s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 158.179.20.157:33648 - 55679 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.045985693s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.138.94.66:58004 - 46502 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.040520746s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 115.70.56.230:55495 - 64038 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.024160837s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39150
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 115.70.56.230:46136 - 13206 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02479103s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61727
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49416
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11453
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.0.120.20:49853 - 39150 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.012793873s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 140.238.194.220:60644 - 49416 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.011515078s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33527
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40510
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.0.120.20:41647 - 61727 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.029128181s
+[INFO] 140.238.194.220:47686 - 11453 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024810671s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 122.199.0.81:43421 - 33527 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007637937s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57976
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20112
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 138.44.176.166:39130 - 57976 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007955251s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32534
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51439
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9131
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18524
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 163.47.70.211:65313 - 51439 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.010060379s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 122.199.0.81:40396 - 40510 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027491836s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35691
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 157.211.141.107:62369 - 9131 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007639972s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 138.44.176.166:34514 - 20112 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027142015s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63088
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.106.89.142:53502 - 35691 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008574986s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 163.47.70.211:65477 - 32534 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025905771s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 157.211.141.107:11945 - 18524 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027625357s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.80.150.54:6451 - 19997 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.005092019s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.106.89.142:45342 - 63088 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028252528s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56595
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28571
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 77.90.35.161:44792 - 56595 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007338608s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36740
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 45.249.117.10:39288 - 36740 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.004687147s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.80.150.54:6595 - 55679 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025886966s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60917
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.57.129.180:33960 - 33008 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008672673s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20246
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 77.90.35.161:59756 - 28571 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028168887s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 60.242.119.101:32823 - 60917 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009948336s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34933
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18758
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 45.249.117.10:53113 - 15679 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02437971s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.57.129.180:54413 - 36040 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026558898s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4809
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64391
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56518
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60960
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 144.6.114.198:16795 - 34933 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.014241732s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51197
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3552
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18017
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44918
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 60.242.119.101:40914 - 20246 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.031257962s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 144.6.114.198:28881 - 18758 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026276004s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16418
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50347
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 138.217.244.62:33667 - 56518 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.029570048s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3873
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.12.8.219:49874 - 64391 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.030774394s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57020
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.12.8.219:43939 - 3552 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02627231s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 58.160.166.163:54114 - 4809 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.040503129s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 58.160.166.163:53439 - 44918 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.038534412s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 138.217.244.62:51550 - 60960 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.043064452s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45881
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.252.154.247:44302 - 16418 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.028799897s
+[INFO] 103.252.154.247:41230 - 50347 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026973214s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 175.34.15.25:33644 - 18017 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.049327447s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40673
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10413
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 175.34.15.25:45894 - 51197 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.050378523s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 160.22.78.199:41310 - 57020 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.027673192s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 160.22.78.199:33711 - 3873 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.030797258s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 110.144.14.110:45321 - 45881 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.01709642s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 159.196.153.105:53676 - 55679 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.018333522s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38486
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55944
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 119.15.109.213:60467 - 55944 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.006453913s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62643
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34641
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 159.196.153.105:44013 - 10413 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027520025s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 110.144.14.110:37112 - 40673 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027771075s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3721
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49391
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62804
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38990
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55024
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44677
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 13.54.78.159:57266 - 19997 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.013693118s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 119.15.109.213:47154 - 38486 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025460346s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10413
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.129.22.197:49702 - 62643 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.025310965s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 13.54.78.159:42001 - 55679 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028614038s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2172
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 120.19.33.174:2721 - 3721 "A IN test.rsasha256-sydney0608.test. udp 63 false 4096" NOERROR qr,aa,rd,ra,ad 105 0.030434192s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26610
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64544
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.129.22.197:48299 - 34641 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.040261398s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 114.129.191.115:46732 - 62804 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.038465899s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46692
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 114.129.191.115:45428 - 49391 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.04575001s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 120.88.126.151:50417 - 10413 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.042628506s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 120.19.33.174:2615 - 38990 "A IN test0.rsasha256-sydney0608.test. udp 64 false 4096" NOERROR qr,aa,rd,ra,ad 107 0.053637896s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 180.150.79.58:57790 - 44677 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.054271723s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28761
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51869
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16423
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12772
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.47.178.155:58279 - 64544 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.026977428s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 49.191.96.29:56036 - 2172 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.041444692s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19290
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 180.150.79.58:48283 - 55024 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.058092208s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 49.191.96.29:44393 - 26610 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.037142196s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59497
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 119.18.39.53:35797 - 55679 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.041389082s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42226
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54693
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56455
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 120.88.126.151:51391 - 55679 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.06350564s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57631
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51884
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26852
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 119.18.39.53:38857 - 19997 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.053592923s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49365
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 44.136.201.21:54030 - 59497 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.034347213s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3887
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.47.178.155:49172 - 46692 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.062686878s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17865
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 209.38.30.73:54417 - 42226 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.035230369s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24324
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5950
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.153.213.255:57596 - 19290 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.046842901s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 152.69.167.24:55137 - 51869 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.049828685s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 44.136.201.21:56919 - 28761 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.052800183s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 742
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 629
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 209.38.30.73:55763 - 52739 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.050615606s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 115.186.212.101:37417 - 51884 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.047432133s
+[INFO] 220.244.9.39:50452 - 57631 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.045531875s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8899
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 152.69.167.24:52083 - 16423 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.065295562s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.153.213.255:51008 - 12772 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.068742264s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 115.186.212.101:37535 - 56455 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.059691988s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.85.37.57:35236 - 54693 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.065031016s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 115.70.61.83:22052 - 3887 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.037029464s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11450
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.85.37.57:37276 - 26852 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.06676134s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16187
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 115.70.61.83:22164 - 17865 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.043599171s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 220.244.9.39:47021 - 49365 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.05500072s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 43.252.115.252:39056 - 5950 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.04699603s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 43.252.115.252:40887 - 24324 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.050318964s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.251.173.92:34474 - 629 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.039973232s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 160.222.152.216:49376 - 8899 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.032465631s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.251.173.92:59215 - 742 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.041278624s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 160.222.152.216:56003 - 14788 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.042193299s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.80.144.18:46280 - 11450 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.020285365s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.80.144.18:53135 - 16187 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024745467s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6921
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17335
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.232.254.207:50608 - 6921 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.005313191s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43793
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64947
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17328
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27248
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.232.254.207:47167 - 17335 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025172491s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 147.10.131.126:36879 - 43793 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009679067s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 167.179.176.191:49182 - 64947 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.010971894s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27629
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.252.153.123:42816 - 48841 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.00862936s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24023
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57361
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 167.179.176.191:58123 - 17328 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026565597s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 147.10.131.126:52057 - 27248 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02560546s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.142.158.42:44873 - 24023 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007236782s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18017
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63376
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 149.28.175.108:32977 - 63376 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007216097s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14535
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9585
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51425
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.252.153.123:38358 - 27629 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.030093308s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43988
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41319
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 110.142.211.52:37709 - 14535 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009404992s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49502
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47381
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3909
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53380
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.142.158.42:34054 - 57361 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.030264858s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 149.28.175.108:37884 - 18017 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02731433s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57821
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6921
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17335
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 61.245.158.57:43683 - 43988 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.023606935s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 110.142.211.52:41901 - 51425 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.030744666s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.65.64.238:45318 - 9585 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.031425989s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.65.64.238:38441 - 41319 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.030652414s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.129.27.250:44724 - 49502 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027353439s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.108.228.242:50827 - 53380 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.029929261s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.129.27.250:33397 - 47381 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.032539404s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 1.40.111.151:60298 - 6921 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.022905686s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.108.228.242:58466 - 3909 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.035445613s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 1.40.111.151:33599 - 17335 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026578389s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 827
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 61.245.158.57:39984 - 57821 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.031723614s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54578
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18657
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.179.130.2:58588 - 827 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.017297475s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 80.97.44.60:46385 - 36387 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.016823834s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33785
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14999
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 115.70.50.8:43331 - 33785 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.005669397s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 80.97.44.60:34231 - 18657 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024084662s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.179.130.2:34098 - 54578 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025993316s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62643
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34641
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 115.70.50.8:43460 - 14999 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026099495s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 106.68.213.2:46208 - 62643 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008902044s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26610
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60594
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3721
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38990
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 45.249.116.196:38699 - 26610 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007838444s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 106.68.213.2:48656 - 34641 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025820127s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41955
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53069
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 16.50.48.184:41673 - 3721 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.010433664s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 49.190.88.215:37658 - 41955 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.00843389s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 45.249.116.196:38609 - 60594 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025231286s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 16.50.48.184:42869 - 38990 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025806241s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21928
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14898
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 167.179.131.69:37463 - 21928 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.005940365s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 49.190.88.215:56746 - 53069 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028101905s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 167.179.131.69:36469 - 14898 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025955702s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16423
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51869
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 20.28.218.234:51487 - 51869 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007548335s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 20.28.218.234:44324 - 16423 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02615211s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63765
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61996
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54346
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47746
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 159.196.174.217:47267 - 63765 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008116979s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44771
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11953
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.97.55.45:34496 - 54346 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007651704s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4890
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12702
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30577
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 159.196.174.217:53878 - 61996 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028579378s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58474
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28483
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10840
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 87.121.95.42:55366 - 4890 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.017878058s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.97.55.45:55711 - 47746 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027713697s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45417
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33407
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.135.187.170:53712 - 11953 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.029609197s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60106
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9131
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28716
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53144
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[INFO] 87.121.95.42:63905 - 12702 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026987148s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55856
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.135.187.170:43070 - 44771 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.038280266s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 54.206.78.202:45024 - 30577 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027570457s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57235
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.226.9.136:3334 - 10840 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.030499954s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 159.196.154.212:55936 - 45417 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.02759616s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 54.206.78.202:50627 - 28483 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.038926659s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.10.91.103:42775 - 33407 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.031886216s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.226.9.136:55464 - 58474 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.044150478s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.10.91.103:50106 - 60106 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.032750243s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 159.196.154.212:55726 - 9131 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.03343763s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 220.240.182.236:55278 - 55856 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.031520827s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 116.255.29.81:39476 - 53144 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.034425628s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 220.240.182.236:48163 - 57235 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.031340166s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 116.255.29.81:41841 - 28716 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.037258404s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23090
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 120.88.123.241:49863 - 23090 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.004565804s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30721
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19530
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 195.114.14.200:32813 - 30721 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007447543s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 120.88.123.241:51512 - 2219 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028548332s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13180
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5198
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 180.150.66.105:38589 - 5198 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007461654s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 195.114.14.200:56125 - 19530 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027314433s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35838
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 180.150.66.105:58501 - 13180 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028543749s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9420
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22589
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 193.177.221.9:36848 - 35838 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.00720024s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31016
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 119.18.6.58:60862 - 31016 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009580966s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 193.177.221.9:43493 - 9420 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024813451s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 119.18.6.58:53797 - 22589 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028106525s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24250
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 122.199.30.128:58469 - 19997 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008353384s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44356
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 159.196.176.45:46985 - 24250 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.005076684s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12772
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 122.199.30.128:53163 - 55679 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025952064s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28131
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22529
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4213
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.73.64.129:47111 - 28131 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.010402575s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 150.107.75.182:57503 - 19997 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.020086134s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 159.196.176.45:37664 - 44356 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.032977755s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 46.250.244.2:58097 - 22529 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.017568549s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.73.64.129:41490 - 12772 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027344248s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22655
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 150.107.75.182:45404 - 55679 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.031699386s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18885
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 46.250.244.2:56450 - 4213 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028529442s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13894
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21833
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.95.115.64:51280 - 22655 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009178278s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28513
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.51.115.92:40378 - 21833 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.014234559s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.119.111.64:59518 - 28513 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.010519679s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.95.115.64:43792 - 18885 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.028705627s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.51.115.92:50576 - 13894 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025022534s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.119.111.64:35981 - 45218 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025001933s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33810
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45655
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36781
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44835
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 123.210.128.98:3341 - 33810 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007119532s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.44.119.34:59423 - 36781 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.0105741s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36023
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42935
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15178
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 123.210.128.98:45662 - 45655 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024987697s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.44.119.34:58076 - 44835 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024924875s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 180.181.249.58:10411 - 36023 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.010539826s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 125.254.72.45:35602 - 15178 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.010547748s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6911
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3392
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64043
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 125.254.72.45:40149 - 42935 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024413582s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 180.181.249.58:10270 - 33008 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027756176s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53941
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 123.253.191.215:39481 - 6911 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.014032591s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 120.88.73.122:39860 - 64043 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.012230831s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 123.253.191.215:42064 - 3392 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027568567s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 120.88.73.122:47302 - 53941 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02442784s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11253
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62729
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39118
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6743
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.95.113.129:18079 - 11253 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.012791643s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 160.222.159.202:43974 - 62729 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.014421347s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44728
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61011
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.95.113.129:24368 - 39118 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027044193s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 160.222.159.202:53827 - 6743 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026992382s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56804
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10714
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.132.93.71:39653 - 61011 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.012176916s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.191.68.28:60088 - 56804 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.012533837s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.132.93.71:3273 - 44728 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026064537s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.191.68.28:46494 - 10714 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026012598s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1087
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6911
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64623
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39718
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 150.228.243.231:23347 - 1087 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008539397s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 203.12.4.134:28733 - 64623 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.00993947s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 150.228.243.231:46838 - 6911 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024787264s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 203.12.4.134:30295 - 39718 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027338746s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52722
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37444
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51415
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50171
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 1.145.201.9:1789 - 52722 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008434231s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 121.200.4.9:65354 - 37444 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.011999354s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24324
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14091
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 172.105.254.49:54125 - 24324 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007927199s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 1.145.201.9:1758 - 50171 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024502667s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 121.200.4.9:65521 - 51415 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026027657s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 172.105.254.49:54505 - 14091 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027314466s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12972
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37817
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.181.45.9:55170 - 12972 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008182199s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18131
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 159.196.245.77:58299 - 18131 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.00472098s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16274
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.181.45.9:60308 - 37817 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025991302s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24324
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5950
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.158.243.14:34729 - 5950 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008807225s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37849
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38486
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 159.196.245.77:34966 - 16274 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026821412s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18961
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6743
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42226
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58164
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 165.99.240.226:43536 - 38486 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.014509485s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.158.243.14:52191 - 24324 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02511776s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22894
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 195.114.15.6:58012 - 42226 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.023855653s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 45.249.116.54:59775 - 6743 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.027711404s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 165.99.240.226:47011 - 37849 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.030294539s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 45.249.116.54:46738 - 18961 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.029890978s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 195.114.15.6:42821 - 58164 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027747724s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.230.159.152:39874 - 22894 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.01399907s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.230.159.152:44616 - 61008 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.032538428s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42836
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33729
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6640
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13031
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36453
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20579
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 168.138.3.153:55660 - 6640 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.018828315s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 159.196.77.172:55194 - 42836 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.024343037s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10413
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 159.196.77.172:45059 - 13031 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025623949s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 144.6.205.10:60699 - 36453 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.023141154s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 168.138.3.153:35232 - 33729 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.030656443s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 125.253.33.62:48317 - 55679 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009945012s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 144.6.205.10:62829 - 20579 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026249702s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63596
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45194
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 146.19.0.17:34678 - 63596 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007773318s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15652
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 125.253.33.62:43217 - 10413 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025234118s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 159.196.102.162:42411 - 15652 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.004809053s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63564
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 146.19.0.17:51355 - 45194 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024074573s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 160.222.157.211:26789 - 36040 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.006835294s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 159.196.102.162:51607 - 63564 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024820607s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 160.222.157.211:13749 - 47696 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024013614s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10840
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58474
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13716
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 122.199.54.108:59123 - 10840 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.010706281s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12529
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1732
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31137
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39718
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27215
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 80.97.44.210:44045 - 3739 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.018343887s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 80.97.44.210:55492 - 13716 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.024887994s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 122.199.54.108:56050 - 58474 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.029949309s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.4.234.221:52114 - 31137 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.021536529s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 103.219.7.243:38047 - 12529 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.024586602s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 45.63.30.66:52203 - 39718 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.02365953s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.219.7.243:58416 - 1732 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025848327s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 103.4.234.221:35669 - 17387 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026285083s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56804
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10714
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[INFO] 45.63.30.66:40606 - 27215 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.026881952s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 167.179.144.52:17837 - 56804 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.006685361s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 167.179.144.52:64638 - 10714 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.023978905s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58474
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 110.32.192.203:34523 - 58474 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.004624463s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29465
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 110.32.192.203:52566 - 29465 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.02485903s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24227
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38711
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 27.100.36.46:38225 - 24227 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007479366s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 27.100.36.46:56242 - 38711 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025649473s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51869
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16423
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38943
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64370
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 67.219.106.231:60021 - 51869 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.012768101s
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 202.128.123.64:36491 - 38943 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.013199904s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 67.219.106.231:36351 - 16423 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.025202498s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 202.128.123.64:42708 - 64370 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027422623s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.rsasha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.rsasha256-sydney0608.test. A
+[INFO] 87.121.73.46:45381 - 19997 "A IN test.rsasha256-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.007601211s
+[DEBUG] plugin/resolver: Found response for query test0.rsasha256-sydney0608.test. A
+[INFO] 87.121.73.46:50678 - 55679 "A IN test0.rsasha256-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.027166757s
+[INFO] SIGINT: Shutting down

@@ -1,0 +1,4386 @@
+maxprocs: Leaving GOMAXPROCS=2: CPU quota undefined
+tls://.:8853
+.:53
+quic://.:853
+CoreDNS-1.14.3
+linux/amd64, go1.26.3, cd93f6051-dirty
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13383
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.181.251.177:11944 - 13383 "A IN test.ecdsap256sha256-sydney0608.test. udp 65 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.11693854s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63132
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17410
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 114.31.201.91:47175 - 17410 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007565122s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 114.31.201.91:42357 - 63132 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.040169336s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47816
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39527
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 146.185.214.58:46816 - 47816 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008447651s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58912
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5212
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 27.131.108.126:40935 - 58912 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.010951598s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24227
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38711
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 152.69.167.24:40055 - 24227 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.00826521s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 146.185.214.58:48864 - 39527 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.042544212s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28483
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4409
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 27.131.108.126:56237 - 5212 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.040886965s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.126.192.48:54954 - 4409 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.011018247s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 152.69.167.24:47823 - 38711 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.044358469s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62729
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6743
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 43.252.115.252:50872 - 62729 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008763517s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.126.192.48:58732 - 28483 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.045608493s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51887
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27125
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.41.0.43:48440 - 51887 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008342583s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 43.252.115.252:37230 - 6743 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.047878612s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41473
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55893
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.41.0.43:52170 - 27125 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.041181427s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.41.0.51:35088 - 55893 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008062711s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.41.0.51:39445 - 41473 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.041419753s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64960
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24362
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56036
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6921
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28761
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.179.130.2:60537 - 64960 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007978816s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59497
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28528
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36782
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 80.97.44.60:47174 - 56036 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.015738842s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35029
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12857
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 160.250.144.229:53356 - 28761 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.021957385s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.76.118.140:60893 - 45218 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.023461904s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14404
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20565
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.179.130.2:33092 - 24362 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.048390892s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 80.97.44.60:58743 - 6921 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.045376737s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24670
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63903
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.76.118.140:42090 - 24788 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.046436582s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 160.250.144.229:50933 - 59497 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.049010054s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 152.69.190.132:55220 - 36782 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.042550731s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.126.52.180:45083 - 12857 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.039443392s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.87.175.244:54179 - 20565 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.026546417s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19549
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54596
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.126.52.180:41787 - 35029 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.046651774s
+[INFO] 51.161.193.12:59632 - 24670 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.018278104s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 152.69.190.132:54230 - 28528 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.053706254s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.41.0.250:57625 - 19549 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.011928874s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.87.175.244:53321 - 14404 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.046432867s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.129.26.187:34876 - 36040 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.006287059s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 51.161.193.12:40913 - 63903 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.041041417s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.41.0.250:59338 - 54596 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.042894477s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13895
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.129.26.187:57773 - 47696 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.0437222s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25999
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 163.227.185.15:43797 - 6040 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007018904s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58089
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 63.222.191.5:58095 - 25999 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.006358648s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34769
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6666
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 163.227.185.15:53181 - 13895 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.044158326s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.174.217:49345 - 34769 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008817774s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 63.222.191.5:52051 - 58089 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.042737931s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44126
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31046
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17192
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.97.55.45:34956 - 44126 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.00682086s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54829
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 87.121.95.42:54356 - 17192 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.011125179s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26805
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7315
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1380
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.73.64.201:44312 - 7315 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007148508s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30361
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32546
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 54.206.78.202:48202 - 1380 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008300863s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.174.217:34578 - 6666 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.046712246s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8317
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47557
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61673
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59514
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16610
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5789
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51547
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22690
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.17.170.244:44826 - 5789 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007604836s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.29.65.11:56713 - 47557 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.013437104s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.52.117.1:56452 - 51547 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.014531787s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.154.212:48114 - 61673 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.020228798s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28131
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51194
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28563
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62178
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37995
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12529
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12772
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 157.20.113.125:36323 - 16610 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.03292435s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.149.228.48:18863 - 28131 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008294789s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.97.55.45:43641 - 31046 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.067150474s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 116.255.29.81:37405 - 37995 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.028778402s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 87.121.95.42:10894 - 54829 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.085840783s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.10.91.103:51697 - 28563 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.032519263s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3887
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21179
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[INFO] 103.73.64.201:58151 - 26805 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.078120085s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36294
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 129.78.96.2:38099 - 3887 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007384204s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17865
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.153.153.254:40695 - 21179 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007344552s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.52.117.1:33007 - 22690 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.071513305s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15741
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36294
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21179
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.154.212:41965 - 8317 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.078228478s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.29.65.11:54061 - 59514 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.078822194s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 54.206.78.202:48778 - 32546 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.09004866s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 157.20.113.125:53011 - 30361 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.091015882s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3721
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.72.63.19:38477 - 15741 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.012380926s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 49.192.104.188:42757 - 21179 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.012272337s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.17.170.244:39923 - 51194 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.063041796s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.149.228.48:8985 - 12772 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.063448312s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.10.91.103:48895 - 62178 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.069378958s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 116.255.29.81:44271 - 12529 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.0701137s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60118
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47686
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.100.61.93:39525 - 45218 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.013247541s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15910
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64586
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36363
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53666
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30944
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36298
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.153.153.254:54707 - 36294 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.057483011s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.126.193.94:52784 - 47686 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.021010989s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 14.202.193.210:41334 - 64586 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.017771062s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.119.76.130:36169 - 53666 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.015735714s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 129.78.96.2:60651 - 17865 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.063713394s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29614
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18329
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42226
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58164
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41631
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29060
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 49.255.158.255:57664 - 36298 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.022070439s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.153.238.101:42007 - 29614 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007431022s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 49.192.104.188:37296 - 36294 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.063305382s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.72.63.19:39246 - 3721 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.060113493s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.249.116.219:52589 - 18329 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.014737944s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 193.177.221.9:41820 - 42226 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.017756559s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 14.202.193.210:51761 - 15910 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.0504811s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.126.193.94:40370 - 60118 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.0591934s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33318
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.100.61.93:47554 - 24788 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.066907133s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45417
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 27.33.9.176:57800 - 33318 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008104378s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.119.76.130:57145 - 36363 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.056049859s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21179
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 160.222.157.211:8359 - 21179 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007387218s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 140.238.205.157:45737 - 36040 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.013067704s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 49.255.158.255:41314 - 30944 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.064831773s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36294
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 150.107.75.182:51363 - 33008 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.013705842s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.153.238.101:55228 - 29060 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.05611191s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 193.177.221.9:49860 - 58164 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.057244875s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.249.116.219:52649 - 41631 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.057907389s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3632
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 116.255.5.183:58921 - 3632 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007366807s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46494
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13031
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19076
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.51.115.92:57194 - 13031 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.00825378s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46401
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.95.115.64:47282 - 46494 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.015617259s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 140.238.205.157:57697 - 47696 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.048984274s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 27.33.9.176:44391 - 45417 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.056238515s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11456
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24425
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10331
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 158.179.20.157:56793 - 36040 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007461719s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 150.107.75.182:39681 - 36040 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.057755083s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51517
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.138.94.66:53398 - 24425 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.013468069s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.150.36.30:33871 - 10331 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.020440781s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 160.222.157.211:33019 - 36294 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.059579938s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 116.255.5.183:58955 - 51219 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.05172994s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33889
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 115.70.56.230:49723 - 33889 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.006143827s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.51.115.92:50760 - 46401 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.048491232s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.95.115.64:32816 - 19076 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.059988231s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14967
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.150.36.30:34090 - 51517 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.040943501s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.138.94.66:36771 - 11456 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.051793939s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46568
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 158.179.20.157:54527 - 47696 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.043942023s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.0.120.20:58994 - 14967 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008744999s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25847
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56993
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 140.238.194.220:35204 - 25847 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007839427s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 115.70.56.230:60256 - 13 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.042090407s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22894
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.0.120.20:45116 - 46568 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.040117942s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49508
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59538
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 120.88.73.122:42906 - 22894 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.01095962s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 140.238.194.220:58732 - 56993 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.042830597s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52699
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 138.44.176.166:54768 - 49508 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.015998903s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47106
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 163.47.70.211:65391 - 52699 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.00726766s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28131
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64212
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34641
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62643
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.95.113.129:60527 - 64212 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.019174434s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 120.88.73.122:39348 - 61008 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.040852892s
+[INFO] 138.44.176.166:54892 - 59538 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.042282889s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 160.222.159.202:45199 - 62643 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.016866078s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.80.150.54:6469 - 33008 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.005099077s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 90
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.95.113.129:19981 - 28131 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.038528034s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48637
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 163.47.70.211:65281 - 47106 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.044970903s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.249.117.10:42962 - 90 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.005624699s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36782
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 160.222.159.202:39221 - 34641 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.038845234s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58681
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6705
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28528
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25284
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19925
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4229
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33523
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27115
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2892
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19925
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40678
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 123.210.128.98:43925 - 36782 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.017803551s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 77.90.35.161:54011 - 25284 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.015196622s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.119.111.139:46526 - 6705 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.02490075s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.80.150.54:6629 - 36040 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.043826896s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38990
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20790
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51869
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55329
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64489
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21833
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29332
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40169
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8288
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8053
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.249.117.10:42557 - 48637 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.062268869s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 123.210.128.98:30845 - 28528 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.056033539s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.119.111.139:42139 - 58681 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.063007488s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57747
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45229
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48391
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4003
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6743
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34068
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33392
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18961
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 60.242.119.101:37750 - 40678 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.068904283s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.44.119.34:38195 - 4229 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.077176314s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.44.119.34:51391 - 2892 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.076322707s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 77.90.35.161:60959 - 19925 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.082585634s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.57.129.180:2130 - 33523 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.078821718s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 60.242.119.101:39774 - 19925 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.075208374s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51593
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53051
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23673
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43873
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 175.34.15.25:37878 - 64489 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.065078344s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.57.129.180:26680 - 27115 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.08954184s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.12.4.134:43481 - 38990 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.072662342s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 144.6.114.198:32383 - 55329 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.079418s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6924
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 138.217.244.62:58363 - 29332 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.074668955s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2208
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[INFO] 138.217.244.62:40911 - 40169 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.077113492s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3675
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49713
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37100
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61296
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.12.4.134:16646 - 51869 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.094045147s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 144.6.114.198:25017 - 20790 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.096422667s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56517
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8864
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48528
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30933
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 175.34.15.25:43366 - 21833 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.100308052s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.17.129.223:49182 - 34068 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.071388301s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.252.154.247:36563 - 4003 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.089042259s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20579
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51517
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34641
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37652
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36453
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23987
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.181.45.9:56480 - 3675 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.081295425s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.15.109.213:45500 - 2208 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.093292588s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47750
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63672
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22136
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21932
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36453
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62125
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42547
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[INFO] 110.144.14.110:58224 - 51593 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.148642664s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7770
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26918
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28963
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20512
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32617
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43391
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46712
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54940
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31319
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 121.200.4.9:65066 - 48391 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.170924476s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 110.144.14.110:58943 - 53051 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.148741151s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 121.200.4.9:65149 - 57747 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.18552731s
+[INFO] 172.105.254.49:35283 - 6743 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.174810978s
+[INFO] 160.22.78.199:39852 - 23673 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.16261464s
+[INFO] 203.12.8.219:46465 - 8288 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.202553305s
+[INFO] 203.12.8.219:41630 - 8053 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.198665573s
+[INFO] 114.129.191.115:36786 - 56517 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.129101706s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.181.45.9:41732 - 49713 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.142625514s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.17.129.223:38752 - 33392 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.182045265s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 160.22.78.199:41660 - 43873 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.177523562s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.150.79.58:34582 - 48528 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.145174085s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 120.88.126.151:49561 - 36040 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.138457071s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45655
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12488
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29761
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36266
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27228
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29896
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8641
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33810
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[INFO] 202.47.178.155:51820 - 51517 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.133902995s
+[INFO] 103.252.154.247:58042 - 45229 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.231324075s
+[INFO] 180.150.79.58:41567 - 30933 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.172945412s
+[INFO] 45.249.116.54:50918 - 34641 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.132390702s
+[INFO] 172.105.254.49:57742 - 18961 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.219748231s
+[INFO] 159.196.245.77:56535 - 37100 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.183238077s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 195.114.15.6:37406 - 20579 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.15009846s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.249.116.54:38873 - 37652 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.147025976s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.47.178.155:63775 - 23987 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.15388571s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51183
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 13.54.78.159:33733 - 36040 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.200605771s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.153.105:33261 - 47696 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.225981053s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.245.77:59010 - 61296 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.212923065s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.15.109.213:50737 - 6924 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.221737251s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55068
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36356
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27115
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24674
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39118
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.153.213.255:59676 - 63672 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.133693534s
+[INFO] 120.88.126.151:39233 - 47696 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.203615659s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 13.54.78.159:54454 - 33008 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.221075872s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28649
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.251.173.92:35987 - 42547 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.11153317s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.18.39.53:48378 - 36040 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.180416441s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27183
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34769
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57792
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35976
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 209.38.30.73:32980 - 36453 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.149051538s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35838
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.18.39.53:49289 - 33008 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.202696791s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.85.37.57:59473 - 7770 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.125521661s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51869
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.153.105:39603 - 36040 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.272627139s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 115.70.61.83:22267 - 28963 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.138714112s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 44.136.201.21:39192 - 43391 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.145434983s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24674
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25279
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8108
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9986
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13360
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46983
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22902
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12183
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21990
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7821
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41319
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64489
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20567
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1109
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20715
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16202
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16423
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 44.136.201.21:48516 - 32617 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.15642161s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.85.37.57:42170 - 26918 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.160633963s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.129.22.197:51048 - 51219 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.282269607s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 114.129.191.115:40181 - 8864 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.274806013s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63253
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26703
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 115.186.212.101:38091 - 14788 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.227149164s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38056
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64420
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52747
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6244
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9585
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63596
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36294
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39118
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51197
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51183
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11664
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31151
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25545
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18017
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 160.222.152.216:46963 - 12488 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.201227296s
+[INFO] 180.150.66.105:60814 - 3739 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.284734733s
+[INFO] 203.129.22.197:52627 - 25096 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.376242664s
+[INFO] 159.196.102.162:50998 - 36356 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.160214819s
+[INFO] 202.80.144.18:47727 - 8641 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.19893975s
+[INFO] 180.150.66.105:45026 - 22136 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.285111325s
+[INFO] 103.251.173.92:58149 - 46712 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.254428356s
+[INFO] 220.244.9.39:51432 - 27228 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.200459328s
+[INFO] 195.114.15.6:54451 - 36453 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.32492766s
+[INFO] 160.222.152.216:48481 - 29761 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.201505472s
+[INFO] 146.19.0.17:52095 - 45655 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.213986522s
+[INFO] 103.232.254.207:53190 - 51183 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.169478224s
+[INFO] 115.186.212.101:39091 - 62125 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.285048641s
+[INFO] 115.70.61.83:22171 - 20512 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.254908595s
+[INFO] 160.222.157.211:27021 - 27115 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.160328192s
+[INFO] 220.244.9.39:47856 - 36266 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.201413838s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 146.19.0.17:57321 - 33810 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.200064274s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 168.138.3.153:54159 - 54940 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.260848876s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 209.38.30.73:36807 - 21932 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.291796562s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.232.254.207:53635 - 39118 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.172842506s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.252.153.123:43109 - 35976 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.160289844s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 168.138.3.153:35092 - 31319 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.27264841s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51197
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 167.179.176.191:42487 - 57792 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.16897311s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 160.222.157.211:4305 - 24674 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.195872642s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18714
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6964
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25349
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22922
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.153.213.255:59592 - 47750 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.325157297s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.150.114.56:26133 - 25279 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.154826913s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38711
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40748
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52554
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36781
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24227
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[INFO] 110.142.211.52:59573 - 26703 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.164589492s
+[INFO] 103.142.158.42:53988 - 8108 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.182439741s
+[INFO] 103.252.153.123:51843 - 28649 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.224014605s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 80.97.44.210:39382 - 21990 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.215007582s
+[INFO] 167.179.176.191:46022 - 27183 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.251223183s
+[INFO] 128.0.115.66:41594 - 46983 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.215408827s
+[INFO] 103.142.158.42:41806 - 9986 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.215589808s
+[INFO] 159.196.102.162:55462 - 55068 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.269031582s
+[INFO] 202.80.144.18:45458 - 29896 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.308549586s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42935
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[INFO] 1.40.111.151:42820 - 39118 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.218399151s
+[INFO] 203.129.27.250:60761 - 64420 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.218512734s
+[INFO] 147.10.131.126:38955 - 35838 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.272106358s
+[INFO] 45.63.30.66:44903 - 51869 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.251176647s
+[INFO] 110.32.192.203:59823 - 9585 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.1842272s
+[INFO] 202.65.64.238:59849 - 38056 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.218669444s
+[INFO] 202.65.64.238:54299 - 52747 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.218659134s
+[INFO] 167.179.144.52:9915 - 63253 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.222172968s
+[INFO] 115.70.50.8:43310 - 31151 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.146420358s
+[INFO] 103.108.228.242:60850 - 63596 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.218718113s
+[INFO] 149.28.175.108:35047 - 64489 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.238503864s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 128.0.115.66:48408 - 22902 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.241353728s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.150.114.56:26238 - 24674 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.243711268s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 61.245.158.57:47375 - 13360 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.24343977s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.63.30.66:54224 - 16423 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.243094313s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 115.70.50.8:43459 - 25545 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.154479292s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.249.116.196:38718 - 51197 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.164366129s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 110.142.211.52:48123 - 20567 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.248415915s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 147.10.131.126:58372 - 34769 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.285320104s
+[INFO] 203.129.27.250:38552 - 1109 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.248416344s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21179
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45155
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22620
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36294
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3632
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 49.190.88.215:42372 - 25349 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.105250958s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 61.245.158.57:43358 - 12183 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.253894126s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 149.28.175.108:33369 - 41319 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.256563068s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 579
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.219.7.243:50126 - 16202 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.258625234s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.219.7.243:41440 - 20715 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.259278195s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 167.179.144.52:17758 - 11664 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.240838793s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41157
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 80.97.44.210:43669 - 7821 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.261639104s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.108.228.242:36585 - 6244 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.242093701s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 16.50.48.184:46667 - 6964 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.118507214s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 110.32.192.203:59064 - 36294 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.215666545s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 1.40.111.151:52199 - 51183 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.254447604s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 49.190.88.215:43832 - 22922 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.134238342s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 167.179.131.69:37544 - 52554 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.108545166s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 20.28.218.234:45212 - 24227 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.113579158s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 167.179.131.69:47770 - 36781 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.117985001s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38711
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 45.249.116.196:38723 - 18017 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.207559583s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 194.146.114.1:57454 - 40748 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.129245074s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.153.212.36:47153 - 47696 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.160938223s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8708
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53094
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18371
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24227
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22028
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.226.9.136:27447 - 21179 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.059389141s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9909
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62804
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 20.28.218.234:37751 - 38711 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.150069719s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.153.212.36:27085 - 36040 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.167887464s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 16.50.48.184:54972 - 18714 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.169105018s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63995
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.135.187.170:52190 - 45155 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.068224523s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8987
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 194.146.114.1:46780 - 51197 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.194987465s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56899
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.12.1.50:36217 - 33008 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.078081159s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 220.240.182.236:55210 - 579 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.084016911s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 220.240.182.236:53453 - 41157 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.084279581s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55579
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53972
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59911
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.226.9.136:23037 - 36294 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.101446947s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.12.1.50:39107 - 36040 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.095027678s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29465
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58474
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 27.100.36.46:60658 - 42935 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.131593234s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 122.199.30.128:41217 - 36040 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.048890926s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 150.228.243.231:6259 - 22028 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.066649296s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 195.114.14.200:43450 - 63995 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.060369897s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.135.187.170:46009 - 22620 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.133892358s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 27.100.36.46:44689 - 3632 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.135916827s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 120.88.123.241:33014 - 18371 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.083948314s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29908
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38707
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4759
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28198
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.128.123.64:45123 - 62804 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.084543486s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 122.199.30.128:57905 - 33008 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.07435083s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 67.219.106.231:32847 - 38711 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.098954897s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 67.219.106.231:58886 - 24227 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.095481321s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22136
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.2.158:51902 - 55579 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.067036232s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 202.128.123.64:46001 - 9909 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.101270661s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 150.228.243.231:13026 - 53094 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.105547214s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 195.114.14.200:60543 - 8987 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.095226321s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58749
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.161.65:21426 - 56899 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.079164816s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47936
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47750
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9612
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60525
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6629
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 120.88.123.241:57880 - 8708 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.119302843s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.18.6.58:33515 - 58474 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.068688825s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.176.45:47980 - 4759 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.036168915s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14102
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.161.65:21427 - 53972 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.091271774s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50159
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64586
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27248
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 119.18.6.58:43963 - 29465 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.092271818s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.2.158:51554 - 59911 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.102442731s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.87.12.152:45640 - 38707 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.062999559s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.87.12.152:48933 - 29908 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.073729729s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.232.160.89:43788 - 22136 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.060038102s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.232.160.89:41500 - 3739 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.069248088s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 27.131.79.106:34598 - 6629 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.06043704s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.73.64.129:34717 - 47936 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.063912501s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 46.250.244.2:46386 - 60525 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.064749947s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 157.211.20.241:37695 - 50159 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.044817774s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.73.64.129:40884 - 47750 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.069536404s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.176.45:55625 - 28198 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.095666429s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 157.211.20.241:50070 - 14102 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.056555412s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 46.250.244.2:56708 - 9612 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.07333144s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.119.111.64:34418 - 64586 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.044760248s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 27.131.79.106:56954 - 58749 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.075798895s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.119.111.64:49231 - 27248 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.044190374s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35525
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33523
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64038
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38572
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61993
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.181.249.58:10740 - 35525 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.014492215s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28513
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 125.254.72.45:54588 - 24788 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.021261457s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 123.253.191.215:43360 - 28513 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.014608602s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 122.199.0.81:41076 - 38572 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.027720127s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28877
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59153
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.106.89.142:51584 - 28877 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.004696753s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8317
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 157.211.141.107:4510 - 8317 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.00603919s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 180.181.249.58:10538 - 33523 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.046599633s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54152
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 125.254.72.45:54175 - 64038 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.044906968s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 122.199.0.81:39472 - 61993 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.047254013s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 123.253.191.215:42792 - 45218 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.040148186s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2842
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.106.89.142:56019 - 59153 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.037919054s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42557
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.132.93.71:8158 - 2842 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.006629988s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63253
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11664
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.191.68.28:37852 - 11664 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.00941854s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 157.211.141.107:57058 - 54152 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.043921574s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38595
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28513
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 150.228.243.231:63257 - 38595 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.004517786s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 203.132.93.71:17197 - 42557 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.041151604s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25616
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1528
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.191.68.28:57059 - 63253 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.043849052s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 58.160.166.163:53907 - 25616 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007251085s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 150.228.243.231:17828 - 28513 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.036987754s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57479
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 1.145.201.9:1775 - 57479 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.004921162s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38781
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 58.160.166.163:56198 - 1528 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.040407308s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33008
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 1.145.201.9:1747 - 38781 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.03904799s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 87.121.73.46:47707 - 33008 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007934246s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 87.121.73.46:39213 - 36040 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.039291701s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18714
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6964
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 120.19.33.174:2700 - 18714 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 4096" NOERROR qr,aa,rd,ra,ad 117 0.00714694s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6743
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62729
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63376
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.158.243.14:55823 - 62729 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.010183607s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18017
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 49.191.96.29:49090 - 63376 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.009068355s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31137
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6924
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 120.19.33.174:2590 - 6964 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 4096" NOERROR qr,aa,rd,ra,ad 119 0.036866769s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 165.99.240.226:37985 - 6924 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.006984019s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48564
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10762
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.158.243.14:12536 - 6743 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.04216504s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.230.159.152:41667 - 10762 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.01112907s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 49.191.96.29:52310 - 18017 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.042211967s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 165.99.240.226:52340 - 31137 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.048705729s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32534
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33038
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.230.159.152:36451 - 48564 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.043028389s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.77.172:40276 - 32534 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.006147941s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52515
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31813
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 144.6.205.10:53293 - 52515 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008811792s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 159.196.77.172:47947 - 33038 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.043761753s
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 125.253.33.62:36560 - 36040 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.008068753s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 144.6.205.10:51291 - 31813 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.04010711s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 125.253.33.62:34785 - 47696 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.038734789s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21179
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36294
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 122.199.54.108:46684 - 21179 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.006741459s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6765
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23090
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.4.234.221:47043 - 6765 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.00689846s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 122.199.54.108:46365 - 36294 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.042687844s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 103.4.234.221:44278 - 23090 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.039069458s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.ecdsap256sha256-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.ecdsap256sha256-sydney0608.test. A
+[INFO] 106.68.213.2:36115 - 51219 "A IN test.ecdsap256sha256-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 117 0.007959946s
+[DEBUG] plugin/resolver: Found response for query test0.ecdsap256sha256-sydney0608.test. A
+[INFO] 106.68.213.2:60266 - 25096 "A IN test0.ecdsap256sha256-sydney0608.test. udp 70 false 1232" NOERROR qr,aa,rd,ra,ad 119 0.041171742s
+[INFO] SIGINT: Shutting down

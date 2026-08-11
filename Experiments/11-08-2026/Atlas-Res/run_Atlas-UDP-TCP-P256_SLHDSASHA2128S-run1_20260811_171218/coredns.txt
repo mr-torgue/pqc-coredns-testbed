@@ -1,0 +1,4410 @@
+maxprocs: Leaving GOMAXPROCS=2: CPU quota undefined
+.:53
+quic://.:853
+tls://.:8853
+CoreDNS-1.14.3
+linux/amd64, go1.26.3, cd93f6051-dirty
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10262
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.181.251.177:11913 - 10262 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 69 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.089620835s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3045
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44108
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 114.31.201.91:50231 - 44108 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.01027565s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 114.31.201.91:47403 - 3045 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.044316014s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53026
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61358
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.29.65.11:52360 - 61358 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.008681185s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.29.65.11:58960 - 53026 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.046364306s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10120
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21280
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.153.238.101:40920 - 21280 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.009532709s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.153.238.101:56151 - 10120 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.041429434s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36826
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39533
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.119.111.139:34406 - 36826 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.010165175s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59599
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46847
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.249.117.10:36329 - 59599 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.008947542s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.119.111.139:52640 - 39533 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.04252796s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63033
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22655
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.249.117.10:51786 - 46847 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.049149975s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.252.154.247:43615 - 63033 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.01397904s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.252.154.247:56300 - 22655 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.040830004s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6640
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33729
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 119.15.109.213:39049 - 6640 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.009554072s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31346
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36938
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.41.0.51:56926 - 31346 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.009882767s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22905
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39078
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 119.15.109.213:36179 - 33729 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.043803985s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60927
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 146.185.214.58:49256 - 39078 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.012140974s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23189
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 27.131.108.126:52957 - 60927 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.010095306s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.41.0.51:37351 - 36938 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.045443931s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 146.185.214.58:39154 - 22905 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.040200602s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17865
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26404
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3797
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20945
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34861
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 27.131.108.126:41919 - 23189 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.05098988s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36127
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.85.37.57:35193 - 31387 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.025902084s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56829
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.126.192.48:59965 - 17865 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.032619875s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 220.244.9.39:48142 - 20945 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.022739243s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 43.252.115.252:50679 - 56829 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.009485908s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52494
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.126.192.48:35640 - 26404 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.046325378s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28623
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55199
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.251.173.92:33271 - 52494 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.020984324s
+[INFO] 103.85.37.57:34700 - 34861 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.050790323s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 220.244.9.39:36024 - 3797 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.056679185s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.41.0.43:50435 - 55199 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.022684914s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 43.252.115.252:46310 - 36127 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.045215632s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.251.173.92:60699 - 58166 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.043413175s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48731
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19479
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.41.0.43:58236 - 28623 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.05213287s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.102.162:42518 - 19479 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.011519198s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15178
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3392
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.102.162:46541 - 48731 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.047364255s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 147.10.131.126:41562 - 3392 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.012477599s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22775
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15197
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 128.0.115.66:44953 - 22775 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.012440676s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 147.10.131.126:36546 - 15178 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.044908361s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6769
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.129.27.250:40455 - 7387 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.007154835s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 128.0.115.66:48030 - 15197 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.039997453s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.129.27.250:57008 - 6769 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.041229428s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5198
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13180
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16423
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51869
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49856
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57438
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24152
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45353
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32514
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42981
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29465
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63376
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 80.97.44.60:40644 - 5198 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.033399635s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 650
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55853
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.126.52.180:42646 - 45353 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.042840823s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.179.130.2:57575 - 32514 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.045361308s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 763
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22953
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 152.69.190.132:35462 - 49856 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.058264868s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17964
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 80.97.44.60:54448 - 13180 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.070069394s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35810
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.76.118.140:39564 - 51869 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.08069523s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.126.52.180:44877 - 24152 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.072879044s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35810
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52536
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 152.69.190.132:32995 - 57438 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.085213341s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.76.118.140:42881 - 16423 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.090673326s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31070
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 160.250.144.229:53490 - 29465 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.075489501s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 51.161.193.12:46919 - 650 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.05913973s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36484
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61171
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59686
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32185
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46751
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.249.116.196:38535 - 17964 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.065793223s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.179.130.2:58148 - 42981 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.115594502s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24713
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64895
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 51.161.193.12:41247 - 55853 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.100034233s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.153.212.36:62812 - 19644 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.090122768s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.41.0.250:37300 - 22953 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.093993924s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.153.212.36:23374 - 62841 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.100119826s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 194.146.114.1:58233 - 35810 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.086037183s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 160.250.144.229:33060 - 63376 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.144272881s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.41.0.250:60772 - 763 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.110801776s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.249.116.196:38581 - 35810 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.104780452s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40161
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53282
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54969
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50836
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47407
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25188
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15489
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46122
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 163.227.185.15:48075 - 61171 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.077566765s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 63.222.191.5:44435 - 46751 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.071399725s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.150.66.105:59494 - 31070 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.097588708s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64519
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30842
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31667
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12421
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49365
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19290
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43131
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53051
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.150.66.105:43340 - 36484 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.114003247s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6143
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 157.20.113.125:46686 - 24713 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.083996337s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 194.146.114.1:39713 - 52536 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.140011253s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 163.227.185.15:41511 - 59686 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.121632795s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17281
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36325
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39306
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54717
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41452
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16423
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51869
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.135.187.170:41317 - 50836 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.109418692s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 87.121.95.42:33276 - 40161 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.115845596s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37622
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1009
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 63.222.191.5:55640 - 32185 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.182910158s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 54.206.78.202:49295 - 25188 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.125423501s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38005
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.135.187.170:42120 - 47407 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.152930876s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.154.212:40097 - 49365 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.123300706s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10471
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34982
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44300
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64038
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44767
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18657
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1315
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28362
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 54.206.78.202:53061 - 46122 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.156822351s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.97.55.45:33719 - 53282 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.16703756s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.52.117.1:59095 - 30842 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.152788203s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 87.121.95.42:50518 - 15489 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.166754011s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 119.17.170.244:40276 - 31667 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.148262642s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52907
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31070
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36484
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36314
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 157.20.113.125:60386 - 64895 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.228607286s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46631
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50140
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 119.17.170.244:56988 - 12421 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.181849208s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 116.255.29.81:39806 - 43131 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.178085158s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33856
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29318
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33098
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24324
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50937
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14091
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64132
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.52.117.1:54378 - 64519 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.208136297s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24227
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63359
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41491
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16633
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13101
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6964
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 220.240.182.236:48719 - 6143 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.195901604s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 220.240.182.236:39384 - 17281 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.20410958s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.72.63.19:34935 - 41452 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.169558419s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.100.61.93:41251 - 16423 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.163253418s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56899
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26422
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28999
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42022
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53972
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10840
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16201
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[INFO] 103.97.55.45:49550 - 54969 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.316456433s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55867
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 116.255.29.81:40432 - 19290 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.296523163s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 129.78.96.2:56901 - 36325 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.253882776s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11453
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10464
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37256
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42854
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49604
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.100.61.93:50606 - 51869 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.240284336s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.154.212:56374 - 53051 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.311053018s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.249.116.219:52572 - 36387 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.198299518s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49365
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22892
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31151
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25545
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31669
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21833
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13894
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57631
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47639
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21990
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 116.255.5.183:54667 - 24324 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.155260296s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.126.193.94:44000 - 1009 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.255993024s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.119.76.130:36318 - 44767 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.219136872s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.126.193.94:49657 - 37622 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.277380536s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.161.65:19986 - 38005 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.247755988s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46341
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[INFO] 129.78.96.2:58389 - 39306 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.320529227s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1067
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45297
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.87.12.152:49099 - 36314 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.281103518s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21373
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50140
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53177
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2538
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54916
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32028
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63936
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55969
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45167
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19206
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61786
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19256
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51456
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 221
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 915
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12231
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7068
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27058
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24796
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45697
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41631
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 49.255.158.255:48402 - 34982 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.322465123s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 193.177.221.9:36169 - 24788 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.32231877s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.161.65:19985 - 28362 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.321752922s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29916
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 150.228.243.231:59689 - 22997 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.371074429s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 140.238.205.157:45337 - 19644 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.294643305s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2783
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40280
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18329
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.249.116.219:52567 - 18657 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.355950392s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.95.115.64:60056 - 41491 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.281050235s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.51.115.92:42227 - 56899 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.233303982s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 193.177.221.9:33343 - 64038 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.362349679s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.138.94.66:58998 - 16201 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.253260168s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.87.12.152:39428 - 52907 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.368804624s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.119.111.64:36311 - 6964 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.316637319s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10331
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50140
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 160.222.157.211:53711 - 16633 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.373361565s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.150.36.30:33949 - 26422 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.346873458s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51517
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50140
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14091
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36023
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40921
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54683
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1748
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1325
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23007
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54143
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 27.33.9.176:53342 - 33856 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.480652505s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.232.160.89:45195 - 31070 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.513219048s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 157.211.141.107:59129 - 57631 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.338642761s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62974
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46109
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17306
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64586
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61351
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56829
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28633
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36127
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10080
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50140
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17964
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11836
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33729
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10840
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58474
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24524
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57134
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4724
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4315
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9585
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41319
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15910
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34564
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 140.238.205.157:45218 - 62841 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.466753182s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58010
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9484
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40748
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12593
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53417
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59236
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62273
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6164
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[INFO] 27.131.79.106:57770 - 46631 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.518571212s
+[INFO] 49.255.158.255:33584 - 44300 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.557401053s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 27.131.79.106:52686 - 29318 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.53477623s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 138.44.176.166:57671 - 31151 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.396139985s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21919
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.95.115.64:55292 - 13101 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.529714629s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.150.36.30:34273 - 10840 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.480902737s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 116.255.5.183:43712 - 14091 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.560434859s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 163.47.70.211:65380 - 21833 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.416524674s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.87.175.244:59573 - 28999 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.494277322s
+[INFO] 150.107.75.182:45150 - 50140 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.575121921s
+[INFO] 103.72.63.19:41459 - 54717 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.683430696s
+[INFO] 203.12.8.219:36979 - 45167 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.313564376s
+[INFO] 103.232.160.89:56605 - 36484 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.606233834s
+[INFO] 203.119.111.64:58269 - 24227 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.556075013s
+[INFO] 150.228.243.231:12611 - 10471 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.635165471s
+[INFO] 157.211.141.107:58240 - 49365 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.432067595s
+[INFO] 103.138.94.66:52547 - 48219 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.513535157s
+[INFO] 203.119.76.130:46516 - 1315 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.633345919s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13716
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 158.179.20.157:59960 - 19644 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.58641482s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5707
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38595
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33215
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15501
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54562
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29055
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63359
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.0.120.20:54564 - 55867 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.580442865s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16633
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26780
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26610
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38331
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.0.120.20:43439 - 49604 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.571543274s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15901
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48377
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60551
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17250
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 149
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62816
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 157.211.20.241:57119 - 50937 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.820188362s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57134
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 58.160.166.163:60791 - 2783 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.536372235s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.95.113.129:5315 - 21990 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.677137923s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.51.115.92:37835 - 53972 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.754724205s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 157.211.20.241:43072 - 33098 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.824915515s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 58.160.166.163:35681 - 29916 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.588086708s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 60.242.119.101:49880 - 19256 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.562493895s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.80.150.54:6498 - 19644 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.63300566s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.106.89.142:53569 - 55218 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.637563714s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 138.44.176.166:41207 - 25545 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.677887862s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 110.144.14.110:49707 - 10331 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.48416183s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 119.17.129.223:19381 - 18329 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.536274591s
+[INFO] 140.238.194.220:45758 - 37256 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.668856s
+[INFO] 150.107.75.182:51284 - 19644 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.802931102s
+[INFO] 160.222.157.211:43366 - 63359 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.7716232s
+[INFO] 103.243.110.251:55661 - 1067 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.604442635s
+[INFO] 27.33.9.176:57927 - 64132 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.791932877s
+[INFO] 144.6.114.198:60291 - 63936 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.530231026s
+[INFO] 160.22.78.199:45686 - 915 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.529456666s
+[INFO] 138.217.244.62:43062 - 51456 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.529816472s
+[INFO] 103.95.113.129:8865 - 47639 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.644770162s
+[INFO] 202.44.119.34:54912 - 11453 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.669462412s
+[INFO] 203.57.129.180:47413 - 53177 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.530764296s
+[INFO] 202.87.175.244:46424 - 42022 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.722423214s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53399
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60594
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 120.19.33.174:2701 - 40921 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 4096" NOERROR qr,aa,rd,ra,ad 125 0.536520798s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60450
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33802
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7821
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50140
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21990
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63359
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16633
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24524
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.44.119.34:57807 - 10464 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.772773244s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13716
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45056
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26356
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12772
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28131
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43793
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27248
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16633
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58151
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2253
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12529
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30113
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57714
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63359
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16633
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9669
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 191
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50140
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49856
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57438
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24227
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38711
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45885
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1732
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40921
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54683
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 65103
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.153.105:37390 - 19644 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.726389429s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 120.88.73.122:34200 - 31669 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.922019803s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30933
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.132.93.71:49835 - 21373 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.878815874s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 175.34.15.25:44127 - 7068 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.808046289s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.153.105:44376 - 62841 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.726987941s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 60.242.119.101:37004 - 19206 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.810263589s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 167.179.176.191:34392 - 29055 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.498245557s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 44.136.201.21:59526 - 9585 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.757328023s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24524
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24324
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 121.200.4.9:65155 - 40280 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.847923687s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 160.22.78.199:57667 - 12231 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.873584064s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63359
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16633
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6823
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29938
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60111
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34641
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62643
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 209.38.30.73:36932 - 15910 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.763641117s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3888
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5950
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 1.145.201.9:1779 - 24796 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.883234958s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 1.145.201.9:1786 - 45697 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.882177634s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 158.179.20.157:53749 - 62841 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.078801334s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.150.79.58:34749 - 62974 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.802800238s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 87.121.73.46:49367 - 50140 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.807684944s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 163.47.70.211:65398 - 13894 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.001308814s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 140.238.194.220:49487 - 42854 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.025499696s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 121.200.4.9:65078 - 53387 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.860241643s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 138.217.244.62:46337 - 221 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.886238466s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57134
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 114.129.191.115:49800 - 1748 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.804588472s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.106.89.142:55326 - 46341 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.962993489s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 120.88.126.151:42603 - 19644 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.823753683s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 175.34.15.25:53737 - 27058 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.887109206s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.243.110.251:53485 - 45297 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.962720307s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.80.150.54:6587 - 50140 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.958699588s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 120.88.73.122:33133 - 22892 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 1.003723765s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35058
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.150.79.58:56260 - 46109 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.80638107s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.129.22.197:39225 - 36023 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.808981163s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 77.90.35.161:51954 - 54916 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.962683835s
+[INFO] 203.57.129.180:19289 - 2538 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.725970906s
+[INFO] 115.70.61.83:22224 - 1325 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.517596447s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.132.93.71:4823 - 22997 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.98177702s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16379
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.4.234.221:34835 - 5707 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.488302625s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37985
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11585
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54675
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24013
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4724
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.232.254.207:39107 - 3739 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.672158324s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29794
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 13.54.78.159:60056 - 19644 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.824004849s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1247
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 13.54.78.159:44874 - 50140 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.826327748s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 77.90.35.161:46800 - 55969 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.979994784s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 120.19.33.174:2799 - 54683 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 4096" NOERROR qr,aa,rd,ra,ad 127 0.826280306s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.12.8.219:36609 - 61786 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.909770727s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 49.191.96.29:48354 - 10080 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.794097563s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.245.77:59408 - 28633 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.794215575s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64086
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 119.17.129.223:50643 - 41631 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.90819059s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 110.144.14.110:53957 - 51517 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.828679893s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.158.243.14:25211 - 56829 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.79624743s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 87.121.73.46:35043 - 19644 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.831539348s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 146.19.0.17:45043 - 62273 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.674381165s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56506
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53177
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16423
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62729
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38990
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51869
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42907
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49985
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.4.234.221:33348 - 38595 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.534569893s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.142.158.42:60305 - 15901 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.64722373s
+[INFO] 202.80.144.18:47436 - 59236 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.722878845s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.158.243.14:63032 - 36127 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.846428376s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44441
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15058
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31716
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28131
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12772
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38990
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3721
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15501
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.10.91.103:41207 - 60450 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.36648905s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 114.129.191.115:48565 - 17306 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.915442358s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.245.77:34706 - 61351 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.893731497s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 144.6.114.198:23695 - 32028 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.015630613s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.142.158.42:40157 - 60551 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.707362467s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 160.222.152.216:35327 - 9484 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.785641799s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 80.97.44.210:46994 - 21919 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.742711484s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 152.69.167.24:40647 - 24524 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.913310126s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 165.99.240.226:37889 - 33729 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.914369967s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 115.70.61.83:22200 - 23007 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.823659414s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.150.114.56:26449 - 26780 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.722349213s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.63.30.66:50901 - 15501 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.632815551s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 119.18.39.53:52902 - 19644 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.926322674s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 49.191.96.29:51254 - 17964 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.928060594s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 160.222.152.216:35784 - 34564 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.870307566s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 144.6.205.10:52706 - 58010 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.827935803s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.129.22.197:60708 - 14091 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.983772352s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 120.88.126.151:35964 - 62841 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.983560922s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.232.254.207:41609 - 13716 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.756357553s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 44.136.201.21:45967 - 41319 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.958598715s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46837
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.47.178.155:55170 - 10840 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.96218276s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 110.142.211.52:60419 - 62816 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.731437431s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 209.38.30.73:35348 - 64586 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.982095474s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36127
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12702
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9859
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 122.199.54.108:47997 - 63359 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.784799573s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 122.199.54.108:52137 - 16633 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.786402281s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 122.199.30.128:42211 - 50140 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.450752811s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 167.179.176.191:60910 - 54562 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.793238734s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.77.172:36563 - 40748 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.873238412s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.252.153.123:39199 - 48377 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.806112156s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 20.28.218.234:59372 - 57134 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.658187608s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.153.213.255:43256 - 4724 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 1.018383425s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.129.26.187:34538 - 19644 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.612265176s
+[INFO] 146.19.0.17:35475 - 6164 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.905515494s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.65.64.238:37717 - 26610 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.71722866s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24956
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.150.114.56:26554 - 38331 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.839193269s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 167.179.144.52:54809 - 12772 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.627229613s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.252.153.123:60065 - 149 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.851890606s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15910
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33889
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31716
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7703
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2623
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55881
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 110.32.192.203:51346 - 16633 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.655093303s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 1.40.111.151:51607 - 3739 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.679398369s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.149.228.48:52495 - 21990 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.586752816s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.153.213.255:42892 - 4315 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.100990943s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 80.97.44.210:37742 - 17250 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.907457908s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 165.99.240.226:48095 - 11836 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.110892608s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.63.30.66:37715 - 33215 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.822516657s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 120.88.123.241:37094 - 27248 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.702290056s
+[INFO] 1.40.111.151:55074 - 13716 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.702424042s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 61.245.158.57:44717 - 45056 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.708247029s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.80.144.18:49178 - 53417 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 1.00326364s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 122.199.30.128:41090 - 19644 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.588532622s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38331
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 123.210.128.98:58739 - 49856 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.592484746s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.47.178.155:58118 - 58474 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.133692673s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 123.253.191.215:59854 - 38990 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.373534658s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 110.142.211.52:54065 - 53399 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.732185286s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36040
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2538
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.149.228.48:35516 - 7821 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.637263441s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.2.158:58611 - 45885 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.60481004s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.65.64.238:39125 - 60594 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.740066019s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 115.70.50.8:43321 - 12529 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.741397296s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 14.202.193.210:42994 - 24227 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.616083238s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 119.18.39.53:50120 - 50140 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 1.1844805059999999s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.129.26.187:36603 - 62841 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.769575274s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 144.6.205.10:62777 - 54143 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 1.092141781s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.12.1.50:59897 - 19644 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.672080344s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 27.100.36.46:42234 - 5950 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.752215081s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52515
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 195.114.14.200:45667 - 191 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.694770365s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7068
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 120.88.123.241:33159 - 43793 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.822155677s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.181.249.58:10271 - 56506 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.486095452s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 195.114.14.200:59819 - 9669 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.707564063s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.12.1.50:45544 - 50140 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.736567889s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 150.228.243.231:31903 - 38990 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.376693797s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 49.192.104.188:46823 - 63359 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.710402168s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 67.219.106.231:52170 - 24524 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.738080032s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 16.50.48.184:40678 - 40921 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.844904875s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48142
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24966
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60362
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30571
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36023
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.10.91.103:54260 - 33802 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.829450971s
+[INFO] 159.196.77.172:55568 - 12593 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.219727315s
+[INFO] 16.50.48.184:55158 - 54683 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.926505239s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 115.70.56.230:59588 - 34641 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.593035283s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 49.192.104.188:49549 - 16633 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.814846873s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.2.158:48999 - 2253 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.823312977s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 119.18.6.58:41817 - 16379 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.74281565s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.73.64.129:40125 - 24013 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.752244352s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14091
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.p256-slhdsasha2128s-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 61.245.158.57:53720 - 26356 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.963867576s
+[INFO] 152.69.167.24:41203 - 57134 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.3781255909999999s
+[INFO] 46.250.244.2:43098 - 29794 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.758809758s
+[INFO] 119.18.6.58:55923 - 37985 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.758915738s
+[INFO] 110.32.192.203:55392 - 58151 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.963929655s
+[INFO] 49.190.88.215:35807 - 1247 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.963842818s
+[INFO] 125.254.72.45:51413 - 16423 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.61727889s
+[INFO] 159.196.176.45:43883 - 54675 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.759016365s
+[INFO] 103.153.153.254:42216 - 63359 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.866272906s
+[INFO] 202.128.123.64:42816 - 57714 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.838686771s
+[INFO] 103.73.64.201:39285 - 49985 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.938151911s
+[INFO] 159.196.174.217:52969 - 6823 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.942745934s
+[INFO] 49.190.88.215:51380 - 65103 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.964242144s
+[INFO] 103.191.68.28:40090 - 12772 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.505442968s
+[INFO] 150.228.243.231:36416 - 3721 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.505266854s
+[INFO] 27.100.36.46:40862 - 24324 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.952084873s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 172.105.254.49:54156 - 36127 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.3993976s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 160.222.159.202:37904 - 31716 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.509994787s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.153.153.254:34094 - 16633 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.874405012s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.73.64.129:55116 - 4724 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.767280802s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 14.202.193.210:44968 - 38711 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.846512058s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 123.253.191.215:50976 - 51869 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.627825011s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.191.68.28:34527 - 28131 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.523873255s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.181.45.9:33106 - 9859 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.420278288s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 123.210.128.98:7477 - 57438 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.872887611s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.73.64.201:42893 - 3888 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.976571484s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 160.222.159.202:48193 - 15058 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.544903442s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 115.186.212.101:45757 - 55881 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.362366106s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 167.179.144.52:54876 - 28131 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 1.005234757s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 115.70.56.230:33572 - 62643 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.661644244s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 46.250.244.2:54504 - 35058 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.818713557s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 202.128.123.64:46195 - 30113 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.887675619s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 160.222.157.211:5658 - 38331 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.300620513s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 20.28.218.234:33210 - 24524 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 1.019612068s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 122.199.0.81:43419 - 42907 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.673810597s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 195.114.15.6:46702 - 33889 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.383127605s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.12.4.134:48895 - 15501 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.564117038s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 168.138.3.153:35271 - 36040 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.292571627s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 125.253.33.62:33602 - 19644 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.29379464s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 203.12.4.134:34202 - 44441 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.591589515s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.174.217:43588 - 29938 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.005140434s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 115.70.50.8:43424 - 1732 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.031944197s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 167.179.131.69:59867 - 64086 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.034331608s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.226.9.136:42578 - 16633 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 1.01422241s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.219.7.243:51122 - 60362 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.241407912s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.230.159.152:40242 - 2623 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.399252717s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 45.249.116.54:39797 - 31716 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.401112195s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 172.105.254.49:36425 - 12702 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.474943819s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.230.159.152:36187 - 7703 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.417282924s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 67.219.106.231:44633 - 57134 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.983713697s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 125.254.72.45:42008 - 62729 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.715645309s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.226.9.136:9916 - 63359 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 1.04435651s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 159.196.176.45:37059 - 11585 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.864073441s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.108.228.242:35998 - 30571 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.271932728s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 195.114.15.6:41571 - 15910 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.43834593s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 115.186.212.101:40016 - 24956 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.468981767s
+[INFO] 167.179.131.69:37635 - 30933 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 1.081874964s
+[INFO] 160.222.157.211:25438 - 2538 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.349046995s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.181.45.9:39831 - 46837 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.540501526s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 180.181.249.58:10677 - 53177 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.742360029s
+[INFO] 125.253.33.62:35274 - 62841 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.356325264s
+[INFO] 45.249.116.54:45297 - 19997 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.449078731s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 168.138.3.153:49510 - 47696 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.357867907s
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 149.28.175.108:45720 - 48142 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.297736186s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 149.28.175.108:47514 - 7068 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.301554843s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 122.199.0.81:60611 - 60111 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.753567181s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 106.68.213.2:54658 - 36023 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.182300577s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.219.7.243:53331 - 24966 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.309555427s
+[DEBUG] plugin/resolver: Found response for query test0.p256-slhdsasha2128s-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.p256-slhdsasha2128s-sydney0608.test. A
+[INFO] 103.108.228.242:51657 - 52515 "A IN test0.p256-slhdsasha2128s-sydney0608.test. udp 74 false 1232" NOERROR qr,aa,rd,ra,ad 127 0.327778666s
+[INFO] 106.68.213.2:34465 - 14091 "A IN test.p256-slhdsasha2128s-sydney0608.test. udp 73 false 1232" NOERROR qr,aa,rd,ra,ad 125 0.145384522s
+[INFO] SIGINT: Shutting down

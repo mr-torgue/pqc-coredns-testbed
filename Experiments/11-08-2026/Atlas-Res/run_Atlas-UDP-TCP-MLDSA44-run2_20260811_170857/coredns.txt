@@ -1,0 +1,4386 @@
+maxprocs: Leaving GOMAXPROCS=2: CPU quota undefined
+.:53
+quic://.:853
+tls://.:8853
+CoreDNS-1.14.3
+linux/amd64, go1.26.3, cd93f6051-dirty
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7114
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 180.181.251.177:11902 - 7114 "A IN test.mldsa44-sydney0608.test. udp 57 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.076908165s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15368
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9723
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.41.0.43:41510 - 9723 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008193832s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.41.0.43:56213 - 15368 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028332043s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20340
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6485
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 114.31.201.91:55711 - 20340 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007917568s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33840
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5904
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 157.20.113.125:41655 - 5904 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.006851046s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51311
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 114.31.201.91:46369 - 6485 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028272536s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40940
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 157.20.113.125:44596 - 33840 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027261544s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 146.185.214.58:52668 - 40940 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008666133s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 146.185.214.58:32797 - 51311 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025061559s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20923
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23564
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.29.65.11:49642 - 23564 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007278801s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.29.65.11:41681 - 20923 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026166098s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34137
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41807
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 49.255.158.255:39580 - 41807 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008328467s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2220
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23453
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.153.238.101:46674 - 23453 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007525327s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 49.255.158.255:51259 - 34137 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025641985s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.153.238.101:45450 - 2220 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024948285s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20735
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45250
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.119.111.139:56644 - 20735 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.011242093s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.119.111.139:58509 - 45250 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.02913292s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33393
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7969
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.41.0.51:44335 - 33393 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.0085028s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7192
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.41.0.51:44130 - 7969 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025255454s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21388
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13183
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 119.18.39.53:55368 - 7192 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.015652589s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 27.131.108.126:47079 - 21388 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.010885108s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36127
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56829
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 119.18.39.53:60975 - 61166 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026512305s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 152.69.167.24:56585 - 56829 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.009253984s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 27.131.108.126:46010 - 13183 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026118231s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58048
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8551
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 152.69.167.24:49623 - 36127 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027031118s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.126.192.48:60928 - 58048 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.009231483s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.126.192.48:44695 - 8551 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025975664s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50449
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39629
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 43.252.115.252:45393 - 50449 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008537663s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 43.252.115.252:59409 - 39629 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024829614s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35077
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11320
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 128.0.115.66:42239 - 11320 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007342564s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58145
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24290
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 128.0.115.66:39126 - 35077 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.031888692s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.129.27.250:48937 - 58145 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.014091258s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41036
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22600
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 1.40.111.151:45425 - 41036 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.01025658s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.129.27.250:44723 - 24290 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028270505s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 1.40.111.151:43759 - 22600 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.029087394s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58332
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17250
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18657
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1601
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40658
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 80.97.44.60:52743 - 58332 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.01218659s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.126.52.180:52982 - 40658 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.016608728s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 152.69.190.132:36215 - 36387 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.021337108s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 80.97.44.60:45966 - 17250 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028362786s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 152.69.190.132:52048 - 18657 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026861888s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.126.52.180:34823 - 1601 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025835064s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40922
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43159
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 51.161.193.12:57482 - 40922 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007375247s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 202.153.212.36:41743 - 61166 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.004675799s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54858
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59480
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40621
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.41.0.250:41940 - 59480 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.011896865s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 51.161.193.12:44332 - 43159 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025697028s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37058
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28362
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 45.249.116.196:38565 - 37058 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.005499311s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28362
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.41.0.250:47276 - 54858 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027432338s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.153.212.36:15769 - 40621 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026873089s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38005
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 194.146.114.1:44799 - 28362 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.01205213s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 45.249.116.196:38517 - 28362 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024900444s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4581
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 65272
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 194.146.114.1:46978 - 38005 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026142776s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 163.227.185.15:42387 - 65272 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008545809s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 163.227.185.15:49916 - 4581 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024615677s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23460
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62076
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 159.196.174.217:35958 - 23460 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.005227775s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22564
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32726
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46790
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61547
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.135.187.170:59813 - 46790 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.012664318s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8450
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 159.196.174.217:41713 - 62076 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027400209s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52931
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.97.55.45:34407 - 32726 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.017463195s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63033
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22655
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.97.55.45:43224 - 22564 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028035133s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.73.64.201:46499 - 52931 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.014605195s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.135.187.170:40885 - 61547 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027807047s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 54.206.78.202:37791 - 63033 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.013895911s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57018
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35237
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33996
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49980
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47921
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64362
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29135
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63551
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.52.117.1:58476 - 57018 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.018427597s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 54.206.78.202:51373 - 22655 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.037079274s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.73.64.201:53572 - 8450 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.040490911s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 119.17.170.244:33265 - 33996 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.022182884s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12401
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19323
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.52.117.1:33507 - 35237 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.029253276s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 180.149.228.48:47675 - 64362 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.026796939s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 116.255.29.81:45203 - 63551 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027051719s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 116.255.29.81:53920 - 47921 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.030346167s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 119.17.170.244:35523 - 49980 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.035579541s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 180.149.228.48:8004 - 29135 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.031602926s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 220.240.182.236:47547 - 19323 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.018686799s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10080
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37985
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 220.240.182.236:36881 - 12401 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025611533s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.153.153.254:40093 - 37985 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007642213s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51171
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52296
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 129.78.96.2:44410 - 51171 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.006824684s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37985
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10080
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11711
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11465
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.153.153.254:40775 - 10080 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028927089s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5950
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24324
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 49.192.104.188:35592 - 37985 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.017353021s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 129.78.96.2:52886 - 52296 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.030897696s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.72.63.19:58639 - 11465 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.017653603s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.100.61.93:55087 - 5950 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.014091822s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63432
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 49.192.104.188:60896 - 10080 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.02554469s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 915
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62729
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64420
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6743
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.72.63.19:48806 - 11711 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.030785477s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3632
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2987
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.100.61.93:53824 - 24324 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.030067157s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 14.202.193.210:55563 - 62729 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.019212279s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22136
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.126.193.94:39157 - 63432 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028484133s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23203
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 150.228.243.231:52043 - 2987 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027387999s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 14.202.193.210:54801 - 6743 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.036749984s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34441
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.126.193.94:59327 - 915 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.041978676s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 150.228.243.231:14492 - 64420 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.039590965s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 193.177.221.9:57917 - 3632 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.035703889s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 193.177.221.9:47604 - 51219 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.037892329s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 45.249.116.219:52690 - 3739 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026963897s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31137
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 45.249.116.219:52654 - 22136 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.03203929s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 159.196.161.65:19580 - 23203 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.022624537s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41187
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39488
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40621
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.87.12.152:49584 - 41187 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.014072896s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.232.160.89:60102 - 31137 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.019485434s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7192
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 159.196.161.65:19581 - 34441 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.030508408s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 281
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53863
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.87.12.152:54230 - 39488 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.029292477s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.232.160.89:47514 - 17387 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.033702671s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 140.238.205.157:37698 - 61166 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.016834716s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31716
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63075
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 150.107.75.182:49725 - 7192 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.024159325s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2527
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 150.107.75.182:33630 - 61166 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.030116201s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 140.238.205.157:58899 - 40621 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.036217859s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 27.131.79.106:55773 - 53863 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024964491s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 27.131.79.106:51631 - 281 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.031234375s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 116.255.5.183:46401 - 31716 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.026083056s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 157.211.20.241:39802 - 63075 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.022391658s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62729
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16423
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37985
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10080
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 116.255.5.183:42376 - 19997 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.032857878s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 157.211.20.241:37433 - 2527 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.033963311s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31016
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40621
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3018
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32251
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.119.111.64:55989 - 16423 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.018077988s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22589
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 160.222.157.211:9732 - 37985 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.029350171s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.119.111.64:38493 - 62729 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.03421084s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18961
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35525
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 160.222.157.211:6348 - 10080 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.031447228s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30248
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49341
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 202.87.175.244:33328 - 3018 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.027563883s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 180.150.36.30:34027 - 31016 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.0290767s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 158.179.20.157:44737 - 40621 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.034372716s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63193
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49508
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 180.150.36.30:33802 - 22589 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.039991135s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 158.179.20.157:46820 - 61166 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.047191921s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.87.175.244:60376 - 32251 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.051015564s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 115.70.56.230:45379 - 18961 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.032621979s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.138.94.66:45164 - 49341 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.027966353s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 202.44.119.34:52751 - 63193 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.017487909s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19644
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52087
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45254
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.138.94.66:58995 - 30248 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.033955625s
+[INFO] 115.70.56.230:50522 - 35525 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.038589878s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55444
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46692
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63826
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64310
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.44.119.34:40875 - 49508 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.035721171s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 140.238.194.220:56636 - 52087 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.020245795s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 180.181.249.58:10274 - 19644 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.022713145s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51105
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63711
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 180.181.249.58:10336 - 62841 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.02898152s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.0.120.20:39052 - 55444 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.027037621s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 110.144.14.110:39086 - 46692 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.027385747s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13383
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2319
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 120.88.73.122:39892 - 51105 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.013473173s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 140.238.194.220:48758 - 45254 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.039560403s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12593
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22678
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13716
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[INFO] 203.0.120.20:41572 - 63826 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.039630127s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 110.144.14.110:47388 - 64310 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.035718262s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64362
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 138.44.176.166:54445 - 63711 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.028245395s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45881
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40673
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 120.88.73.122:45935 - 13383 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027685919s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 138.44.176.166:41928 - 2319 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.0323678s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18715
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7192
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.95.113.129:17029 - 13716 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.022880585s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22026
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49001
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 163.47.70.211:65485 - 22678 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028626748s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43988
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6410
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 163.47.70.211:65310 - 12593 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.033047313s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.95.113.129:29451 - 64362 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026950594s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 157.211.141.107:6008 - 45881 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.021787201s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45785
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 157.211.141.107:28683 - 40673 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.030031142s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62841
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41452
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.106.89.142:53891 - 18715 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.034129395s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.132.93.71:47039 - 6410 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.032175323s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 202.80.150.54:6425 - 7192 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.037575162s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 77.90.35.161:45252 - 49001 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.035181967s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.106.89.142:33271 - 43988 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.035339348s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.132.93.71:56424 - 45785 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.0300182s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.80.150.54:6542 - 61166 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.047213187s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44781
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.57.129.180:8348 - 62841 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.019327941s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25815
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61681
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55840
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4531
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 77.90.35.161:52644 - 22026 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.047332903s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56632
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39510
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48523
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62125
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.57.129.180:25393 - 41452 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.034100028s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12204
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47346
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38625
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 65185
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12260
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.12.8.219:51292 - 44781 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.040129833s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 45.249.117.10:52797 - 25815 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.039470238s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 160.22.78.199:35782 - 61681 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.040640815s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 160.22.78.199:35922 - 4531 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.042250697s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37294
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64391
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31317
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17522
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.12.8.219:53374 - 55840 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.049004554s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 60.242.119.101:36792 - 47346 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.037091562s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 144.6.114.198:31383 - 39510 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.048153095s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 144.6.114.198:1144 - 56632 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.048322521s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39118
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54693
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11253
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 60.242.119.101:60594 - 12204 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.042680793s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7192
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 45.249.117.10:42782 - 48523 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.06098903s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40621
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 1.145.201.9:1728 - 12260 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.051837144s
+[INFO] 1.145.201.9:1748 - 65185 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.049084251s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 138.217.244.62:35063 - 62125 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.069812027s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 138.217.244.62:32905 - 38625 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.064376532s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24674
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27115
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17473
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17429
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 121.200.4.9:65045 - 61096 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.059614867s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.252.154.247:56134 - 37294 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.06029146s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 58.160.166.163:32990 - 54693 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.050636716s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.252.154.247:46733 - 64391 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.061324773s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 87.121.73.46:39511 - 7192 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.044650401s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33215
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27848
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59915
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30113
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63959
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15501
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 121.200.4.9:65270 - 31317 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.067544085s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40621
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 159.196.153.105:46150 - 40621 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.061653951s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 119.17.129.223:2169 - 11253 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.075986294s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.129.22.197:48168 - 55679 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.041968504s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 87.121.73.46:36415 - 61166 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.07551711s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.129.22.197:55905 - 19997 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.046892178s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51903
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50449
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39629
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17246
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 916
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37058
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25279
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24674
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13206
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 119.17.129.223:24249 - 39118 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.088388876s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 119.15.109.213:35422 - 27115 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.057846144s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 159.196.153.105:59111 - 61166 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.084242323s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 114.129.191.115:59262 - 63959 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.050156291s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3909
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 63.222.191.5:47975 - 17429 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.067596103s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10068
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42569
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 180.150.79.58:41721 - 27848 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.062920659s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 63.222.191.5:48858 - 17473 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.077522822s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 120.88.126.151:53691 - 40621 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.060939809s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18442
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 58.160.166.163:53163 - 17522 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.13270242s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 114.129.191.115:56740 - 30113 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.075237997s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 119.15.109.213:46690 - 24674 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.098091725s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64038
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13206
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18017
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17901
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18169
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51197
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 180.150.79.58:58284 - 59915 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.08138765s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10331
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51517
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62715
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 202.153.213.255:54112 - 42569 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.045504051s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21936
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 120.88.126.151:46380 - 61166 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.108304668s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56595
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28571
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 165.99.240.226:41275 - 24674 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.078374572s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35554
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31640
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26065
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53972
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 49.191.96.29:50515 - 37058 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.088908886s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2172
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22589
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 195.114.15.6:52960 - 13206 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.097114683s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 120.19.33.174:2713 - 15501 "A IN test.mldsa44-sydney0608.test. udp 61 false 4096" NOERROR qr,aa,rd,ra,ad 101 0.136077984s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33527
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 159.196.245.77:36955 - 916 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.105114418s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59280
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.153.213.255:40377 - 3909 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.095415829s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1520
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.251.173.92:33370 - 21936 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.043890256s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 209.38.30.73:46629 - 64038 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.075555355s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.85.37.57:44579 - 18169 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.075365092s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 195.114.15.6:33446 - 51903 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.124781604s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12737
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.158.243.14:61829 - 39629 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.12559318s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 120.19.33.174:2716 - 33215 "A IN test0.mldsa44-sydney0608.test. udp 62 false 4096" NOERROR qr,aa,rd,ra,ad 103 0.161373435s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 165.99.240.226:56634 - 25279 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.126235498s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 44.136.201.21:54278 - 51197 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.087913048s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19963
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 202.80.144.18:50803 - 62715 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.084833457s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 49.191.96.29:33183 - 17246 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.135665733s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.158.243.14:56821 - 50449 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.136582533s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 220.244.9.39:36757 - 51517 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.102827097s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48400
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41036
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22600
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 209.38.30.73:60859 - 13206 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.110041718s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48477
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 159.196.77.172:49700 - 53972 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.076444425s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.251.173.92:44758 - 35554 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.078700217s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38711
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 159.196.245.77:45376 - 10068 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.144667959s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24227
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 44.136.201.21:40892 - 18017 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.126146804s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 160.222.152.216:42858 - 31640 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.092889079s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 115.70.61.83:22038 - 56595 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.101306457s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 159.196.77.172:33851 - 33527 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.078261796s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 202.47.178.155:53080 - 22589 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.09093355s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.47.178.155:58426 - 2172 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.093356637s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 159.196.102.162:40812 - 12737 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.062058682s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.85.37.57:58170 - 18442 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.156177339s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 115.70.61.83:22148 - 28571 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.113051807s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37670
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 160.222.152.216:51260 - 26065 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.106755227s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.80.144.18:47348 - 17901 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.145596265s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 146.19.0.17:38169 - 1520 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.079997256s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10080
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37985
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54717
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44441
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 220.244.9.39:39151 - 10331 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.14897113s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63099
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45027
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23090
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 146.19.0.17:51820 - 59280 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.090047969s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2348
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54210
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61657
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11193
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33632
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8009
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14814
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7068
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27058
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.232.254.207:51677 - 22600 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.076760427s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 147.10.131.126:33457 - 24227 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.063950257s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 167.179.176.191:45031 - 48477 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.080683601s
+[INFO] 159.196.102.162:59773 - 19963 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.106846922s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.232.254.207:44043 - 41036 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.085250344s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50614
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40145
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 180.150.114.56:26260 - 54717 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.064154158s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10080
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24324
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5950
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.142.158.42:44227 - 37670 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.077912526s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 167.179.176.191:42524 - 48400 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.121557122s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.142.158.42:46239 - 45027 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.078845049s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.252.153.123:36144 - 2348 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.08055437s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6119
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17964
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8836
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38705
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.252.153.123:45456 - 63099 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.096575553s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64431
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 61.245.158.57:48449 - 40145 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.067452869s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 80.97.44.210:37433 - 2219 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.110540437s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.219.7.243:58913 - 33632 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.100035895s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 147.10.131.126:60594 - 38711 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.147766692s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 80.97.44.210:35127 - 23090 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.115145876s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60594
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26610
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 110.142.211.52:33545 - 14814 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.095310745s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.219.7.243:60677 - 11193 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.107097784s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 122.199.54.108:60255 - 37985 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.124831854s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33215
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18657
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15501
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 61.245.158.57:49272 - 50614 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.084983445s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 122.199.54.108:45073 - 10080 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.128890422s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 202.65.64.238:49934 - 7068 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.106103875s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.65.64.238:52262 - 27058 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.10928428s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16798
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 45.63.30.66:40838 - 8009 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.119435557s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40621
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 45.63.30.66:56989 - 54210 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.121699998s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 180.150.114.56:26506 - 44441 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.138942784s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 110.142.211.52:52254 - 61657 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.127590293s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29888
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 45.76.118.140:47055 - 5950 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.077872786s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 110.32.192.203:50445 - 10080 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.086931571s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37256
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42854
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 120.88.123.241:38395 - 45218 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.108649889s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 120.88.123.241:49997 - 24788 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.102675671s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 110.32.192.203:53523 - 17964 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.078159174s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.179.130.2:50739 - 64431 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.064509364s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 160.250.144.229:41420 - 60594 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.056114981s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 115.70.50.8:43407 - 8836 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.089068308s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 45.76.118.140:51985 - 24324 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.113312536s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 160.250.144.229:60372 - 26610 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.073202997s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 16.50.48.184:58806 - 15501 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.064140235s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 16.50.48.184:57553 - 33215 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.07148037s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56829
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36127
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 123.210.128.98:4961 - 18657 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.078954643s
+[INFO] 202.179.130.2:42661 - 6119 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.120233502s
+[INFO] 49.190.88.215:46379 - 29888 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.060483338s
+[INFO] 115.70.50.8:43427 - 38705 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.108994112s
+[INFO] 203.129.26.187:40458 - 61166 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.071218659s
+[INFO] 203.129.26.187:52115 - 40621 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.071195092s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 49.190.88.215:51022 - 16798 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.075052652s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 123.210.128.98:24864 - 36387 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.085691605s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 167.179.131.69:60073 - 42854 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.055202485s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 167.179.131.69:41965 - 37256 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.059695761s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 20.28.218.234:60109 - 56829 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.016256877s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37985
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10080
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.226.9.136:1127 - 37985 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.004764155s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 20.28.218.234:54963 - 36127 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.031206332s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32334
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11488
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 87.121.95.42:46586 - 32334 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.00730855s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.226.9.136:26950 - 10080 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025674841s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15058
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31716
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55406
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 27.100.36.46:60751 - 15058 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007779801s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46553
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 87.121.95.42:52749 - 11488 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026841371s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7192
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.10.91.103:41877 - 55406 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.01025331s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.12.1.50:38486 - 7192 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.010491231s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 27.100.36.46:39539 - 31716 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025591272s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40673
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6377
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 159.196.154.212:45315 - 40673 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.004995465s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.10.91.103:37402 - 46553 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028184085s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.12.1.50:43874 - 61166 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025508165s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 159.196.154.212:43709 - 6377 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026424716s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34468
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62069
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56829
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36127
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 202.128.123.64:54285 - 62069 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.01311498s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 67.219.106.231:59255 - 56829 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.014362207s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35185
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9188
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 67.219.106.231:43153 - 36127 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025906943s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 195.114.14.200:34838 - 9188 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.011161478s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 202.128.123.64:43473 - 34468 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028190049s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 195.114.14.200:50693 - 35185 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026192288s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47059
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34752
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39785
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 159.196.2.158:41701 - 47059 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.006831779s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25425
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35222
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.119.76.130:36510 - 39785 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.011627132s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18768
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 119.18.6.58:54893 - 35222 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.01030139s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 159.196.2.158:35789 - 34752 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028159206s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.119.76.130:45217 - 25425 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025664395s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 119.18.6.58:38194 - 18768 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025015702s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51037
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 159.196.176.45:38656 - 51037 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.005106347s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11813
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42569
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18557
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43149
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49214
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 46.250.244.2:47433 - 43149 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.013792669s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 159.196.176.45:33009 - 11813 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026263966s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.73.64.129:45971 - 18557 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.017056223s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20945
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3797
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 27.33.9.176:59491 - 20945 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.005345798s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.73.64.129:39693 - 42569 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026086141s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 46.250.244.2:42768 - 49214 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028221601s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 27.33.9.176:33165 - 3797 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026138273s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28195
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12248
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.51.115.92:37561 - 28195 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.006727013s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56187
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2119
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.95.115.64:34398 - 56187 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.00557182s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.51.115.92:40140 - 12248 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026893372s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.95.115.64:46218 - 2119 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024883097s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14091
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24324
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 125.254.72.45:41386 - 24324 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008231795s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27215
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5950
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 123.253.191.215:40234 - 27215 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.006147537s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 125.254.72.45:41796 - 14091 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025504083s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 123.253.191.215:59435 - 5950 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024691976s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26145
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23227
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 122.199.0.81:54952 - 26145 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.005989001s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12702
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56506
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 160.222.159.202:52493 - 12702 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008177901s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 122.199.0.81:40213 - 23227 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025725006s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 160.222.159.202:51176 - 56506 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025391427s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24620
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58255
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.191.68.28:53992 - 24620 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007846796s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39718
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 150.228.243.231:39766 - 39718 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.004939183s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.191.68.28:50082 - 58255 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.02891456s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27215
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52156
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54210
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 203.12.4.134:5325 - 52156 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007287712s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25077
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52536
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 175.34.15.25:33582 - 52536 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007953114s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 150.228.243.231:64760 - 27215 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028404365s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 203.12.4.134:11032 - 54210 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.030507933s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 175.34.15.25:60193 - 25077 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025530134s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39629
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50140
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 172.105.254.49:47058 - 39629 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.009047886s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 172.105.254.49:53235 - 50140 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027249808s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43366
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42588
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7192
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.181.45.9:49967 - 43366 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.012536579s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 13.54.78.159:46405 - 7192 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.014349464s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.181.45.9:35010 - 42588 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025687819s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 13.54.78.159:56061 - 61166 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027060067s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56506
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53177
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 45.249.116.54:44814 - 56506 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008397547s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14584
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6960
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.230.159.152:39382 - 14584 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008975431s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 45.249.116.54:57437 - 53177 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.02513245s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33393
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34427
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 115.186.212.101:43187 - 33393 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.00519421s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.230.159.152:59838 - 6960 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024941585s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 115.186.212.101:36206 - 34427 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028286766s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42300
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31709
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60513
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 168.138.3.153:34163 - 31709 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.014059227s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 144.6.205.10:52933 - 13 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.015116178s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 168.138.3.153:38138 - 42300 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027689121s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40621
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 125.253.33.62:52525 - 61166 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008142301s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 144.6.205.10:57314 - 60513 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027378178s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 125.253.33.62:47772 - 40621 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.029756221s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54717
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41452
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 160.222.157.211:21812 - 41452 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007749811s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 160.222.157.211:36629 - 54717 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.028361305s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35810
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52536
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3392
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6911
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 149.28.175.108:49920 - 35810 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.012548049s
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.4.234.221:37345 - 6911 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.00901255s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61623
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20579
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 103.108.228.242:33686 - 20579 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008146957s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 149.28.175.108:58466 - 52536 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.027819299s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.4.234.221:60130 - 3392 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.026428959s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58255
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24620
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 167.179.144.52:50190 - 24620 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.007145048s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 103.108.228.242:59920 - 61623 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024874536s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 167.179.144.52:57599 - 58255 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.025662317s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19997
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 106.68.213.2:55017 - 19997 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008527446s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 106.68.213.2:56363 - 55679 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024681731s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31137
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 180.150.66.105:46300 - 31137 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008596857s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 180.150.66.105:53911 - 17387 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024751021s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61166
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7192
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.mldsa44-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.mldsa44-sydney0608.test. A
+[INFO] 122.199.30.128:49739 - 7192 "A IN test.mldsa44-sydney0608.test. udp 61 false 1232" NOERROR qr,aa,rd,ra,ad 101 0.008739959s
+[DEBUG] plugin/resolver: Found response for query test0.mldsa44-sydney0608.test. A
+[INFO] 122.199.30.128:34419 - 61166 "A IN test0.mldsa44-sydney0608.test. udp 62 false 1232" NOERROR qr,aa,rd,ra,ad 103 0.024799343s
+[INFO] SIGINT: Shutting down

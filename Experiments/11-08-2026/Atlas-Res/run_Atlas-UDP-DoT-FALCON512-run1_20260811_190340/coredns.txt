@@ -1,0 +1,4410 @@
+maxprocs: Leaving GOMAXPROCS=2: CPU quota undefined
+.:53
+quic://.:853
+tls://.:8853
+CoreDNS-1.14.3
+linux/amd64, go1.26.3, cd93f6051-dirty
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25386
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 180.181.251.177:12033 - 25386 "A IN test.falcon512-sydney0608.test. udp 59 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.123351925s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36782
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28528
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 80.97.44.60:36591 - 36782 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009256536s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 80.97.44.60:56035 - 28528 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.045314951s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39353
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40999
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.41.0.43:35922 - 40999 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.01268297s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.41.0.43:42860 - 39353 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.040665989s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64211
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59884
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8770
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48720
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.126.52.180:47328 - 64211 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.015888606s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.97.55.45:47902 - 48720 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.016384121s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 191
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28405
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63004
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38740
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 54.206.78.202:48870 - 28405 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.013920155s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.29.65.11:48876 - 38740 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.011446655s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.126.52.180:38888 - 59884 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.042903443s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.97.55.45:52349 - 8770 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.042331374s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 54.206.78.202:46751 - 191 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.04313641s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.29.65.11:38245 - 63004 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.043837006s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40542
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57884
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.87.12.152:56905 - 40542 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.008911283s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 150.107.75.182:41337 - 51219 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.00949422s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6638
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29135
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32435
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35380
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 193.177.221.9:59698 - 29135 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.012443284s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.153.238.101:54461 - 32435 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.013175268s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.87.12.152:38675 - 57884 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.049836848s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 150.107.75.182:58069 - 25096 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.043533823s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 193.177.221.9:33168 - 6638 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.043163509s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.153.238.101:40242 - 35380 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.043839603s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20904
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30834
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 114.31.201.91:39832 - 20904 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.009740772s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17173
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46652
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57350
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18444
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 157.20.113.125:45936 - 17173 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.013216867s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 114.31.201.91:37497 - 30834 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.05004184s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.132.93.71:57291 - 57350 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.013429666s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.132.93.71:40258 - 18444 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.039824989s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 157.20.113.125:60989 - 46652 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.04688531s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 943
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4070
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11541
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59153
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32072
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49844
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56351
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61291
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 61.245.158.57:36603 - 59153 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.022675231s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48391
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57747
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 63.222.191.5:58510 - 4070 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.028818128s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9344
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40725
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 1.145.201.9:1762 - 11541 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.035704019s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53934
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35561
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61673
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19373
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24085
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 119.17.129.223:32510 - 48391 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.030118454s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.52.117.1:53036 - 56351 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.045403474s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54143
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9420
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 49.255.158.255:57603 - 40725 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.046784665s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54895
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52808
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19373
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 63.222.191.5:45361 - 943 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.094190235s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9179
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8229
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 1.145.201.9:1739 - 49844 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.08546079s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18118
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16544
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 61.245.158.57:33674 - 32072 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.10332637s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 159.196.153.105:52427 - 25096 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.062730679s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 110.144.14.110:49808 - 35561 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.065501001s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 47402
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.52.117.1:55073 - 61291 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.11306487s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43793
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27248
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64737
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36269
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42941
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 56518
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53699
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 119.17.129.223:42665 - 57747 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.118310815s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6847
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42569
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18557
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4003
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 49.255.158.255:40250 - 9344 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.120455376s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36505
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32060
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.119.111.139:50273 - 53934 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.130334074s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 120.88.126.151:44868 - 25096 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.097218669s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45052
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10578
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 159.196.153.105:52580 - 19373 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.140051184s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28761
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59497
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 180.150.79.58:38591 - 54895 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.122236529s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.129.22.197:32825 - 54143 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.134835215s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 180.150.79.58:57006 - 52808 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.125298412s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 110.144.14.110:37325 - 61673 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.166545638s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 119.18.39.53:40778 - 51219 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.12026997s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29291
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.119.111.139:46605 - 24085 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.179785168s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42475
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.129.22.197:57562 - 9420 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.166515345s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 120.88.126.151:46855 - 19373 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.154088622s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55379
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62605
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13742
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41696
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.252.153.123:45513 - 9179 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.163721157s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 119.17.170.244:38288 - 8229 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.164184358s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.153.213.255:34466 - 64737 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.13823524s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30700
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 202.153.213.255:49236 - 47402 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.146483241s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 152.69.167.24:37173 - 43793 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.145484241s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 119.17.170.244:32809 - 18118 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.184090782s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.12.8.219:44314 - 4003 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.138493509s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 119.18.39.53:47430 - 25096 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.185794472s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30084
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 202.179.130.2:38982 - 36269 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.161820351s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25640
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.12.8.219:56762 - 6847 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.156070437s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.252.153.123:53177 - 16544 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.205319588s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.41.0.250:43391 - 36505 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.135064527s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2625
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 209.38.30.73:35636 - 42569 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.164586846s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54386
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 163.227.185.15:58548 - 10578 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.126821366s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 45.249.116.196:38561 - 28761 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.128771985s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 115.186.212.101:47835 - 53699 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.187162888s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 152.69.167.24:53934 - 27248 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.192412029s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38248
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 209.38.30.73:57011 - 18557 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.185054022s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43109
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.179.130.2:54770 - 42941 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.19541457s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 115.186.212.101:45183 - 56518 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.20427457s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.41.0.250:39374 - 32060 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.17276139s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62762
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31265
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 30700
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 163.227.185.15:51032 - 45052 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.167386374s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9251
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 45.249.116.196:38574 - 59497 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.172731992s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8771
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 159.196.102.162:39426 - 55379 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.130982629s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.41.0.51:60675 - 62605 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.131634475s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 128.0.115.66:55964 - 29291 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.15664799s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 159.196.102.162:35938 - 41696 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.139289866s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23090
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.232.254.207:57460 - 30700 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.113160277s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.41.0.51:50860 - 13742 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.143527983s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 128.0.115.66:52173 - 42475 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.169479675s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37406
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 989
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 167.179.176.191:38698 - 30084 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.110510583s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.142.158.42:40598 - 54386 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.09167353s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42836
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8538
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54292
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18837
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52747
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63193
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.142.158.42:44180 - 2625 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.107175782s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 110.142.211.52:58028 - 38248 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.085996778s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 167.179.176.191:40496 - 25640 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.118121187s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42374
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60708
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.232.254.207:57369 - 61096 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.164082513s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 1.40.111.151:49351 - 30700 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.089937408s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52295
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19373
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28167
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 115.70.61.83:22074 - 31265 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.100908231s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 159.196.154.212:55411 - 9251 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.079789516s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10784
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3797
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 45.76.118.140:35817 - 2219 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.079109735s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19373
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 45.76.118.140:54678 - 23090 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.083604322s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25153
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43836
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59497
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 115.70.61.83:22070 - 62762 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.136547679s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 1.40.111.151:39135 - 61096 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.134478507s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3812
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 110.142.211.52:40988 - 43109 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.165077265s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 115.70.50.8:43315 - 8538 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.093851289s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23144
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29315
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 159.196.161.65:36574 - 52747 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.117356881s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 152.69.190.132:39327 - 37406 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.138496364s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38882
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13959
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46837
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23377
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 152.69.190.132:52093 - 989 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.154329845s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 49.190.88.215:47549 - 28167 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.106386907s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 115.70.50.8:43397 - 63193 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.148385658s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 159.196.154.212:44937 - 8771 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.190184086s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16659
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51900
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32445
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41577
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 159.196.161.65:36575 - 42836 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.151359049s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52587
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64200
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 160.222.157.211:28670 - 3797 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.112842115s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14480
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 51.161.193.12:40495 - 60708 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.145352107s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.129.26.187:40632 - 25096 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.107350663s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24606
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20872
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35069
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 51.161.193.12:35217 - 42374 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.160369017s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 194.146.114.1:42955 - 59497 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.114384054s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.87.175.244:45910 - 54292 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.180567925s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59211
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51249
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58306
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19487
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 202.87.175.244:60889 - 18837 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.186885403s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 49.190.88.215:40795 - 52295 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.162368676s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59279
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14621
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33038
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33392
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59570
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 4850
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 14656
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61051
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1199
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 194.146.114.1:41880 - 3812 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.128182132s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 160.22.78.199:37558 - 43836 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.145464372s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15074
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.153.212.36:15025 - 25096 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.177256298s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 202.153.212.36:50792 - 19373 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.190642068s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 160.22.78.199:42932 - 25153 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.169891565s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 160.222.157.211:29706 - 10784 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.185787707s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3797
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10784
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8771
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42226
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7821
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3797
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10784
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39679
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10034
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5827
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55881
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.95.115.64:56828 - 29315 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.211075518s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63637
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.129.26.187:40524 - 19373 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.270011126s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21990
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48937
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12030
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34324
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36830
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55715
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13615
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40280
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10331
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51517
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.10.91.103:43582 - 20872 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.165544475s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.95.115.64:38147 - 23144 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.223738018s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 167.179.131.69:57564 - 16659 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.201737717s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58968
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.73.64.201:58302 - 64200 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.21356636s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31238
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35435
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44386
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 65090
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11645
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58832
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 12748
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19373
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42751
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44544
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50262
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58222
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64737
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48626
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 159.196.174.217:52350 - 23377 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.241335933s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 159.196.174.217:38368 - 46837 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.247502265s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.153.153.254:36602 - 3797 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.14102737s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.51.115.92:60541 - 13959 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.279310102s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.73.64.201:51729 - 52587 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.261578601s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.138.94.66:44937 - 14480 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.250768495s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49365
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.12.1.50:48174 - 51219 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.247033094s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35838
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9420
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21919
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60145
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8708
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61274
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 87.121.95.42:50422 - 51900 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.303287566s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19373
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40503
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57631
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55108
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 27.131.108.126:35162 - 61051 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.259519968s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29456
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.135.187.170:42855 - 19487 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.274134643s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 27.131.108.126:50068 - 14656 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.264296605s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 122.199.0.81:37610 - 1199 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.269878347s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 220.240.182.236:37055 - 4850 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.273383917s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.51.115.92:47130 - 38882 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.342976704s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 167.179.131.69:37897 - 41577 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.339899758s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37849
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38486
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 21932
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36453
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 13206
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51903
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28802
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 157.211.141.107:45886 - 8771 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.253121247s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 116.255.29.81:40542 - 15074 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.301300842s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.138.94.66:43871 - 24606 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.348668832s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 122.199.0.81:41957 - 33038 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.314864111s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 122.199.30.128:37800 - 51219 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.270015911s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 146.185.214.58:47649 - 51249 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.3373944s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[INFO] 220.240.182.236:39185 - 14621 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.323316467s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 48137
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 44835
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16139
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61452
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54940
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 31319
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28460
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25412
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34068
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33392
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 146.185.214.58:57006 - 59211 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.375739596s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45297
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 116.255.29.81:52260 - 59279 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.378033266s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 180.149.228.48:61404 - 59570 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.380589671s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 180.149.228.48:61543 - 33392 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.382061716s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61164
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7743
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53447
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7387
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57689
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 36484
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6765
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51903
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55944
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5244
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35449
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42813
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28506
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32617
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43391
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61399
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9188
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2298
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6423
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10784
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 29496
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[INFO] 203.119.76.130:40963 - 55715 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.351255458s
+[INFO] 203.10.91.103:46421 - 35069 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.468308832s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 87.121.95.42:24585 - 32445 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.515951997s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 58.160.166.163:34097 - 12748 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.307182677s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 49.192.104.188:51044 - 10784 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.413381797s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 60.242.119.101:37543 - 58968 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.330985107s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.100.61.93:41622 - 52739 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.424872032s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 49.192.104.188:59898 - 3797 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.439415577s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 42569
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.232.160.89:47965 - 42751 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.38201282s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40372
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 61623
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39772
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2056
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62713
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62908
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 4096
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24119
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 51593
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8708
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 16191
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 18371
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20409
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23987
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28761
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40364
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49365
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53051
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33889
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15910
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2056
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5198
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3909
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.153.153.254:34909 - 10784 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.518937814s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.106.89.142:44321 - 10034 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.521680763s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 120.88.123.241:46793 - 7821 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.530309998s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 45.249.116.219:52618 - 53387 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.489115091s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 140.238.205.157:34241 - 25096 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.421138281s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 20512
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28963
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64145
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35109
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57396
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 120.88.123.241:51168 - 21990 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.537439458s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38705
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 116.255.5.183:41226 - 35838 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.384259839s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 45.249.117.10:54870 - 65090 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.470003981s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.119.76.130:35583 - 36830 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.547664145s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 60.242.119.101:46024 - 50262 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.489721041s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45218
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 53439
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46889
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 57988
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26815
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60950
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 40739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27082
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 58923
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2987
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19130
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 150.228.243.231:13159 - 36484 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.296403921s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 25096
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 19373
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 8836
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 119.18.6.58:37995 - 10331 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.600744109s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.119.111.64:57532 - 8708 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.441411607s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.12.1.50:44718 - 25096 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.72109981s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 115.70.56.230:48640 - 36453 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.407592516s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.135.187.170:52374 - 58306 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.73413757s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 159.196.2.158:53559 - 12030 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.631762221s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 129.78.96.2:53214 - 39679 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.677791717s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.0.120.20:45827 - 48937 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.643120493s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.73.64.129:52440 - 58222 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.576319016s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.95.113.129:18620 - 34068 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.417951265s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39118
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 157.211.141.107:7512 - 55881 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.71135087s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 55944
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38486
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15425
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3770
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41036
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3797
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10784
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22600
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10784
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3797
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 41631
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64212
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52087
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 45254
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38595
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3042
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 28513
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34628
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 325
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 50741
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 63672
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 60362
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46109
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62974
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 11253
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.119.111.64:44724 - 21919 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.524184654s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 158.179.20.157:45127 - 25096 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.5322742s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.243.110.251:36168 - 7743 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.421978324s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 17306
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 120.88.73.122:50563 - 48137 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.500327302s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 119.18.6.58:59791 - 51517 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.731708423s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.252.154.247:42674 - 61399 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.382177792s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 116.255.5.183:38499 - 9420 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.575277662s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 159.196.176.45:52577 - 11645 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.660731295s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 159.196.245.77:43480 - 60145 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.579485472s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.100.61.93:52860 - 42226 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.762439475s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.73.64.129:59170 - 64737 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.669804447s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 45.249.117.10:49765 - 44386 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.679925877s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.106.89.142:59038 - 63637 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.796913902s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2751
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32617
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 1748
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.126.193.94:33687 - 35435 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.695277486s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.126.193.94:34185 - 31238 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.696076124s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 180.150.114.56:26524 - 38486 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.580498032s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 115.70.56.230:46242 - 21932 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.583368584s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.232.160.89:47905 - 44544 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.716481843s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.0.120.20:55973 - 13615 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.752960786s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 110.32.192.203:55855 - 29496 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.454313445s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 138.217.244.62:43713 - 35449 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.516239226s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 45.249.116.219:52632 - 40280 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.815780416s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 180.150.114.56:26182 - 37849 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.617247648s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 159.196.176.45:36213 - 58832 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.752995538s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43793
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62908
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62713
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 9420
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 54143
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10471
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 59404
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27248
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 129.78.96.2:44613 - 5827 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.882351231s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 87.121.73.46:41784 - 25096 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.49400314s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 27.131.79.106:57411 - 40372 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.379888439s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34769
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 35838
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 138.217.244.62:44822 - 42813 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.675773682s
+[INFO] 87.121.73.46:35648 - 51219 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.627616657s
+[INFO] 140.238.194.220:49161 - 28802 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.771150988s
+[INFO] 58.160.166.163:59974 - 48626 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.898127588s
+[INFO] 120.19.33.174:2789 - 62908 "A IN test.falcon512-sydney0608.test. udp 63 false 4096" NOERROR qr,aa,rd,ra,ad 105 0.505854141s
+[INFO] 159.196.2.158:55907 - 34324 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.973308269s
+[INFO] 180.150.36.30:34064 - 57631 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.808071798s
+[INFO] 158.179.20.157:45757 - 19373 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.808292578s
+[INFO] 160.222.157.211:35634 - 55944 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.302704223s
+[INFO] 157.211.20.241:45438 - 55108 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.808112453s
+[INFO] 203.57.129.180:41704 - 51903 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.676350652s
+[INFO] 180.150.36.30:33923 - 49365 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.84869422s
+[INFO] 159.196.245.77:50771 - 61274 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.81386588s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 146.19.0.17:35686 - 8836 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.399463014s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 180.181.249.58:10424 - 51903 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.773592168s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 122.199.30.128:33337 - 25096 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 1.031683273s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 159.196.77.172:55598 - 53447 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.694023577s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 989
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 163.47.70.211:65405 - 25412 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.76765769s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 163.47.70.211:65315 - 28460 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.768507501s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 157.211.20.241:40432 - 40503 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.8403216s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 150.228.243.231:27034 - 6765 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.713271073s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 120.88.73.122:39231 - 61452 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.791552132s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 140.238.194.220:45118 - 29456 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.854239756s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 140.238.205.157:40760 - 19373 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.958388873s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.72.63.19:57895 - 31319 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.800171039s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.72.63.19:50387 - 54940 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.804086654s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 168.138.3.153:44835 - 40739 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.463009118s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.243.110.251:43754 - 61164 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.744399773s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 43793
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 27248
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6116
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 7877
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 37406
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 49985
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3888
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 119.15.109.213:57851 - 61623 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.575595494s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 43.252.115.252:45971 - 45218 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.478767884s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.126.192.48:59445 - 35109 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.553194811s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.252.154.247:39772 - 9188 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.714898848s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 26684
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 33852
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 14.202.193.210:57806 - 8708 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.666370263s
+[INFO] 180.181.249.58:10237 - 13206 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.932098115s
+[INFO] 121.200.4.9:65439 - 6423 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.784187566s
+[INFO] 138.44.176.166:56435 - 44835 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.903358856s
+[INFO] 144.6.114.198:31454 - 45297 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.849745413s
+[INFO] 103.219.7.243:35232 - 52087 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.45902932s
+[INFO] 144.6.114.198:5547 - 28506 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.836794137s
+[INFO] 13.54.78.159:38574 - 51219 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.667061409s
+[INFO] 138.44.176.166:44250 - 16139 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.903484041s
+[INFO] 202.80.150.54:6534 - 25096 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.837825015s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.251.173.92:45613 - 58923 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.560533122s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.95.113.129:21454 - 33392 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.908274465s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.57.129.180:19319 - 55944 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.849332134s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 160.250.144.229:41080 - 51593 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.681854979s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 147.10.131.126:56827 - 41036 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.48541496s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 27.131.79.106:37244 - 39772 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.692094588s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 120.19.33.174:2744 - 62713 "A IN test0.falcon512-sydney0608.test. udp 64 false 4096" NOERROR qr,aa,rd,ra,ad 107 0.691745594s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 110.32.192.203:40547 - 10784 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.81162252s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 165.99.240.226:41169 - 5198 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.693334276s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 159.196.77.172:34093 - 7387 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.866882098s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.44.119.34:37517 - 57689 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.872514099s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 160.222.152.216:43541 - 57988 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.623042191s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.85.37.57:41699 - 64145 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.689433806s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 175.34.15.25:38817 - 43391 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.847980052s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.158.243.14:9172 - 45218 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.729353005s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 114.129.191.115:38169 - 24119 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.730117586s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 160.222.152.216:57684 - 53439 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.623324201s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 160.250.144.229:47403 - 20409 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.729807766s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 14.202.193.210:51028 - 18371 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.729956669s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 52739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.158.243.14:63649 - 24788 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.732106753s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 38595
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 5707
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 2219
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 125.253.33.62:39989 - 19373 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.630584011s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 114.129.191.115:58194 - 16191 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.740194797s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 125.253.33.62:44947 - 25096 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.638144822s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 44.136.201.21:49372 - 26815 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.641876206s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 175.34.15.25:35503 - 32617 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.868325305s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.108.228.242:57972 - 63672 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.548998935s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.226.9.136:39309 - 3797 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.552120739s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.80.144.18:55413 - 15425 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.553007425s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 80.97.44.210:56804 - 41631 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.551319188s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 122.199.54.108:57371 - 3797 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.551832136s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 45.63.30.66:58267 - 38595 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.551893687s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 15910
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64586
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 202.44.119.34:43096 - 5244 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.9423063s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.126.192.48:59287 - 57396 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.732111622s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 220.244.9.39:47990 - 19130 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.66565412s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.80.150.54:6503 - 51219 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 1.015154609s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 77.90.35.161:47537 - 28963 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.739765812s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 195.114.15.6:43012 - 42569 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.816330917s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.47.178.155:52504 - 49365 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.781678132s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 62974
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 46109
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 49.191.96.29:35902 - 28761 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.790380898s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 202.80.144.18:57351 - 3770 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.586265464s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6765
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23090
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 16.50.48.184:51058 - 62908 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.434147591s
+[INFO] 44.136.201.21:52615 - 46889 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.696758358s
+[INFO] 80.97.44.210:48292 - 64212 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.596090618s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 45.63.30.66:58901 - 28513 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.602741849s
+[INFO] 77.90.35.161:60517 - 20512 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.770393757s
+[INFO] 195.114.15.6:41258 - 3909 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.807802089s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.219.7.243:44211 - 45254 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.605093557s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 49.191.96.29:51551 - 23987 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.815872806s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 220.244.9.39:60301 - 2987 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.71089284s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 147.10.131.126:33540 - 22600 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.612985846s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 180.150.66.105:50953 - 11253 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.621404963s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 149.28.175.108:33493 - 2751 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.536582759s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.129.27.250:56632 - 3042 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.62403074s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 119.15.109.213:49406 - 2056 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.834824956s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 27.33.9.176:53982 - 10471 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.465984329s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.65.64.238:56605 - 325 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.629860346s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 67.219.106.231:53937 - 43793 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.272966221s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.226.9.136:56035 - 10784 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.63984601s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 20.28.218.234:60773 - 43793 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.4810302s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 27.33.9.176:42097 - 59404 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.478748611s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.85.37.57:42617 - 40364 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.84852362s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 150.228.243.231:11360 - 1748 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.554413912s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 64038
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 24788
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 106.68.213.2:52153 - 9420 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.485178558s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 160.222.157.211:27382 - 38486 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.649648877s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 150.228.243.231:15049 - 17306 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.59480603s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 202.47.178.155:34406 - 53051 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.863095853s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.108.228.242:53697 - 60362 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.6565267s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.129.27.250:45084 - 34628 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.665045338s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 168.138.3.153:55630 - 27082 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.767100311s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 121.200.4.9:65507 - 2298 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.992008668s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 167.179.144.52:36527 - 46109 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.666128452s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 13.54.78.159:59765 - 25096 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.877778045s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 165.99.240.226:53802 - 2056 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.882852314s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 202.65.64.238:53616 - 50741 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.676092011s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.251.173.92:51754 - 60950 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.780380035s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 146.19.0.17:37703 - 38705 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.823543422s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 45.249.116.54:39195 - 15910 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.889591393s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 149.28.175.108:53383 - 32617 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.604350836s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 27.100.36.46:33640 - 34769 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.441701958s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 195.114.14.200:58780 - 49985 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.333207511s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 16.50.48.184:46839 - 62713 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.537096963s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 45.249.116.54:44723 - 33889 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.912525762s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 167.179.144.52:25470 - 62974 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.707634425s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 27.100.36.46:39982 - 35838 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.426669048s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 43.252.115.252:43915 - 24788 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.814160272s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 202.128.123.64:46982 - 7877 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.34957961s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 123.210.128.98:52404 - 989 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.391713103s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 10752
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 180.150.66.105:58222 - 39118 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.731294741s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 32517
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 123.210.128.98:22661 - 37406 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.360756764s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 67.219.106.231:49330 - 27248 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.366035178s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.191.68.28:51287 - 46109 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.153189454s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 106.68.213.2:42079 - 54143 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.574729921s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 125.254.72.45:45742 - 2219 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.22710957s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 20.28.218.234:39067 - 27248 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.581974365s
+[INFO] 195.114.14.200:52038 - 3888 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.379615404s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 122.199.54.108:42574 - 10784 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.746200903s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 202.128.123.64:45170 - 6116 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.38663946s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 203.12.4.134:42788 - 5707 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.236960723s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 46.250.244.2:58151 - 26684 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.322849918s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 160.222.159.202:52557 - 15910 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.192650802s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 46.250.244.2:56636 - 33852 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.312380412s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 160.222.159.202:46284 - 64586 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.194733584s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 125.254.72.45:51323 - 52739 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.25177033s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 39683
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 34708
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 203.12.4.134:43670 - 38595 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.243906269s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.191.68.28:34922 - 62974 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.184113944s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 172.105.254.49:55912 - 24788 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.119881398s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 123.253.191.215:56190 - 6765 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.175437086s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 172.105.254.49:55429 - 64038 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.128088598s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 123.253.191.215:46740 - 23090 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.181101151s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.181.45.9:32774 - 32517 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.052955493s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.181.45.9:42700 - 10752 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.06167587s
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.230.159.152:48020 - 34708 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.023318051s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.230.159.152:52608 - 39683 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.048839055s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 23058
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 6244
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 144.6.205.10:64937 - 23058 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.00908335s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 144.6.205.10:59113 - 6244 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.040912357s
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 22136
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Received query: ;; opcode: QUERY, status: NOERROR, id: 3739
+;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version 0; flags:; udp: 1232
+; NSID:   
+
+;; QUESTION SECTION:
+;test0.falcon512-sydney0608.test.	IN	 A
+
+[DEBUG] plugin/resolver: Found response for query test.falcon512-sydney0608.test. A
+[INFO] 103.4.234.221:36430 - 22136 "A IN test.falcon512-sydney0608.test. udp 63 false 1232" NOERROR qr,aa,rd,ra,ad 105 0.010563256s
+[DEBUG] plugin/resolver: Found response for query test0.falcon512-sydney0608.test. A
+[INFO] 103.4.234.221:47889 - 3739 "A IN test0.falcon512-sydney0608.test. udp 64 false 1232" NOERROR qr,aa,rd,ra,ad 107 0.040410814s
+[INFO] SIGINT: Shutting down
