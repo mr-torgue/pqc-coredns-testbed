@@ -46,7 +46,7 @@ if ! pgrep -f "coredns" > /dev/null; then
     exit 1
 fi
 
-if ! "$(ps aux | grep coredns | grep ${CONFIG_DIR})"; then
+if ! ps aux | grep coredns | grep -q "${CONFIG_DIR}"; then
     echo "Error: coredns is not using the specified configuration directory: $CONFIG_DIR"
     exit 1
 fi
@@ -74,7 +74,7 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
     pkill tcpdump
 
     # make sure all entries are logged for this experiment
-    tail -n +1 -F /var/log/coredns.log >> $exp_folder/coredns.txt
+    tail -n +1 -F /var/log/coredns.log >> $exp_folder/coredns.txt &
 
     # start monitoring
     if [ "$INTERVAL" -ne 0 ]; then
