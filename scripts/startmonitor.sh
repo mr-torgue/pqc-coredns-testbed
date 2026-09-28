@@ -46,7 +46,7 @@ if ! pgrep -f "coredns" > /dev/null; then
     exit 1
 fi
 
-if ! grep -q "$CONFIG_DIR" <<< "$(ps aux | grep coredns)"; then
+if ! "$(ps aux | grep coredns | grep ${CONFIG_DIR})"; then
     echo "Error: coredns is not using the specified configuration directory: $CONFIG_DIR"
     exit 1
 fi
