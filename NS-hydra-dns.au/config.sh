@@ -98,8 +98,8 @@ CapabilityBoundingSet=CAP_NET_BIND_SERVICE
 AmbientCapabilities=CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
 User=coredns
-WorkingDirectory=${CONFIG_DIR}
-ExecStart=/usr/bin/coredns -conf=${CONFIG_DIR}/Corefile
+WorkingDirectory=$(pwd)/${CONFIG_DIR}
+ExecStart=/usr/bin/coredns -conf=$(pwd)/${CONFIG_DIR}/Corefile
 ExecReload=/bin/kill -SIGUSR1 $MAINPID
 Restart=on-failure
 StandardOutput=append:/var/log/coredns.log

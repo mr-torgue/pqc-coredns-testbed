@@ -119,8 +119,8 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
         echo "DEBUG MODE"
         sudo gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
     else
-        if [ -f "$CONFIG_DIR/coredns.service" ]; then
-            cp "$CONFIG_DIR/coredns.service" /etc/systemd/system/coredns.service
+        if [ -f "coredns.service" ]; then
+            sudo cp "coredns.service" /etc/systemd/system/coredns.service
             sudo systemctl daemon-reload
             sudo systemctl enable coredns
             sudo systemctl start coredns
