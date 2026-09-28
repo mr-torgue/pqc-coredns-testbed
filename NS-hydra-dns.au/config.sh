@@ -34,9 +34,9 @@ DOMAINS=()
 IMPORT_SCRIPT=""
 for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
     # generate zone file
-    DOMAIN=$(echo "${DNSSEC_DS}-${LOC}.test" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+    DOMAIN=$(echo "${DNSSEC_DS}.${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
     ZONEFILE="db.${DOMAIN}"
-    ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n 1000 -w > $ZONEFILE
+    ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $ZONEFILE
 
     if [ "$DNSSEC_DS" != "NA" ]; then
       	../scripts/gendnskey.sh -f "${DOMAIN}" -d "${DNSSEC_DS}"
