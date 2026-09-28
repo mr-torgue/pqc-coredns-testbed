@@ -113,18 +113,20 @@ read -p "do you want to run bind with these settings? (Y/N): " choice
 # Check the user's input
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     cd "$CONFIG_DIR"
-    pkill coredns
 
     if [ "$DEBUG" = "true" ]; then
+        sudo pkill coredns
         echo "DEBUG MODE"
         sudo gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
     else
         if [ -f "coredns.service" ]; then
+            sudo service coredns stop
             sudo cp "coredns.service" /etc/systemd/system/coredns.service
             sudo systemctl daemon-reload
             sudo systemctl enable coredns
             sudo systemctl start coredns
         else
+            sudo pkill coredns
             echo "Could not find service file, starting as normal process."
             sudo /opt/coredns/coredns -conf CoreFile
         fi

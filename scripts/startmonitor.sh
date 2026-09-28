@@ -35,6 +35,32 @@ while getopts ":c:pi:l:" opt; do
   esac
 done
 
+# ---------- cleanup machinery ----------
+PIDS=()
+
+cleanup() {
+    echo ""
+    echo "Stopping monitoring..."
+    # disable the trap so CTRL+C during cleanup doesn't re-enter
+    trap - EXIT INT TERM
+    # kill tcpdump gently first so the PCAP footer gets written
+    for pid in "${PIDS[@]}"; do
+        if kill -0 "$pid" 2>/dev/null; then
+            kill -INT "$pid" 2>/dev/null || kill "$pid" 2>/dev/null
+        fi
+    done
+    # give processes a moment to flush (pcap files, sar samples)
+    sleep 1
+    for pid in "${PIDS[@]}"; do
+        kill -9 "$pid" 2>/dev/null
+    done
+    wait 2>/dev/null
+    echo "Done. Results in $PWD/$EXP_FOLDER"
+}
+trap cleanup EXIT INT TERM
+
+
+
 if [ -z "$CONFIG_DIR" ]; then
     echo "Error: Please provide a directory name with -c option."
     exit 1
