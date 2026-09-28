@@ -94,7 +94,7 @@ echo -e "-------------------------------------"
 echo -e "|          Available Keys           |"
 echo -e "-------------------------------------"
 while read -r file; do
-    FILE_ALG=$(sed -n '2p' "$file" | awk -F'[()]' '{print $2}') 
+    FILE_ALG=$(sudo sed -n '2p' "$file" | awk -F'[()]' '{print $2}') 
     # check if key file exists
     key_file="${file%.private}.key"
     if [ ! -f "$key_file" ]; then
