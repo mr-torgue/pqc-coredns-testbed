@@ -5,8 +5,7 @@ runs coredns and displays debug information
 
 DEBUG="false"
 LABEL="default"
-REDIRECT_OUTPUT="false"
-while getopts ":c:dl:o" opt; do
+while getopts ":c:dl:" opt; do
   case $opt in
     c)
       CONFIG_DIR="$OPTARG"
@@ -16,9 +15,6 @@ while getopts ":c:dl:o" opt; do
       ;;
     l)
       LABEL="$OPTARG"
-      ;;
-    o)
-      REDIRECT_OUTPUT="true"
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -38,7 +34,6 @@ fi
 
 echo "CONFIG_DIR: $CONFIG_DIR"
 echo "DEBUG: $DEBUG"
-echo "REDIRECT_OUTPUT: $REDIRECT_OUTPUT"
 echo "LABEL: $LABEL"
 
 # Print OpenSSL version
@@ -124,11 +119,16 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
         echo "DEBUG MODE"
         sudo gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
     else
-        if [ "$REDIRECT_OUTPUT" = "true" ]; then
-            sudo /opt/coredns/coredns -conf CoreFile > "/var/log/coredns.log" 2>&1
+        if [ -f "$CONFIG_DIR/coredns.service" ]; then
+            cp "$CONFIG_DIR/coredns.service" /etc/systemd/system/coredns.service
+            sudo systemctl daemon-reload
+            sudo systemctl enable coredns
+            sudo systemctl start coredns
         else
+            echo "Could not find service file, starting as normal process."
             sudo /opt/coredns/coredns -conf CoreFile
         fi
+
     fi
 else
     echo "aborting..."
