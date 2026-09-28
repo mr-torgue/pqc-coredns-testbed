@@ -4,23 +4,15 @@ runs coredns and displays debug information
 '
 
 DEBUG="false"
-PCAP_FILE="false"
-INTERVAL=0
 LABEL="default"
 REDIRECT_OUTPUT="false"
-while getopts ":c:dpi:l:o" opt; do
+while getopts ":c:dl:o" opt; do
   case $opt in
     c)
       CONFIG_DIR="$OPTARG"
       ;;
     d)
       DEBUG="true"
-      ;;
-    p)
-      PCAP_FILE="true"
-      ;;
-    i)
-      INTERVAL="$OPTARG"
       ;;
     l)
       LABEL="$OPTARG"
@@ -46,9 +38,7 @@ fi
 
 echo "CONFIG_DIR: $CONFIG_DIR"
 echo "DEBUG: $DEBUG"
-echo "PCAP_FILE: $PCAP_FILE"
 echo "REDIRECT_OUTPUT: $REDIRECT_OUTPUT"
-echo "INTERVAL: $INTERVAL"
 echo "LABEL: $LABEL"
 
 # Print OpenSSL version
@@ -128,41 +118,14 @@ read -p "do you want to run bind with these settings? (Y/N): " choice
 # Check the user's input
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     cd "$CONFIG_DIR"
-    if [ -n "$LABEL" ]; then
-        run_folder="run_${LABEL}_$(date +%Y%m%d_%H%M%S)"
-    else
-        run_folder="run_$(date +%Y%m%d_%H%M%S)"
-    fi
-    mkdir -p "$run_folder"
-    echo "Created run folder: $CONFIG_DIR/$run_folder"
-
-    pkill sar
     pkill coredns
-    pkill tcpdump
-
-    # start monitoring
-    if [ "$INTERVAL" -ne 0 ]; then
-        echo "Start CPU, Network, and Memory monitoring using sar with interval $INTERVAL"
-        current_date=$(date +%d-%m-%y)
-        echo "Start time: $(date)" > cpu-$current_date.log
-        echo "Start time: $(date)" > mem-$current_date.log
-        echo "Start time: $(date)" > net-$current_date.log
-        (sar -u $INTERVAL >> $run_folder/cpu-$current_date.log &); (sar -n DEV $INTERVAL --iface=ens5 >> $run_folder/net-$current_date.log &); (sar -r $INTERVAL >> $run_folder/mem-$current_date.log &)
-    else
-        echo "Monitoring disabled (interval set to 0)"
-    fi
-
-    if [ "$PCAP_FILE" = "true" ]; then
-        echo "PCAP will be stored in $run_folder/$LABEL"
-        tcpdump -i any '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$run_folder/$LABEL" &
-    fi
 
     if [ "$DEBUG" = "true" ]; then
         echo "DEBUG MODE"
         gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
     else
         if [ "$REDIRECT_OUTPUT" = "true" ]; then
-            /opt/coredns/coredns -conf CoreFile > "$run_folder/coredns.txt" 2>&1
+            /opt/coredns/coredns -conf CoreFile > "/var/log/coredns.txt" 2>&1
         else
             /opt/coredns/coredns -conf CoreFile
         fi

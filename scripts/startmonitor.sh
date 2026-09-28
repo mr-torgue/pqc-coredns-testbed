@@ -7,7 +7,7 @@ PCAP_FILE="false"
 INTERVAL=0
 LABEL="default"
 REDIRECT_OUTPUT="false"
-while getopts ":c:pi:l:o" opt; do
+while getopts ":c:pi:l:" opt; do
   case $opt in
     c)
       CONFIG_DIR="$OPTARG"
@@ -20,9 +20,6 @@ while getopts ":c:pi:l:o" opt; do
       ;;
     l)
       LABEL="$OPTARG"
-      ;;
-    o)
-      REDIRECT_OUTPUT="true"
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
