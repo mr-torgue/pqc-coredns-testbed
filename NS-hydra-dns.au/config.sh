@@ -3,7 +3,7 @@
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
 TLS_DS="ED25519" # "MLDSA44"
-DNSSEC_DS_LIST=("FALCON512" "P256_FALCON512" "RSA3072_FALCON512" "FALCON1024" "P521_FALCON1024" "MLDSA44" "P256_MLDSA44" "RSA3072_MLDSA44" "SLHDSASHA2128S" "P256_SLHDSASHA2128S" "RSA3072_SLHDSASHA2128S" "MAYO1" "P256_MAYO1" "SNOVA2454" "P256_SNOVA2454" "ECDSAP256SHA256" "ED25519" "RSASHA256" "NA") 
+DNSSEC_DS_LIST=("FALCON512" "P256_FALCON512" "RSA3072_FALCON512" "FALCON1024" "P521_FALCON1024" "MLDSA44" "P256_MLDSA44" "RSA3072_MLDSA44" "SLHDSASHA2128S" "P256_SLHDSASHA2128S" "RSA3072_SLHDSASHA2128S" "MAYO1" "P256_MAYO1" "SNOVA2454" "P256_SNOVA2454" "ECDSAP256SHA256" "ED25519" "RSASHA256") 
 CONFIG_NAME="config"
 NR_ENTRIES=100
 BASE_DOMAIN=hydra-dns.au
@@ -30,47 +30,37 @@ fi
 CONFIG_DIR="${CONFIG_NAME}-${LOC}-${DATE_TIME}"
 mkdir -p "${CONFIG_DIR}"
 
+# generate base zone file [loc].hydra-dns.au
 DOMAINS=()
-IMPORT_SCRIPT=""
+DOMAIN=$(echo "$${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+BASEZONEFILE="db.${DOMAIN}"
+../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $BASEZONEFILE
+DOMAINS+=("$DOMAIN")
+
 for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
     # generate zone file
     DOMAIN=$(echo "${DNSSEC_DS}.${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
     ZONEFILE="db.${DOMAIN}"
     ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $ZONEFILE
+	../scripts/gendnskey.sh -f "${DOMAIN}" -d "${DNSSEC_DS}"
+	../scripts/signzone.sh -z "$ZONEFILE" -f "${DOMAIN}"
 
-    if [ "$DNSSEC_DS" != "NA" ]; then
-      	../scripts/gendnskey.sh -f "${DOMAIN}" -d "${DNSSEC_DS}"
-		../scripts/signzone.sh -z "$ZONEFILE" -f "${DOMAIN}"
+	# export DS record for easy import
+	DSRR="dsset-${DOMAIN}."
+	if [ ! -f "$DSRR" ]; then
+		echo "Error: File '$DOMAIN' not found." >&2
+		exit 1
+	fi
+	checksum=$(sha256sum "$DSRR" | awk '{print $1}')
 
-		# export DS record for easy import
-		DSRR="dsset-${DOMAIN}."
-		if [ ! -f "$DSRR" ]; then
-			echo "Error: File '$DOMAIN' not found." >&2
-			exit 1
-		fi
-		checksum=$(sha256sum "$DSRR" | awk '{print $1}')
+    echo "${DOMAIN}.	IN	NS	ns1.${DOMAIN}." >> $BASEZONEFILE
+    echo "ns1.${DOMAIN}.	IN	A	${NS_IP}" >> $BASEZONEFILE
 
-		# import into a variable
-		read -r -d '' NEW_BLOCK <<EOF
-cat > $DSRR << 'INNER_EOF'
-$(cat "$DSRR")
-INNER_EOF
-echo '$checksum  $DSRR' | sha256sum --check
-if grep -q "${DOMAIN}.\s*IN\s*NS" db.test; then
-    sed -i "/ns1.${DOMAIN}.\s*IN\s*A/c ns1.${DOMAIN}.	IN	A	${NS_IP}" db.test
-else
-    echo "${DOMAIN}.	IN	NS	ns1.${DOMAIN}." >> db.test
-    echo "ns1.${DOMAIN}.	IN	A	${NS_IP}" >> db.test
-fi
-EOF
-		IMPORT_SCRIPT+="$NEW_BLOCK"
-
-		# copy dnssec files
-		mv K${DOMAIN}* ${CONFIG_DIR}
-		mv db.${DOMAIN} ${CONFIG_DIR}
-		mv db.${DOMAIN}.signed ${CONFIG_DIR}
-		mv $DSRR ${CONFIG_DIR}
-    fi
+	# copy dnssec files
+	mv K${DOMAIN}* ${CONFIG_DIR}
+	mv db.${DOMAIN} ${CONFIG_DIR}
+	mv db.${DOMAIN}.signed ${CONFIG_DIR}
+	mv $DSRR ${CONFIG_DIR}
     DOMAINS+=("$DOMAIN")
 done
 
@@ -95,4 +85,29 @@ cat > "${CONFIG_DIR}/config.json" <<EOF
 	"Date": "${DATE_TIME}",
 	"Config Name": "${CONFIG_NAME}"
 }
+EOF
+
+cat > "${CONFIG_DIR}/coredns.service" <<EOF
+[Unit]
+Description=CoreDNS DNS server
+Documentation=https://coredns.io
+After=network.target
+
+[Service]
+PermissionsStartOnly=true
+LimitNOFILE=1048576
+LimitNPROC=512
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+NoNewPrivileges=true
+User=coredns
+WorkingDirectory=${CONFIG_DIR}
+ExecStart=/usr/bin/coredns -conf=${CONFIG_DIR}/Corefile
+ExecReload=/bin/kill -SIGUSR1 $MAINPID
+Restart=on-failure
+StandardOutput=append:/var/log/coredns.log
+StandardError=append:/var/log/coredns.err.log
+
+[Install]
+WantedBy=multi-user.target
 EOF
