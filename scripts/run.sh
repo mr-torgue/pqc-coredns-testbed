@@ -122,12 +122,12 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
 
     if [ "$DEBUG" = "true" ]; then
         echo "DEBUG MODE"
-        gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
+        sudo gdb --batch -ex "run" -ex "bt" -ex "quit" --args /opt/coredns/coredns -conf CoreFile
     else
         if [ "$REDIRECT_OUTPUT" = "true" ]; then
-            /opt/coredns/coredns -conf CoreFile > "/var/log/coredns.txt" 2>&1
+            sudo /opt/coredns/coredns -conf CoreFile > "/var/log/coredns.log" 2>&1
         else
-            /opt/coredns/coredns -conf CoreFile
+            sudo /opt/coredns/coredns -conf CoreFile
         fi
     fi
 else

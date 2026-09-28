@@ -4,7 +4,7 @@ OPENSSL_VERSION=3.6.3
 LIBOQS_VERSION=0.15.0
 OQSPROVIDER_VERSION=0.11.0
 COREDNS_VERSION=1.14.3
-GO_VERSION=1.26.4
+GO_VERSION=1.27.1
 OQS_BIND_VERSION=v1.2.2
 
 # Install pre-requisites
@@ -63,26 +63,12 @@ echo "export PATH=\$PATH:/usr/local/go/bin" | sudo tee -a /etc/profile > /dev/nu
 export PKG_CONFIG_PATH="/usr/local/lib64/pkgconfig:$PKG_CONFIG_PATH"
 echo "export PKG_CONFIG_PATH=\"/usr/local/lib64/pkgconfig:\$PKG_CONFIG_PATH\"" >> ~/.bashrc
 cd ~
-git clone https://github.com/mr-torgue/coredns
+git clone -b openssl https://github.com/mr-torgue/coredns
 cd coredns
 sed -i '/^file:file$/i resolver:github.com/mr-torgue/resolver' plugin.cfg
 make
 sudo mkdir -p /opt/coredns
 sudo mv coredns /opt/coredns
-
-# Install prometheus, node_exporter, and Grafana
-sudo apt install prometheus prometheus-node-exporter prometheus-bind-exporter -y
-sudo systemctl enable prometheus
-sudo systemctl start prometheus
-sudo systemctl start node_exporter
-sudo systemctl enable node_exporter
-sudo apt-get install -y adduser libfontconfig1 musl
-wget https://dl.grafana.com/grafana-enterprise/release/13.0.2/grafana-enterprise_13.0.2_26816849631_linux_amd64.deb
-sudo dpkg -i grafana-enterprise_13.0.2_26816849631_linux_amd64.deb
-sudo /bin/systemctl daemon-reload
-sudo /bin/systemctl enable grafana-server
-sudo /bin/systemctl start grafana-server
-
 
 # Stop our own stub resolver, we need that port!
 sudo systemctl stop systemd-resolved
@@ -91,3 +77,13 @@ sudo systemctl mask systemd-resolved
 sudo rm /etc/resolv.conf
 echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf > /dev/null
 echo "nameserver 8.8.4.4" | sudo tee -a /etc/resolv.conf > /dev/null
+
+# Setup logrotate
+echo '/var/log/coredns.log {
+    size 100M
+    rotate 4
+    compress
+    missingok
+    notifempty
+    copytruncate
+}' | sudo tee /etc/logrotate.d/coredns > /dev/null
