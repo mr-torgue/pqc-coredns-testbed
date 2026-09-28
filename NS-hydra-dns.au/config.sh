@@ -32,7 +32,7 @@ mkdir -p "${CONFIG_DIR}"
 
 # generate base zone file [loc].hydra-dns.au
 DOMAINS=()
-DOMAIN=$(echo "$${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+DOMAIN=$(echo "${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
 BASEZONEFILE="db.${DOMAIN}"
 ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $BASEZONEFILE
 mv db.${DOMAIN} ${CONFIG_DIR}
@@ -72,10 +72,6 @@ done
 cp CoreFile ${CONFIG_DIR}
 mv key.pem ${CONFIG_DIR}
 mv cert.pem ${CONFIG_DIR}
-
-# print import script
-echo "Import script for .test nameserver:"
-echo "$IMPORT_SCRIPT"
 
 cat > "${CONFIG_DIR}/config.json" <<EOF
 {
