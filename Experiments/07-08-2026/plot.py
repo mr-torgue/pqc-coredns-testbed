@@ -71,7 +71,7 @@ def generate_plots():
                 exit(0)
 
             # Plot bars for each client with different colors
-            bars = plt.bar(sorted_clients, algorithm_data.groupby('client')[metric].mean(), color=plt.cm.tab20.colors[:len(sorted_clients)])
+            bars = plt.bar(sorted_clients, grouped_data, color=plt.cm.tab20.colors[:len(sorted_clients)])
             plt.xlabel('Client')
             plt.ylabel(metric)
             plt.title(f'{metric} for {algorithm}')
