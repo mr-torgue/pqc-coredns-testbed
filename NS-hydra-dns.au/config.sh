@@ -91,13 +91,8 @@ Documentation=https://coredns.io
 After=network.target
 
 [Service]
-PermissionsStartOnly=true
 LimitNOFILE=1048576
 LimitNPROC=512
-CapabilityBoundingSet=CAP_NET_BIND_SERVICE
-AmbientCapabilities=CAP_NET_BIND_SERVICE
-NoNewPrivileges=true
-User=coredns
 WorkingDirectory=$(pwd)/${CONFIG_DIR}
 ExecStart=/usr/bin/coredns -conf=$(pwd)/${CONFIG_DIR}/Corefile
 ExecReload=/bin/kill -SIGUSR1 $MAINPID
