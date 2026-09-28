@@ -10,12 +10,31 @@ Use Vagrant to spanw VM's locally: `vagrant up`.
 In the VM run the instllation script.
 
 ## Configuration 
-Configurations can be setup
-
-
 Run coredns with `cd /opt/coredns && ./coredns -conf CoreFile`.
+We have the following directories:
+- NS-example.test: Nameserver for example.test domain
+- NS-test: Namserver for .test TLD
+- NS-Root: Nameserver for root
+- Resolver: resolver
+- NS-hydra-dns.au: Nameserver for (subdomain.)hydra-dns.au. Uses real TLD and root servers.
+A config file can be generated with the config scripts in each directory.
 
 ## Enabling Prometheus and Grafana
+Install with:
+```
+sudo apt install prometheus prometheus-node-exporter prometheus-bind-exporter -y
+sudo systemctl enable prometheus
+sudo systemctl start prometheus
+sudo systemctl start node_exporter
+sudo systemctl enable node_exporter
+sudo apt-get install -y adduser libfontconfig1 musl
+wget https://dl.grafana.com/grafana-enterprise/release/13.0.2/grafana-enterprise_13.0.2_26816849631_linux_amd64.deb
+sudo dpkg -i grafana-enterprise_13.0.2_26816849631_linux_amd64.deb
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable grafana-server
+sudo /bin/systemctl start grafana-server
+```
+
 Add the following to `/etc/prometheus/prometheus.yml` to enable CoreDNS logging in Prometheus:
 ```
   - job_name: coredns

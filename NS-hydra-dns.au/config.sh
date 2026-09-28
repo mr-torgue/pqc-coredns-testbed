@@ -2,10 +2,11 @@
 
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
-TLS_DS="ED25519" #"rsa:2048" "MLDSA44"
+TLS_DS="ED25519" # "MLDSA44"
 DNSSEC_DS_LIST=("FALCON512" "P256_FALCON512" "RSA3072_FALCON512" "FALCON1024" "P521_FALCON1024" "MLDSA44" "P256_MLDSA44" "RSA3072_MLDSA44" "SLHDSASHA2128S" "P256_SLHDSASHA2128S" "RSA3072_SLHDSASHA2128S" "MAYO1" "P256_MAYO1" "SNOVA2454" "P256_SNOVA2454" "ECDSAP256SHA256" "ED25519" "RSASHA256" "NA") 
 CONFIG_NAME="config"
 NR_ENTRIES=100
+BASE_DOMAIN=hydra-dns.au
 
 while getopts "t:a:l:i:c:" opt; do
 	case $opt in
@@ -15,6 +16,7 @@ while getopts "t:a:l:i:c:" opt; do
 		i) NS_IP="$OPTARG" ;;
 		c) CONFIG_NAME="$OPTARG" ;;
 		n) NR_ENTRIES="$OPTARG" ;;
+		d) BASE_DOMAIN="$OPTARG" ;;
 		*) echo "Usage: $0 [-t <tls_ds>] [-a <dnssec_ds>] [-l <location>] [-i <ns_ip>] [-c <config_name>]" >&2; exit 1 ;;
 	esac
 done
@@ -34,7 +36,7 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
     # generate zone file
     DOMAIN=$(echo "${DNSSEC_DS}-${LOC}.test" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
     ZONEFILE="db.${DOMAIN}"
-    ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $ZONEFILE
+    ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n 1000 -w > $ZONEFILE
 
     if [ "$DNSSEC_DS" != "NA" ]; then
       	../scripts/gendnskey.sh -f "${DOMAIN}" -d "${DNSSEC_DS}"

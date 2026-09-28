@@ -1,0 +1,38 @@
+. {
+    prometheus
+    errors
+    log
+    debug
+#   file db.example.test.signed example.test.
+    auto {
+        directory . db\.(.*)\.signed {1}
+    }
+}
+
+quic://.:853 {
+    prometheus
+    errors
+    log
+    debug
+    tls cert.pem key.pem
+    quic {
+        max_streams 16
+        worker_pool_size 65536
+    }
+#   file db.example.test.signed example.test.
+    auto {
+        directory . db\.(.*)\.signed {1}
+    }
+}
+
+tls://.:8853 {
+    prometheus
+    errors
+    log
+    debug
+    tls cert.pem key.pem
+#   file db.example.test.signed example.test.
+    auto {
+        directory . db\.(.*)\.signed {1}
+    }
+}

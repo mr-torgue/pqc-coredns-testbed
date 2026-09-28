@@ -3,18 +3,18 @@
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
 DOMAIN="test."
-TLS_DS="rsa:2048"
+TLS_DS="ED25519" #"rsa:2048"
 DNSSEC_DS="P256_FALCON512"
 ZONEFILE="db.test"
 CONFIG_NAME="config"
 
-while getopts "t:a:z:n:" opt; do
+while getopts "t:a:z:c:" opt; do
   case $opt in
     t) TLS_DS="$OPTARG" ;;
     a) DNSSEC_DS="$OPTARG" ;;
     z) ZONEFILE="$OPTARG" ;;
-    n) CONFIG_NAME="$OPTARG" ;;
-    *) echo "Usage: $0 [-t <tls_ds>] [-a <dnssec_ds>] [-z <zonefile>]" >&2; exit 1 ;;
+    c) CONFIG_NAME="$OPTARG" ;;
+    *) echo "Usage: $0 [-t <tls_ds>] [-a <dnssec_ds>] [-z <zonefile>] [-c <config file>]" >&2; exit 1 ;;
   esac
 done
 CONFIG_DIR="${CONFIG_NAME}-${DATE_TIME}"
