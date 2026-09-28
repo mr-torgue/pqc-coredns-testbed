@@ -35,6 +35,7 @@ DOMAINS=()
 DOMAIN=$(echo "$${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
 BASEZONEFILE="db.${DOMAIN}"
 ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $BASEZONEFILE
+mv db.${DOMAIN} ${CONFIG_DIR}
 DOMAINS+=("$DOMAIN")
 
 for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
