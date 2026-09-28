@@ -8,7 +8,7 @@ CONFIG_NAME="config"
 NR_ENTRIES=100
 BASE_DOMAIN=hydra-dns.au
 
-while getopts "t:a:l:i:c:" opt; do
+while getopts "t:a:l:i:c:n:d:" opt; do
 	case $opt in
 		t) TLS_DS="$OPTARG" ;;
 		a) DNSSEC_DS_LIST=("$OPTARG") ;;

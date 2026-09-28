@@ -7,7 +7,7 @@ DNSSEC_DS_LIST=("FALCON512" "P256_FALCON512" "RSA3072_FALCON512" "FALCON1024" "P
 CONFIG_NAME="config"
 NR_ENTRIES=100
 
-while getopts "t:a:l:i:c:" opt; do
+while getopts "t:a:l:i:c:n:" opt; do
 	case $opt in
 		t) TLS_DS="$OPTARG" ;;
 		a) DNSSEC_DS_LIST=("$OPTARG") ;;
