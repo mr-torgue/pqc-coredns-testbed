@@ -108,7 +108,7 @@ while read -r file; do
     fi
 done < <(find "$CONFIG_DIR" -type f -name "K*.private")
 echo -e "---------------------------"
-read -p "do you want to run bind with these settings? (Y/N): " choice
+read -p "do you want to run coredns with these settings? (Y/N): " choice
 
 # Check the user's input
 if [[ "$choice" =~ ^[Yy]$ ]]; then
