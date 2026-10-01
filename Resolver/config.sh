@@ -64,6 +64,7 @@ elif [ -f "$DSSET" ]; then
 
     echo "</TrustAnchor>" >> "$OUTPUT_FILE"
     echo "Found $count entries in DS file."
+    mv ${DSSET} ${CONFIG_DIR}
 else
     echo "DS file not found: $DSSET"
     exit 1
@@ -77,7 +78,6 @@ cp CoreFile ${CONFIG_DIR}
 cp $ZONEFILE ${CONFIG_DIR}/named.root
 mv key.pem ${CONFIG_DIR}
 mv cert.pem ${CONFIG_DIR}
-mv ${DSSET} ${CONFIG_DIR}
 
 jq -n \
     --arg tls_ds "$TLS_DS" \
