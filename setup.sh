@@ -3,7 +3,7 @@
 OPENSSL_VERSION=3.6.3
 LIBOQS_VERSION=0.15.0
 OQSPROVIDER_VERSION=0.11.0
-COREDNS_VERSION=v0.0.3-openssl
+COREDNS_VERSION=v0.0.4-openssl
 GO_VERSION=1.27.1
 OQS_BIND_VERSION=v1.2.3
 
@@ -27,24 +27,27 @@ sudo sed -i 's/# activate = 1/activate = 1/' /usr/local/ssl/openssl.cnf
 echo "/usr/local/lib64" | sudo tee /etc/ld.so.conf.d/openssl.conf > /dev/null
 sudo ln -s /usr/local/lib64/libcrypto.so /usr/lib/x86_64-linux-gnu/libcrypto.so
 sudo ldconfig 
+cd ~
+sudo rm -rf openssl* # remove it to save space
 
 # Install liboqs
-cd ~
 git clone https://github.com/open-quantum-safe/liboqs.git --branch ${LIBOQS_VERSION}
 mkdir liboqs/build
 cd liboqs/build
 cmake -GNinja -DBUILD_SHARED_LIBS=ON ..
 ninja -j 1
 sudo ninja install
+cd ~
+sudo rm -rf liboqs
 
 # Install oqs-provider
-cd ~
 git clone https://github.com/open-quantum-safe/oqs-provider.git --branch ${OQSPROVIDER_VERSION}
 cd oqs-provider
 cmake -S . -B _build && cmake --build _build && sudo cmake --install _build
+cd ~
+sudo rm -rf oqs-provider
 
 # Install OQS-bind for PQC dnssec tools
-cd ~
 git clone https://github.com/mr-torgue/OQS-bind.git --branch ${OQS_BIND_VERSION}
 cd OQS-bind
 autoreconf -fi
@@ -52,6 +55,8 @@ autoreconf -fi
 make
 sudo make install
 sudo ldconfig 
+cd ~
+sudo rm -rf OQS-Bind
 
 # Install go
 curl -L -O https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz
@@ -65,7 +70,8 @@ echo "export PKG_CONFIG_PATH=\"/usr/local/lib64/pkgconfig:\$PKG_CONFIG_PATH\"" >
 cd ~
 git clone https://github.com/mr-torgue/coredns --branch ${COREDNS_VERSION}
 cd coredns
-sed -i '/^file:file$/i resolver:github.com/mr-torgue/resolver' plugin.cfg
+#sed -i '/^file:file$/i resolver:github.com/mr-torgue/resolver' plugin.cfg
+go mod tidy
 make
 sudo mkdir -p /opt/coredns
 sudo mv coredns /opt/coredns
