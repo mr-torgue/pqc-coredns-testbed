@@ -58,3 +58,23 @@ cat > "${CONFIG_DIR}/config.json" <<EOF
   "Config Name": "${CONFIG_NAME}"
 }
 EOF
+
+cat > "${CONFIG_DIR}/coredns.service" <<EOF
+[Unit]
+Description=CoreDNS DNS server
+Documentation=https://coredns.io
+After=network.target
+
+[Service]
+LimitNOFILE=1048576
+LimitNPROC=512
+WorkingDirectory=$(pwd)/${CONFIG_DIR}
+ExecStart=/opt/coredns/coredns -conf=$(pwd)/${CONFIG_DIR}/Corefile
+ExecReload=/bin/kill -SIGUSR1 $MAINPID
+Restart=on-failure
+StandardOutput=append:/var/log/coredns.log
+StandardError=append:/var/log/coredns.err.log
+
+[Install]
+WantedBy=multi-user.target
+EOF

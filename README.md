@@ -1,30 +1,13 @@
 Creates a testbed that sets up a resolver and three name servers using CoreDNS.
 
 # Installation
+The following will install liboqs, oqs-provider, openssl, coredns (openssl version), go, oqs-bind, and dependencies:
 ```
-curl -L -O https://github.com/mr-torgue/pqc-coredns-testbed/setup.sh
-./setup [nameserver/resolver]
+curl -L -O https://github.com/mr-torgue/pqc-coredns-testbed/setup.sh && ./setup
 ```
 ## Vagrant
 Use Vagrant to spanw VM's locally: `vagrant up`.
-In the VM run the instllation script.
-
-## Configuration 
-Run coredns with `cd /opt/coredns && ./coredns -conf CoreFile`.
-We have the following directories:
-- NS-example.test: Nameserver for example.test domain
-- NS-test: Namserver for .test TLD
-- NS-Root: Nameserver for root
-- Resolver: resolver
-- NS-hydra-dns.au: Nameserver for (subdomain.)hydra-dns.au. Uses real TLD and root servers.
-A config file can be generated with the config scripts in each directory.
-
-Configuration is relatively easy. 
-Use the `config.sh` script to generate a zone file and generate certificates (TLS and DNSSEC).
-Start with the authoritative nameserver. 
-NS-example.test will generate the files for `example.test`. 
-NS-hydra-dns.au is slightly different and will generate files for `[loc].hydra-dns.au`.
-It will generate DS files that have to be loaded
+In the VM run the installation script.
 
 ## Enabling Prometheus and Grafana
 Install with:
@@ -59,8 +42,44 @@ Add the following to `/etc/prometheus/prometheus.yml` to enable CoreDNS logging 
 Go to the Grafana instance (IP:3000) and add Prometheus as a data source.
 Install the [node-exporter](https://grafana.com/grafana/dashboards/1860-node-exporter-full/) and [CoreDNS](https://grafana.com/grafana/dashboards/14981-coredns/) dashboards.
 
+# How to Use
+The easiest way is to use the provided scripts.
 
-# Using DoQ and DoT
+## Configuration
+We have several predefined configurations:
+- NS-example.test: Nameserver for example.test domain
+- NS-test: Namserver for .test TLD
+- NS-Root: Nameserver for root
+- Resolver: resolver
+- NS-hydra-dns.au: Nameserver for (subdomain.)hydra-dns.au. Uses real TLD and root servers. Can be used for different subdomains as well.
+Running the `config.sh` script will generate all the necessary config files to run your nameserver or resolver.
+This includes:
+1. DS records to be saved on the parent server
+2. TLS certificates
+3. Signed zones
+4. CoreFile
+5. Systemd service file
+Basically, the script will generate a folder that is seen as one configuration.
+When running, this configuration needs to be specfied. 
+This way can switch between configuration easily.
+NS-example.test will generate the files for `example.test`. 
+NS-hydra-dns.au is slightly different and will generate files for `[loc].hydra-dns.au`.
+Using `-h` option will show all parameters. 
+
+## Running
+Use `run.sh` to run coredns. 
+Use `-c [config]` to specify a configuration.
+Using `-h` option will show all parameters. 
+
+## Monitoring
+Use `monitor.sh` to sart monitoring. 
+This includes CPU/memory/network monitoring using sar, pcap dumps, and logging queries. 
+Using `-h` option will show all parameters. 
+
+# Manual Setup
+Not recommended, but possible if you know what you are doing.
+
+## Using DoQ and DoT
 DoT and DoQ require TLS certificates. Which can be generated with `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem`. 
 During set up, these certificates will be generated and stored in `/opt/coredns`.
 
@@ -71,7 +90,7 @@ During set up, these certificates will be generated and stored in `/opt/coredns`
 > You might need to run without verifying the TLS signature because the certificate is self-signed.
 > For the resolver, this can be disabled by setting `notlsverify`.
 
-# DNSSEC
+## DNSSEC
 The name servers don't use the DNSSEC or Sign plugin, but merely use a signed zone.
 To generate a zone, we first need to generate keys and then sign the zone.
 Assuming that OQS-BIND is installed this works as follows:
@@ -86,7 +105,7 @@ sudo dnssec-signzone -o . -N INCREMENT -t -K . -S db.root
 > [!NOTE]
 > Make sure to include the DS record in the parent zone or trust anchor.
 
-# Custom Root Zones and Trust Anchors
+## Custom Root Zones and Trust Anchors
 When running a custom root server, make sure to load the proper root file and trust anchor on the resolver.
 On the resolver, the files can be specified with:
 ```
@@ -97,13 +116,8 @@ resolver {
 ```
 
 # To Do
-1. Display key and zone information in showinfo.sh
-2. Add nameserver script that adds NS information for child zones
-3. Add an option to run coredns as user instead of root
-
-One major issue is that one typo in the db means the whole zone has to be signed again.
-Also, lots of redundancy in the scripts...
+1. Fix redundancy in scripts: most scripts are very similar
+2. Add an option to run coredns as user instead of root
 
 # Trouble Shooting
-Run `showinfo.sh` to show some basic information.
 1. Check if liboqs is enabled: `openssl list -providers` if no oqs-provider, enable it in `/usr/local/ssl/openssl.cnf`.

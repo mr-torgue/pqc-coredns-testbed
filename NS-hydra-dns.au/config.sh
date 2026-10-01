@@ -94,7 +94,7 @@ After=network.target
 LimitNOFILE=1048576
 LimitNPROC=512
 WorkingDirectory=$(pwd)/${CONFIG_DIR}
-ExecStart=/usr/bin/coredns -conf=$(pwd)/${CONFIG_DIR}/Corefile
+ExecStart=/opt/coredns/coredns -conf=$(pwd)/${CONFIG_DIR}/Corefile
 ExecReload=/bin/kill -SIGUSR1 $MAINPID
 Restart=on-failure
 StandardOutput=append:/var/log/coredns.log
