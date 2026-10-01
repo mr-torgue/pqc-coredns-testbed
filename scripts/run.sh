@@ -121,6 +121,7 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
     else
         if [ -f "coredns.service" ]; then
             sudo service coredns stop
+            echo "Running as a service (service coredns status)."
             sudo cp "coredns.service" /etc/systemd/system/coredns.service
             sudo systemctl daemon-reload
             sudo systemctl enable coredns
