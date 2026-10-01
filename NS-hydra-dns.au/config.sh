@@ -2,8 +2,11 @@
 
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
+# TLS_DS is the digital signature used in TLS
 TLS_DS="ED25519" # "MLDSA44"
-DNSSEC_DS_LIST=("MLDSA44" "P256_MLDSA44" "RSA3072_MLDSA44" "MLDSA65" "P384_MLDSA65" "MLDSA87" "P521_MLDSA87" "FALCON512" "P256_FALCON512" "RSA3072_FALCON512" "FALCON1024" "P521_FALCON1024" "SLHDSASHA2128S" "P256_SLHDSASHA2128S" "RSA3072_SLHDSASHA2128S" "MAYO1" "P256_MAYO1" "SNOVA2454" "P256_SNOVA2454" "ECDSAP256SHA256" "ED25519" "RSASHA256") 
+# BASE specifies the signature scheme used for DNSSEC used by the based domain (e.g. sydney.hydra-dns.au) whereas the DNSSEC list provides it for subdomains
+BASE_DNSSEC_DS="ED25519"
+DNSSEC_DS_LIST=("MLDSA44" "P256_MLDSA44" "RSA3072_MLDSA44" "MLDSA65" "P384_MLDSA65" "MLDSA87" "P521_MLDSA87" "FALCON512" "P256_FALCON512" "RSA3072_FALCON512" "FALCON1024" "P521_FALCON1024" "SLHDSASHA2128S" "P256_SLHDSASHA2128S" "RSA3072_SLHDSASHA2128S" "MAYO1" "P256_MAYO1" "SNOVA2454" "P256_SNOVA2454" "ECDSAP256SHA256" "ED25519" "RSASHA256" "NA") 
 CONFIG_NAME="config"
 NR_ENTRIES=100
 BASE_DOMAIN=hydra-dns.au
@@ -32,38 +35,52 @@ mkdir -p "${CONFIG_DIR}"
 
 # generate base zone file [loc].hydra-dns.au
 DOMAINS=()
-DOMAIN=$(echo "${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
-BASEZONEFILE="db.${DOMAIN}"
-../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $BASEZONEFILE
-DOMAINS+=("$DOMAIN")
+BASEDOMAIN=$(echo "${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+BASEZONEFILE="db.${BASEDOMAIN}"
+../scripts/genzone.sh -f "$BASEDOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $BASEZONEFILE
+DOMAINS+=("$BASEDOMAIN")
 
 for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
     # generate zone file
     DOMAIN=$(echo "${DNSSEC_DS}.${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
     ZONEFILE="db.${DOMAIN}"
     ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $ZONEFILE
-	../scripts/gendnskey.sh -f "${DOMAIN}" -d "${DNSSEC_DS}"
-	../scripts/signzone.sh -z "$ZONEFILE" -f "${DOMAIN}"
 
-	# export DS record for easy import
-	DSRR="dsset-${DOMAIN}."
-	if [ ! -f "$DSRR" ]; then
-		echo "Error: File '$DOMAIN' not found." >&2
-		exit 1
+    if [ "$DNSSEC_DS" != "NA" ]; then
+		../scripts/gendnskey.sh -f "${DOMAIN}" -d "${DNSSEC_DS}"
+		../scripts/signzone.sh -z "${ZONEFILE}" -f "${DOMAIN}"
+
+		# export DS record for easy import
+		DSRR="dsset-${DOMAIN}."
+		if [ ! -f "$DSRR" ]; then
+			echo "Error: File '$DOMAIN' not found." >&2
+			exit 1
+		fi
+		checksum=$(sha256sum "$DSRR" | awk '{print $1}')
+
+		echo "${DOMAIN}.	IN	NS	ns1.${DOMAIN}." >> $BASEZONEFILE
+		echo "ns1.${DOMAIN}.	IN	A	${NS_IP}" >> $BASEZONEFILE
+
+		# copy dnssec files
+		mv K${DOMAIN}* ${CONFIG_DIR}
+		mv db.${DOMAIN}.signed ${CONFIG_DIR}
+		mv $DSRR ${CONFIG_DIR}
 	fi
-	checksum=$(sha256sum "$DSRR" | awk '{print $1}')
-
-    echo "${DOMAIN}.	IN	NS	ns1.${DOMAIN}." >> $BASEZONEFILE
-    echo "ns1.${DOMAIN}.	IN	A	${NS_IP}" >> $BASEZONEFILE
-
-	# copy dnssec files
-	mv K${DOMAIN}* ${CONFIG_DIR}
 	mv db.${DOMAIN} ${CONFIG_DIR}
-	mv db.${DOMAIN}.signed ${CONFIG_DIR}
-	mv $DSRR ${CONFIG_DIR}
     DOMAINS+=("$DOMAIN")
 done
+# base domain still needs to be signed
+../scripts/gendnskey.sh -f "${BASEDOMAIN}" -d "${BASE_DNSSEC_DS}"
+../scripts/signzone.sh -z "${BASEZONEFILE}" -f "${BASEDOMAIN}"
+mv K${BASEDOMAIN}* ${CONFIG_DIR}
 mv ${BASEZONEFILE} ${CONFIG_DIR}
+mv db.${BASEDOMAIN}.signed ${CONFIG_DIR}
+mv $DSRR ${CONFIG_DIR}
+echo "please add the following data to the parent domain:"
+echo "${BASEDOMAIN}.	IN	NS	ns1.${BASEDOMAIN}."
+echo "ns1.${BASEDOMAIN}.	IN	A	${NS_IP}"
+echo "${DSRR}"
+
 
 # generate a TLS certificate
 ../scripts/gentlskey.sh -f "${DOMAINS}" -t "${TLS_DS}"

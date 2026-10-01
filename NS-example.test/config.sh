@@ -65,10 +65,10 @@ EOF
 
 		# copy dnssec files
 		mv K${DOMAIN}* ${CONFIG_DIR}
-		mv db.${DOMAIN} ${CONFIG_DIR}
 		mv db.${DOMAIN}.signed ${CONFIG_DIR}
 		mv $DSRR ${CONFIG_DIR}
     fi
+	mv db.${DOMAIN} ${CONFIG_DIR}
     DOMAINS+=("$DOMAIN")
 done
 
@@ -105,7 +105,7 @@ After=network.target
 LimitNOFILE=1048576
 LimitNPROC=512
 WorkingDirectory=$(pwd)/${CONFIG_DIR}
-ExecStart=/usr/bin/coredns -conf=$(pwd)/${CONFIG_DIR}/Corefile
+ExecStart=/opt/coredns/coredns -conf=$(pwd)/${CONFIG_DIR}/Corefile
 ExecReload=/bin/kill -SIGUSR1 $MAINPID
 Restart=on-failure
 StandardOutput=append:/var/log/coredns.log
