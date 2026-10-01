@@ -3,9 +3,9 @@
 OPENSSL_VERSION=3.6.3
 LIBOQS_VERSION=0.15.0
 OQSPROVIDER_VERSION=0.11.0
-COREDNS_VERSION=1.14.3
+COREDNS_VERSION=v0.0.3-openssl
 GO_VERSION=1.27.1
-OQS_BIND_VERSION=v1.2.2
+OQS_BIND_VERSION=v1.2.3
 
 # Install pre-requisites
 sudo apt update
@@ -63,7 +63,7 @@ echo "export PATH=\$PATH:/usr/local/go/bin" | sudo tee -a /etc/profile > /dev/nu
 export PKG_CONFIG_PATH="/usr/local/lib64/pkgconfig:$PKG_CONFIG_PATH"
 echo "export PKG_CONFIG_PATH=\"/usr/local/lib64/pkgconfig:\$PKG_CONFIG_PATH\"" >> ~/.bashrc
 cd ~
-git clone -b openssl https://github.com/mr-torgue/coredns
+git clone https://github.com/mr-torgue/coredns --branch ${COREDNS_VERSION}
 cd coredns
 sed -i '/^file:file$/i resolver:github.com/mr-torgue/resolver' plugin.cfg
 make

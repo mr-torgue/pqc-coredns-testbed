@@ -125,7 +125,7 @@ fi
 if [ "$PCAP_FILE" = "true" ]; then
     PCAP="$EXP_FOLDER/capture_${LABEL}.pcap"
     echo "PCAP will be stored in $PCAP"
-    tcpdump -i any -U -s 0 '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$PCAP" \
+    sudo tcpdump -i any -U -s 0 '(port 53 or port 853 or port 8853) and (udp or tcp)' -w "$PCAP" \
         >"$EXP_FOLDER/tcpdump.log" 2>&1 &
     PIDS+=($!)
     start_log "tcpdump started -> $PCAP"

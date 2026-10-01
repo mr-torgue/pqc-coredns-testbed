@@ -19,6 +19,13 @@ We have the following directories:
 - NS-hydra-dns.au: Nameserver for (subdomain.)hydra-dns.au. Uses real TLD and root servers.
 A config file can be generated with the config scripts in each directory.
 
+Configuration is relatively easy. 
+Use the `config.sh` script to generate a zone file and generate certificates (TLS and DNSSEC).
+Start with the authoritative nameserver. 
+NS-example.test will generate the files for `example.test`. 
+NS-hydra-dns.au is slightly different and will generate files for `[loc].hydra-dns.au`.
+It will generate DS files that have to be loaded
+
 ## Enabling Prometheus and Grafana
 Install with:
 ```
@@ -92,6 +99,7 @@ resolver {
 # To Do
 1. Display key and zone information in showinfo.sh
 2. Add nameserver script that adds NS information for child zones
+3. Add an option to run coredns as user instead of root
 
 One major issue is that one typo in the db means the whole zone has to be signed again.
 Also, lots of redundancy in the scripts...

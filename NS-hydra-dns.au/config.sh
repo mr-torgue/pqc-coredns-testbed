@@ -3,7 +3,7 @@
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
 TLS_DS="ED25519" # "MLDSA44"
-DNSSEC_DS_LIST=("FALCON512" "P256_FALCON512" "RSA3072_FALCON512" "FALCON1024" "P521_FALCON1024" "MLDSA44" "P256_MLDSA44" "RSA3072_MLDSA44" "SLHDSASHA2128S" "P256_SLHDSASHA2128S" "RSA3072_SLHDSASHA2128S" "MAYO1" "P256_MAYO1" "SNOVA2454" "P256_SNOVA2454" "ECDSAP256SHA256" "ED25519" "RSASHA256") 
+DNSSEC_DS_LIST=("MLDSA44" "P256_MLDSA44" "RSA3072_MLDSA44" "MLDSA65" "P384_MLDSA65" "MLDSA87" "P521_MLDSA87" "FALCON512" "P256_FALCON512" "RSA3072_FALCON512" "FALCON1024" "P521_FALCON1024" "SLHDSASHA2128S" "P256_SLHDSASHA2128S" "RSA3072_SLHDSASHA2128S" "MAYO1" "P256_MAYO1" "SNOVA2454" "P256_SNOVA2454" "ECDSAP256SHA256" "ED25519" "RSASHA256") 
 CONFIG_NAME="config"
 NR_ENTRIES=100
 BASE_DOMAIN=hydra-dns.au
@@ -17,7 +17,7 @@ while getopts "t:a:l:i:c:n:d:" opt; do
 		c) CONFIG_NAME="$OPTARG" ;;
 		n) NR_ENTRIES="$OPTARG" ;;
 		d) BASE_DOMAIN="$OPTARG" ;;
-		*) echo "Usage: $0 [-t <tls_ds>] [-a <dnssec_ds>] [-l <location>] [-i <ns_ip>] [-c <config_name>]" >&2; exit 1 ;;
+		*) echo "Usage: $0 [-t <tls_ds>] [-a <dnssec_ds>] [-l <location>] [-i <ns_ip>] [-c <config_name>] [-n <number of entries>] [-d <base domain (default hydra-dns.au)>]" >&2; exit 1 ;;
 	esac
 done
 
