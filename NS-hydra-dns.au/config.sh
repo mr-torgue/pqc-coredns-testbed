@@ -75,11 +75,12 @@ done
 mv K${BASEDOMAIN}* ${CONFIG_DIR}
 mv ${BASEZONEFILE} ${CONFIG_DIR}
 mv db.${BASEDOMAIN}.signed ${CONFIG_DIR}
+DSRR="dsset-${BASEDOMAIN}."
 mv $DSRR ${CONFIG_DIR}
 echo "please add the following data to the parent domain:"
 echo "${BASEDOMAIN}.	IN	NS	ns1.${BASEDOMAIN}."
 echo "ns1.${BASEDOMAIN}.	IN	A	${NS_IP}"
-echo "${DSRR}"
+echo "$(cat "${DSRR}")"
 
 
 # generate a TLS certificate
