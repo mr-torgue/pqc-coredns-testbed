@@ -60,6 +60,7 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
 
 		echo "${DOMAIN}.	IN	NS	ns1.${DOMAIN}." >> $BASEZONEFILE
 		echo "ns1.${DOMAIN}.	IN	A	${NS_IP}" >> $BASEZONEFILE
+		echo "$(cat "${DSRR}")" >> $BASEZONEFILE
 
 		# copy dnssec files
 		mv K${DOMAIN}* ${CONFIG_DIR}
