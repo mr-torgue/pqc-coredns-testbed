@@ -4,15 +4,29 @@ DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
 # TLS_DS is the digital signature used in TLS
 TLS_DS="ED25519" # "MLDSA44"
-# BASE specifies the signature scheme used for DNSSEC used by the based domain (e.g. sydney.hydra-dns.au) whereas the DNSSEC list provides it for subdomains
-BASE_DNSSEC_DS="ED25519"
 DNSSEC_DS_LIST=("MLDSA44" "P256_MLDSA44" "RSA3072_MLDSA44" "MLDSA65" "P384_MLDSA65" "MLDSA87" "P521_MLDSA87" "FALCON512" "P256_FALCON512" "RSA3072_FALCON512" "FALCON1024" "P521_FALCON1024" "SLHDSASHA2128S" "P256_SLHDSASHA2128S" "RSA3072_SLHDSASHA2128S" "MAYO1" "P256_MAYO1" "SNOVA2454" "P256_SNOVA2454" "ECDSAP256SHA256" "ED25519" "RSASHA256" "NA") 
 CONFIG_NAME="config"
 NR_ENTRIES=100
 BASE_DOMAIN=hydra-dns.au
 
-while getopts "t:a:l:i:c:n:d:" opt; do
+while getopts "ht:a:l:i:c:n:d:" opt; do
 	case $opt in
+		h)
+			echo "Usage: $0 [-t <tls_ds>] [-a <dnssec_ds>] [-l <location>] [-i <ns_ip>] [-c <config_name>] [-n <number of entries>] [-d <base domain (default hydra-dns.au)>]"
+			echo ""
+			echo "This script configures a nameserver that serves DNSSEC signed zones for a given domain."
+			echo ""
+			echo "Options:"
+			echo "  -t <tls_ds>          Digital signature used in TLS (default: ED25519)"
+			echo "  -a <dnssec_ds>       DNSSEC signature schemes for subdomains (default: multiple schemes)"
+			echo "  -l <location>        Location identifier for the domain (required)"
+			echo "  -i <ns_ip>           IP address of the nameserver (required)"
+			echo "  -c <config_name>     Name for the configuration directory (default: config)"
+			echo "  -n <number of entries> Number of entries to generate in zone files (default: 100)"
+			echo "  -d <base domain>     Base domain name (default: hydra-dns.au)"
+			echo "  -h                   Show this help message"
+			exit 0
+			;;
 		t) TLS_DS="$OPTARG" ;;
 		a) DNSSEC_DS_LIST=("$OPTARG") ;;
 		l) LOC="$OPTARG" ;;
@@ -33,16 +47,24 @@ fi
 CONFIG_DIR="${CONFIG_NAME}-${LOC}-${DATE_TIME}"
 mkdir -p "${CONFIG_DIR}"
 
-# generate base zone file [loc].hydra-dns.au
+# print information
+echo "Generating configuration files for ${BASE_DOMAIN} in ${CONFIG_DIR} with ${#DNSSEC_DS_LIST[@]} zones:"
+for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
+    if [ "$DNSSEC_DS" = "NA" ]; then
+        echo "  - ${DNSSEC_DS}-${LOC}.${BASE_DOMAIN} (will not be signed)"
+    else
+        echo "  - ${DNSSEC_DS}-${LOC}.${BASE_DOMAIN}"
+    fi
+done
+echo "Each zone will contain ${NR_ENTRIES} entries"
+echo "Nameserver IP: ${NS_IP}"
+echo "TLS signature scheme: ${TLS_DS}"
+
 DOMAINS=()
-BASEDOMAIN=$(echo "${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
-BASEZONEFILE="db.${BASEDOMAIN}"
-../scripts/genzone.sh -f "$BASEDOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $BASEZONEFILE
-DOMAINS+=("$BASEDOMAIN")
 
 for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
     # generate zone file
-    DOMAIN=$(echo "${DNSSEC_DS}.${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+    DOMAIN=$(echo "${DNSSEC_DS}-${LOC}.${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
     ZONEFILE="db.${DOMAIN}"
     ../scripts/genzone.sh -f "$DOMAIN" -i "$NS_IP" -n $NR_ENTRIES -w > $ZONEFILE
 
@@ -58,30 +80,19 @@ for DNSSEC_DS in "${DNSSEC_DS_LIST[@]}"; do
 		fi
 		checksum=$(sha256sum "$DSRR" | awk '{print $1}')
 
-		echo "${DOMAIN}.	IN	NS	ns1.${DOMAIN}." >> $BASEZONEFILE
-		echo "ns1.${DOMAIN}.	IN	A	${NS_IP}" >> $BASEZONEFILE
-		echo "$(cat "${DSRR}")" >> $BASEZONEFILE
+		echo "please add the following data to the parent domain:"
+		echo "$(cat "${DSRR}")"
 
 		# copy dnssec files
 		mv K${DOMAIN}* ${CONFIG_DIR}
 		mv db.${DOMAIN}.signed ${CONFIG_DIR}
 		mv $DSRR ${CONFIG_DIR}
 	fi
+	echo "${DOMAIN}.	IN	NS	ns1.${DOMAIN}."
+	echo "ns1.${DOMAIN}.	IN	A	${NS_IP}"
 	mv db.${DOMAIN} ${CONFIG_DIR}
     DOMAINS+=("$DOMAIN")
 done
-# base domain still needs to be signed
-../scripts/gendnskey.sh -f "${BASEDOMAIN}" -d "${BASE_DNSSEC_DS}"
-../scripts/signzone.sh -z "${BASEZONEFILE}" -f "${BASEDOMAIN}"
-mv K${BASEDOMAIN}* ${CONFIG_DIR}
-mv ${BASEZONEFILE} ${CONFIG_DIR}
-mv db.${BASEDOMAIN}.signed ${CONFIG_DIR}
-DSRR="dsset-${BASEDOMAIN}."
-echo "please add the following data to the parent domain:"
-echo "${BASEDOMAIN}.	IN	NS	ns1.${BASEDOMAIN}."
-echo "ns1.${BASEDOMAIN}.	IN	A	${NS_IP}"
-echo "$(cat "${DSRR}")"
-mv $DSRR ${CONFIG_DIR}
 
 
 # generate a TLS certificate
