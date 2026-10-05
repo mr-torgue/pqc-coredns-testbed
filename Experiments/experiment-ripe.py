@@ -6,6 +6,7 @@ import os
 import argparse
 import dns.resolver
 import pandas as pd
+import time
 
 from time import sleep
 from dotenv import load_dotenv
@@ -21,6 +22,38 @@ from get_ripe_results import get_results_with_metadata, get_measurements_with_me
 
 load_dotenv()
 ATLAS_API_KEY = os.getenv("ATLAS_API_KEY")
+
+
+def poll_results_with_timeout(ids, label, algorithm, strategy, timeout=300, initial_interval=5):
+    """
+    Polls for results with a timeout and exponential backoff.
+    Args:
+        ids: List of measurement IDs.
+        label: Label for the measurement.
+        algorithm: Algorithm used.
+        strategy: Strategy used.
+        timeout: Maximum time to wait (in seconds).
+        initial_interval: Initial polling interval (in seconds).
+    Returns:
+        Tuple of (df_measurements, df_results) or (None, None) if timeout occurs.
+    """
+    start_time = time.time()
+    current_interval = initial_interval
+    max_interval = 30  # Maximum polling interval (in seconds)
+    
+    while time.time() - start_time < timeout:
+        (df_measurements, df_results) = get_results_with_metadata(ids, label, algorithm, strategy)
+        if df_measurements is not None and df_results is not None:
+            return (df_measurements, df_results)
+        
+        # Exponential backoff with a cap
+        print(f"No results yet. Waiting for {current_interval} seconds...")
+        sleep(current_interval)
+        current_interval = min(current_interval * 2, max_interval)
+    
+    print(f"Timeout reached after {timeout} seconds. No results obtained.")
+    return (None, None)
+
 
 '''
 run a measurement, wait until the results are in, and return results
@@ -81,15 +114,10 @@ def run_measurement(nr_sources, resolver, domain, description, label, algorithm,
     if is_success:
         ids = response["measurements"]
         print("Success! Collecting results for %s!" % (ids))
-        counter = 0 
-        # add counter to prevent loops
-        while True and counter < 32:
-            print("No results, waiting for 5 seconds...")
-            sleep(5)
-            (df_measurements, df_results) = get_results_with_metadata(ids, label, algorithm, strategy)
-            if df_measurements is not None and df_results is not None:
-                break
-            counter += 1
+        # Use the improved polling mechanism
+        (df_measurements, df_results) = poll_results_with_timeout(ids, label, algorithm, strategy, timeout=300, initial_interval=5)
+        if df_measurements is None or df_results is None:
+            return (None, None, None)
     else:
         print("Request failed: %s" % (response))
         return (None, None, None)
@@ -249,19 +277,16 @@ def run_experiment(nr_sources, nr_queries, resolver, domain, description, label,
     if is_success:
         ids = response["measurements"]
         print("Success! Saving %d ids %s to CSV!" % (len(ids), ids))
-        counter = 0
-        while True and counter < 12:
-            print("Waiting for 10 seconds for results to come in...")
-            sleep(10) # not great but should work
-            (df_measurements, df_results) = get_results_with_metadata(ids, label, algorithm, strategy)
-            if df_measurements is not None and df_results is not None:
-                timestamp = pd.Timestamp.now().strftime("%Y-%m-%d_%H-%M-%S")
-                csv = df_measurements.to_csv(index=False)
-                save_to_csv(csv, timestamp, "measurements-%s" % label, strategy, algorithm)
-                csv = df_results.to_csv(index=False)
-                save_to_csv(csv, timestamp, label, strategy, algorithm)
-                break
-            counter += 1
+        # Use the improved polling mechanism
+        (df_measurements, df_results) = poll_results_with_timeout(ids, label, algorithm, strategy, timeout=300, initial_interval=10)
+        if df_measurements is not None and df_results is not None:
+            timestamp = pd.Timestamp.now().strftime("%Y-%m-%d_%H-%M-%S")
+            csv = df_measurements.to_csv(index=False)
+            save_to_csv(csv, timestamp, "measurements-%s" % label, strategy, algorithm)
+            csv = df_results.to_csv(index=False)
+            save_to_csv(csv, timestamp, label, strategy, algorithm)
+        else:
+            print("Failed to collect results within the timeout period.")
     else:
         print("Request failed: %s" % (response))
 
@@ -283,15 +308,33 @@ def main():
     parser.add_argument("-n", "--nr_sources", type=int, help="Number of sources (default: 5)", default=5)
     parser.add_argument("-q", "--nr_queries", type=int, help="Number of queries (default: 20)", default=20)
     parser.add_argument("-f", "--frequency", type=int, help="Frequency in seconds (default: 0)", default=0)
+    parser.add_argument("--spread", type=int, help="Spread in seconds (must be > 1 and < frequency)", default=None)
+    parser.add_argument("--repeat", type=int, help="Number of repetitions (calculates end_date as start_date + (frequency * repeat))", default=None)
     parser.add_argument("--reuse_id", type=int, help="Reuses probes from this measurement (default: 0)", default=0)
     parser.add_argument("--probes", type=str, help='Comma-separated list of Probe IDs to use')
     parser.add_argument("--start_date", help="Start date (default: now)", default=datetime.now().isoformat())
-    parser.add_argument("--end_date", help="End date (default: now + 1 day)", default=(datetime.now() + timedelta(days=1)).isoformat())
+    parser.add_argument("--end_date", help="End date (default: now + 1 day)", default=None)
     parser.add_argument("--domain", help="Domain to query")
 
     args = parser.parse_args()
     if not hasattr(args, 'domain') or args.domain is None:
         args.domain = "test.%s-%s.test" % (args.algorithm.lower().replace("_", "-"), args.label.lower().replace("_", "-"))
+
+    # Validate and calculate spread and repeat
+    if args.spread is not None:
+        if args.spread <= 1:
+            parser.error("--spread must be greater than 1")
+        if args.frequency <= args.spread:
+            parser.error("--spread must be less than --frequency")
+    
+    # Calculate end_date if repeat is provided
+    if args.repeat is not None:
+        if args.frequency <= 0:
+            parser.error("--repeat requires --frequency to be greater than 0")
+        start_date = datetime.fromisoformat(args.start_date)
+        args.end_date = (start_date + timedelta(seconds=args.frequency * args.repeat)).isoformat()
+    elif args.end_date is None:
+        args.end_date = (datetime.now() + timedelta(days=1)).isoformat()
 
     # Print configuration
     print("Configuration:")
@@ -312,6 +355,10 @@ def main():
         print(f"  Frequency:   {args.frequency}")
         print(f"  Start Date:  {args.start_date}")
         print(f"  End Date:    {args.end_date}")
+        if args.spread is not None:
+            print(f"  Spread:      {args.spread}")
+        if args.repeat is not None:
+            print(f"  Repeat:      {args.repeat}")
     else:
         print(f"  Frequency:   One-off")
     # Ask user to confirm
