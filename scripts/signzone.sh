@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Signs the zone for 2 years (TO DO: add a flag to the CLI)
+
 usage() {
     echo "Usage: $0 -z/--zonefile <filename> [-d/--ds <filename>] [-f/--fqdn <domain>]"
     echo "Will look for DS records in files starting with dsset"
@@ -34,9 +36,9 @@ echo "$DSSET_COUNT dssets added"
 
 # Only use -o if origin is set through the domain variable 
 if [ -n "$DOMAIN" ]; then
-    sudo dnssec-signzone -o ${DOMAIN} -N INCREMENT -t -K . -S "$ZONEFILE"
+    sudo dnssec-signzone -o ${DOMAIN} -N INCREMENT -T 63113904 -t -K . -S "$ZONEFILE"
 else
-    sudo dnssec-signzone -N INCREMENT -t -K . -S "$ZONEFILE"
+    sudo dnssec-signzone -N INCREMENT -T 63113904 -t -K . -S "$ZONEFILE"
 fi
 
 # remove .tmp and remove tmp zonefile
