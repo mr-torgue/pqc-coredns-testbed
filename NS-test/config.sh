@@ -3,7 +3,7 @@
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
 DOMAIN="test."
-TLS_DS="ED25519" #"rsa:2048"
+TLS_DS="MLDSA44" #"ED25519" #"rsa:2048"
 DNSSEC_DS="P256_FALCON512"
 ZONEFILE="db.test"
 CONFIG_NAME="config"

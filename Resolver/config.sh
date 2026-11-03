@@ -2,7 +2,7 @@
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
 DSSET="dsset-."
-TLS_DS="rsa:2048"
+TLS_DS="MLDSA44" #"rsa:2048"
 ZONEFILE="named.root"
 CONFIG_NAME="config"
 ROOT_ANCHOR=""
