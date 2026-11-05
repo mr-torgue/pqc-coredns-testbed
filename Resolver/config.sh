@@ -76,7 +76,7 @@ fi
 # generate TLS key
 sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=${DOMAIN}"
 sudo openssl req -x509 -nodes -days 365 -newkey ${PQC_TLS_DS} -keyout pqc-key.pem.full -out pqc-cert.pem -subj "/CN=${DOMAIN}"
-openssl pkey -in pqc-key.pem.full -provparam ml-dsa.output_formats=seed-only -out pqc-key.pem
+sudo openssl pkey -in pqc-key.pem.full -provparam ml-dsa.output_formats=seed-only -out pqc-key.pem
 
 # copy files
 cp CoreFile ${CONFIG_DIR}
