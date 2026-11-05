@@ -8,8 +8,9 @@ ZONEFILE="named.root"
 CONFIG_NAME="config"
 ROOT_ANCHOR=""
 DOMAIN="resolver.hydra-dns.au"
+IP=""
 
-while getopts "d:t:z:c:r:D:" opt; do
+while getopts "d:t:z:c:r:D:i:" opt; do
   case $opt in
     d) DSSET="$OPTARG" ;;
     t) TLS_DS="$OPTARG" ;;
@@ -17,7 +18,8 @@ while getopts "d:t:z:c:r:D:" opt; do
     c) CONFIG_NAME="$OPTARG" ;;
     r) ROOT_ANCHOR="$OPTARG" ;;
     D) DOMAIN="$OPTARG" ;;
-    *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-z <zonefile>] [-c <config file>] [-r <root anchor XML file>] [-D <domain>]" >&2; exit 1 ;;
+    i) IP="$OPTARG" ;;
+    *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-z <zonefile>] [-c <config file>] [-r <root anchor XML file>] [-D <domain>] [-i <IP address>]" >&2; exit 1 ;;
   esac
 done
 
@@ -74,8 +76,13 @@ else
 fi
 
 # generate TLS key
-sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=${DOMAIN}"
-sudo openssl req -x509 -nodes -days 365 -newkey ${PQC_TLS_DS} -keyout pqc-key.pem.full -out pqc-cert.pem -subj "/CN=${DOMAIN}"
+if [ -n "$IP" ]; then
+    sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=${DOMAIN}" -addext "subjectAltName=DNS:${DOMAIN},IP:${IP}"
+    sudo openssl req -x509 -nodes -days 365 -newkey ${PQC_TLS_DS} -keyout pqc-key.pem.full -out pqc-cert.pem -subj "/CN=${DOMAIN}" -addext "subjectAltName=DNS:${DOMAIN},IP:${IP}"
+else
+    sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=${DOMAIN}" -addext "subjectAltName=DNS:${DOMAIN}"
+    sudo openssl req -x509 -nodes -days 365 -newkey ${PQC_TLS_DS} -keyout pqc-key.pem.full -out pqc-cert.pem -subj "/CN=${DOMAIN}" -addext "subjectAltName=DNS:${DOMAIN}"
+fi
 sudo openssl pkey -in pqc-key.pem.full -provparam ml-dsa.output_formats=seed-only -out pqc-key.pem
 
 # copy files
