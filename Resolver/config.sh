@@ -2,19 +2,24 @@
 DATE_TIME=$(date +"%Y%m%d-%H%M%S")
 
 DSSET="dsset-."
-TLS_DS="MLDSA44" #"rsa:2048"
+TLS_DS="ED25519" #"rsa:2048"
+PQC_TLS_DS="MLDSA44"
 ZONEFILE="named.root"
 CONFIG_NAME="config"
 ROOT_ANCHOR=""
+DOMAIN="resolver.hydra-dns.au"
+IP=""
 
-while getopts "d:t:z:c:r:" opt; do
+while getopts "d:t:z:c:r:D:i:" opt; do
   case $opt in
     d) DSSET="$OPTARG" ;;
     t) TLS_DS="$OPTARG" ;;
     z) ZONEFILE="$OPTARG" ;;
     c) CONFIG_NAME="$OPTARG" ;;
     r) ROOT_ANCHOR="$OPTARG" ;;
-    *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-z <zonefile>] [-c <config file>] [-r <root anchor XML file>]" >&2; exit 1 ;;
+    D) DOMAIN="$OPTARG" ;;
+    i) IP="$OPTARG" ;;
+    *) echo "Usage: $0 [-d <dsset>] [-t <tls_ds>] [-z <zonefile>] [-c <config file>] [-r <root anchor XML file>] [-D <domain>] [-i <IP address>]" >&2; exit 1 ;;
   esac
 done
 
@@ -71,16 +76,27 @@ else
 fi
 
 # generate TLS key
-sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=resolver"
+if [ -n "$IP" ]; then
+    sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=${DOMAIN}" -addext "subjectAltName=DNS:${DOMAIN},IP:${IP}"
+    sudo openssl req -x509 -nodes -days 365 -newkey ${PQC_TLS_DS} -keyout pqc-key.pem.full -out pqc-cert.pem -subj "/CN=${DOMAIN}" -addext "subjectAltName=DNS:${DOMAIN},IP:${IP}"
+else
+    sudo openssl req -x509 -nodes -days 365 -newkey ${TLS_DS} -keyout key.pem -out cert.pem -subj "/CN=${DOMAIN}" -addext "subjectAltName=DNS:${DOMAIN}"
+    sudo openssl req -x509 -nodes -days 365 -newkey ${PQC_TLS_DS} -keyout pqc-key.pem.full -out pqc-cert.pem -subj "/CN=${DOMAIN}" -addext "subjectAltName=DNS:${DOMAIN}"
+fi
+sudo openssl pkey -in pqc-key.pem.full -provparam ml-dsa.output_formats=seed-only -out pqc-key.pem
 
 # copy files
 cp CoreFile ${CONFIG_DIR}
 cp $ZONEFILE ${CONFIG_DIR}/named.root
 mv key.pem ${CONFIG_DIR}
+mv pqc-key.pem ${CONFIG_DIR}
+mv pqc-key.pem.full ${CONFIG_DIR}
 mv cert.pem ${CONFIG_DIR}
+mv pqc-cert.pem ${CONFIG_DIR}
 
 jq -n \
     --arg tls_ds "$TLS_DS" \
+    --arg pqc_tls_ds "$PQC_TLS_DS" \
     --arg config_dir "$CONFIG_DIR" \
     --arg date_time "$DATE_TIME" \
     --arg config_name "$CONFIG_NAME" \
