@@ -22,8 +22,9 @@ CONTENT_TYPES = {
 }
 
 IPV4_RE = re.compile(r"^\d{1,3}(\.\d{1,3}){3}$")
-QNAME_RE = re.compile(r"^[a-z0-9]([a-z0-9.-]*[a-z0-9])?$")
+QNAME_RE = re.compile(r"^[a-z0-9]([a-z0-9.-]*[a-z0-9])?\.?$")
 TRANSPORTS = {"doq", "dot", "doudp", "dotcp"}
+QTYPES = {"A", "AAAA", "MX", "TXT", "NS", "SOA", "CNAME", "PTR", "SRV", "DNSKEY", "DS", "RRSIG", "CAA", "HTTPS", "SVCB", "ANY"}
 
 
 def available_tools():
@@ -47,25 +48,25 @@ def pick_tool(transport):
     return None
 
 
-def build_command(tool, resolver, port, transport, qname):
+def build_command(tool, resolver, port, transport, qname, qtype):
     if tool == "q":
         scheme = {"doq": "quic", "dot": "tls", "doudp": "", "dotcp": ""}[transport]
         server = f"@{scheme}://{resolver}:{port}" if scheme else f"@{resolver}:{port}"
-        cmd = [tool, server, qname, "A", "-d", "--format=raw"]
+        cmd = [tool, server, qname, qtype, "-d", "--format=raw"]
         if transport == "dotcp":
             cmd.append("--tcp")
         if transport in {"dot", "doq"}:
             cmd.append("-i")
         return cmd
     if tool == "kdig":
-        cmd = [tool, f"@{resolver}", "-p", str(port), qname, "A", "+dnssec"]
+        cmd = [tool, f"@{resolver}", "-p", str(port), qname, qtype, "+dnssec"]
         if transport == "dot":
             cmd.append("+tls")
         elif transport == "dotcp":
             cmd.append("+tcp")
         return cmd
     if tool == "dig":
-        cmd = [tool, f"@{resolver}", "-p", str(port), qname, "A", "+dnssec"]
+        cmd = [tool, f"@{resolver}", "-p", str(port), qname, qtype, "+dnssec"]
         if transport == "dot":
             cmd.append("+tls")
         elif transport == "dotcp":
@@ -74,14 +75,14 @@ def build_command(tool, resolver, port, transport, qname):
     return None
 
 
-def run_query(resolver, port, transport, qname):
+def run_query(resolver, port, transport, qname, qtype="A"):
     tool = pick_tool(transport)
     if tool is None:
         return {
             "ok": False,
             "error": f"No installed DNS client supports {transport}. Install q (go install github.com/natesales/q@latest) for DoQ/DoT, or kdig/dig.",
         }, 200
-    cmd = build_command(tool, resolver, port, transport, qname)
+    cmd = build_command(tool, resolver, port, transport, qname, qtype)
     start = time.perf_counter()
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=TIMEOUT_S)
@@ -126,7 +127,8 @@ class Handler(BaseHTTPRequestHandler):
         if parsed.path == "/api/query":
             qs = parse_qs(parsed.query)
             resolver = qs.get("resolver", [""])[0]
-            qname = qs.get("qname", [""])[0]
+            qname = qs.get("qname", [""])[0].rstrip(".")
+            qtype = qs.get("qtype", ["A"])[0].upper()
             transport = qs.get("transport", [""])[0]
             try:
                 port = int(qs.get("port", [""])[0])
@@ -142,7 +144,10 @@ class Handler(BaseHTTPRequestHandler):
             if not QNAME_RE.match(qname):
                 self.send_json({"ok": False, "error": "Invalid QNAME"}, 400)
                 return
-            obj, code = run_query(resolver, port, transport, qname)
+            if qtype not in QTYPES:
+                self.send_json({"ok": False, "error": "Invalid QTYPE"}, 400)
+                return
+            obj, code = run_query(resolver, port, transport, qname, qtype)
             self.send_json(obj, code)
             return
         self.serve_static(parsed.path)

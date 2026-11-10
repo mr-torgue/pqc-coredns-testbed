@@ -37,6 +37,17 @@
         <input id="port" type="number" min="1" max="65535">
         <div id="client-warning" class="warning hidden"></div>
       </div>
+
+      <div class="card">
+        <h2>4. Query name &amp; type</h2>
+        <label for="subdomain">Subdomain (default: test)</label>
+        <input id="subdomain" type="text" placeholder="test" autocomplete="off">
+        <label for="qtype">Query type</label>
+        <select id="qtype"></select>
+        <label for="override">Full query domain (optional, overrides subdomain+scheme)</label>
+        <input id="override" type="text" placeholder="google.com" autocomplete="off">
+        <div id="name-warning" class="warning hidden"></div>
+      </div>
     </section>
 
     <section class="card preview">

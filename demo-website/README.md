@@ -39,13 +39,18 @@ Then open <http://127.0.0.1:8080>.
 ## What it does
 
 1. Pick a resolver: `16.50.166.15` (ours, PQC-capable), `1.1.1.1`
-   (Cloudflare) or `8.8.8.8` (Google). The supported PQC algorithms and
-   clients (DoQ, DoT, DoUDP, DoTCP) are shown per resolver.
+   (Cloudflare, incl. MLDSA44), `9.9.9.9` (Quad9) or `8.8.8.8` (Google).
+   The supported PQC algorithms and clients (DoQ, DoT, DoUDP, DoTCP)
+   are shown per resolver.
 2. Pick a DNSSEC signature scheme (e.g. `p256-falcon512`, `falcon512`,
    `mldsa44`). The QNAME that will be queried becomes
-   `test.[scheme]-sydney.hydra-dns.au`.
+   `[subdomain].[scheme]-sydney.hydra-dns.au`.
 3. Pick a client: DNS over QUIC (default port 853), DNS over TLS
    (default port 8853), DoUDP or DoTCP. The port can be changed.
+4. Set the subdomain label (default `test`, e.g. `xyz` queries
+   `xyz.[scheme]-sydney.hydra-dns.au`), the query type (A, AAAA, MX,
+   DNSKEY, ...), or a full query domain (e.g. `google.com`) which
+   overrides the subdomain+scheme pattern entirely.
 
 The exact query (and the `q` command the backend will run) is shown
 before submitting. Executing sends the query through the local DNS

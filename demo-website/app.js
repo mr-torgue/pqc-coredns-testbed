@@ -34,7 +34,10 @@ const CLIENTS = {
 
 const CLIENT_ORDER = ["doq", "dot", "doudp", "dotcp"];
 
+const Q_TYPES = ["A", "AAAA", "MX", "TXT", "NS", "SOA", "CNAME", "PTR", "SRV", "DNSKEY", "DS", "RRSIG", "CAA", "HTTPS", "SVCB", "ANY"];
+
 const CLASSICAL_ALGORITHMS = ALGORITHMS.filter((a) => !a.pqc).map((a) => a.id);
+const CLOUDFLARE_ALGORITHMS = CLASSICAL_ALGORITHMS.concat(["mldsa44"]);
 
 const RESOLVERS = {
   ours: {
@@ -48,6 +51,13 @@ const RESOLVERS = {
     value: "cloudflare",
     ip: "1.1.1.1",
     name: "Cloudflare",
+    algorithms: CLOUDFLARE_ALGORITHMS,
+    clients: ["dot", "doudp", "dotcp"]
+  },
+  quad9: {
+    value: "quad9",
+    ip: "9.9.9.9",
+    name: "Quad9",
     algorithms: CLASSICAL_ALGORITHMS,
     clients: ["dot", "doudp", "dotcp"]
   },
@@ -60,13 +70,16 @@ const RESOLVERS = {
   }
 };
 
-const RESOLVER_ORDER = ["ours", "cloudflare", "google"];
+const RESOLVER_ORDER = ["ours", "cloudflare", "quad9", "google"];
 
 const state = {
   resolver: "ours",
   algorithm: "p256-falcon512",
   client: "doq",
-  port: CLIENTS.doq.defaultPort
+  port: CLIENTS.doq.defaultPort,
+  subdomain: "test",
+  qtype: "A",
+  override: ""
 };
 
 const els = {
@@ -78,6 +91,10 @@ const els = {
   client: document.getElementById("client"),
   port: document.getElementById("port"),
   clientWarning: document.getElementById("client-warning"),
+  subdomain: document.getElementById("subdomain"),
+  qtype: document.getElementById("qtype"),
+  override: document.getElementById("override"),
+  nameWarning: document.getElementById("name-warning"),
   preview: document.getElementById("query-preview"),
   cli: document.getElementById("cli-preview"),
   run: document.getElementById("run"),
@@ -87,7 +104,8 @@ const els = {
 };
 
 function qname() {
-  return `test.${state.algorithm}-${LOCATION}.${BASE_DOMAIN}`;
+  if (state.override.trim() !== "") return state.override.trim();
+  return `${state.subdomain}.${state.algorithm}-${LOCATION}.${BASE_DOMAIN}`;
 }
 
 function fillSelect(select, options, current) {
@@ -125,7 +143,7 @@ function cliCommand() {
     ? `@${r.ip}:${state.port}`
     : `@${scheme}://${r.ip}:${state.port}`;
   const tcpFlag = scheme === "tcp" ? " --tcp" : "";
-  return `q ${server} ${qname()} A -d${tcpFlag}`;
+  return `q ${server} ${qname()} ${state.qtype} -d${tcpFlag}`;
 }
 
 function renderPreview() {
@@ -135,13 +153,16 @@ function renderPreview() {
     ["Resolver", `${r.name} — ${r.ip}:${state.port}`],
     ["Client / transport", `${c.label} (${c.scheme}://)`],
     ["QNAME", qname()],
-    ["QTYPE", "A (DO bit set for DNSSEC)"]
+    ["QTYPE", `${state.qtype} (DO bit set for DNSSEC)`]
   ];
   els.preview.innerHTML = rows
     .map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`)
     .join("");
   els.cli.textContent = cliCommand();
 }
+
+const LABEL_RE = /^[a-z0-9]([a-z0-9-]*[a-z0-9])?$/;
+const DOMAIN_RE = /^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+\.?$/;
 
 function validate() {
   const r = RESOLVERS[state.resolver];
@@ -158,14 +179,24 @@ function validate() {
   if (!r.clients.includes(state.client)) {
     clientMsg = `${r.name} (${r.ip}) does not support ${c.label}.`;
   }
+  let nameMsg = "";
+  if (state.override.trim() !== "") {
+    if (!DOMAIN_RE.test(state.override.trim())) {
+      nameMsg = `"${state.override}" is not a valid domain name.`;
+    }
+  } else if (!LABEL_RE.test(state.subdomain)) {
+    nameMsg = `"${state.subdomain}" is not a valid subdomain label.`;
+  }
 
   els.algorithmWarning.textContent = algoMsg;
   els.algorithmWarning.classList.toggle("hidden", !algoMsg);
   els.clientWarning.textContent = clientMsg;
   els.clientWarning.classList.toggle("hidden", !clientMsg);
-  els.run.disabled = Boolean(algoMsg || clientMsg);
+  els.nameWarning.textContent = nameMsg;
+  els.nameWarning.classList.toggle("hidden", !nameMsg);
+  els.run.disabled = Boolean(algoMsg || clientMsg || nameMsg);
 
-  return !algoMsg && !clientMsg;
+  return !algoMsg && !clientMsg && !nameMsg;
 }
 
 function updateAll() {
@@ -200,7 +231,8 @@ async function runQuery() {
     resolver: r.ip,
     port: String(state.port),
     transport: state.client,
-    qname: qname()
+    qname: qname(),
+    qtype: state.qtype
   });
 
   try {
@@ -229,7 +261,7 @@ function renderResult(data) {
     ["DNS client", data.tool || "n/a"],
     ["Command", data.command || cliCommand()],
     ["Resolver", `${RESOLVERS[state.resolver].ip}:${state.port} via ${CLIENTS[state.client].label}`],
-    ["Question", `${qname()} A`]
+    ["Question", `${qname()} ${state.qtype}`]
   ];
   els.resultDetails.innerHTML = rows
     .map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`)
@@ -250,7 +282,11 @@ function init() {
     value: k, label: CLIENTS[k].label
   })), state.client);
 
+  fillSelect(els.qtype, Q_TYPES.map((t) => ({ value: t, label: t })), state.qtype);
+
   els.port.value = state.port;
+  els.subdomain.value = state.subdomain;
+  els.override.value = state.override;
 
   els.resolver.addEventListener("change", () => {
     state.resolver = els.resolver.value;
@@ -274,6 +310,21 @@ function init() {
     if (p >= 1 && p <= 65535) {
       state.port = p;
     }
+    updateAll();
+  });
+
+  els.subdomain.addEventListener("input", () => {
+    state.subdomain = els.subdomain.value.trim().toLowerCase();
+    updateAll();
+  });
+
+  els.qtype.addEventListener("change", () => {
+    state.qtype = els.qtype.value;
+    updateAll();
+  });
+
+  els.override.addEventListener("input", () => {
+    state.override = els.override.value.trim().toLowerCase();
     updateAll();
   });
 
