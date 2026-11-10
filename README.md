@@ -76,6 +76,9 @@ Use `monitor.sh` to sart monitoring.
 This includes CPU/memory/network monitoring using sar, pcap dumps, and logging queries. 
 Using `-h` option will show all parameters. 
 
+# Demo website
+See [demo-website/](demo-website/) for a static demo website to query the `test.[scheme]-sydney.hydra-dns.au` zones over DoQ, DoT, DoUDP and DoTCP.
+
 # Manual Setup
 Not recommended, but possible if you know what you are doing.
 
