@@ -10,6 +10,7 @@
   <header>
     <h1>Post-Quantum DNSSEC Demo</h1>
     <p class="subtitle">Query <code>test.[scheme]-sydney.hydra-dns.au</code> over DoQ, DoT, DoUDP or DoTCP against a PQC-capable resolver.</p>
+    <p id="backend-status" class="backend-status">Local backend: checking…</p>
   </header>
 
   <main>
@@ -47,7 +48,6 @@
 
     <section id="results" class="card results hidden">
       <h2>Result</h2>
-      <p class="sim-note">Simulated demo response &mdash; a browser cannot perform PQC/TLS handshakes itself, so timing and records are modelled from the testbed experiments.</p>
       <dl id="result-details" class="preview-list"></dl>
       <pre id="result-raw"></pre>
     </section>

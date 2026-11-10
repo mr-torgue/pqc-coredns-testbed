@@ -1,24 +1,40 @@
 # PQC DNSSEC demo website
 
-A dependency-free static website that demonstrates querying the
-post-quantum DNSSEC test zones (`test.[scheme]-sydney.hydra-dns.au`)
-over different transports against different resolvers.
+A static front-end plus a tiny local backend that runs a real DNS client
+(`q`, falling back to `kdig`/`dig`) so the browser never has to open raw
+sockets itself.
 
-## Run locally
+## How it works
 
-Open `index.html` directly in a browser, or serve the folder:
+- `server.py` (Python 3 standard library only) serves this folder on
+  `http://127.0.0.1:8080` and exposes:
+  - `GET /api/status` — which DNS clients are installed
+  - `GET /api/query?resolver=<ip>&port=<port>&transport=<doq|dot|doudp|dotcp>&qname=<name>`
+    — runs `q` (or `kdig`/`dig`) in the background and returns the real
+    command, rcode, query time and raw output as JSON
+- `index.html` / `app.js` — the front-end. It previews the exact query,
+  then calls `/api/query` when you press "Run query" and shows the real
+  response time and result.
+
+## Setup
+
+Install a DNS client (q is recommended because it supports DoQ):
+
+```
+go install github.com/natesales/q@latest   # or: brew install q
+```
+
+`kdig` (from knot-dnsutils) or `dig` (from bind9-utils) work as fallbacks
+for DoT/DoUDP/DoTCP.
+
+## Run
 
 ```
 cd demo-website
-python3 -m http.server 8080
+python3 server.py
 ```
 
-Then visit <http://localhost:8080>.
-
-## GitHub Pages
-
-Enable GitHub Pages for this repository with the source set to
-`/demo-website` on the default branch to publish the demo.
+Then open <http://127.0.0.1:8080>.
 
 ## What it does
 
@@ -31,6 +47,6 @@ Enable GitHub Pages for this repository with the source set to
 3. Pick a client: DNS over QUIC (default port 853), DNS over TLS
    (default port 8853), DoUDP or DoTCP. The port can be changed.
 
-The exact query is shown before running. Executing the query shows the
-response time and the (simulated) result, since a browser cannot perform
-PQC/TLS handshakes itself.
+The exact query (and the `q` command the backend will run) is shown
+before submitting. Executing sends the query through the local DNS
+client and displays the real response time, rcode and answer.

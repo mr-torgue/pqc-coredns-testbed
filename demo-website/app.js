@@ -1,6 +1,5 @@
 const BASE_DOMAIN = "hydra-dns.au";
 const LOCATION = "sydney";
-const TEST_ANSWER_IP = "42.42.42.42";
 
 const ALGORITHMS = [
   { id: "p256-falcon512", label: "P256_FALCON512", pqc: true },
@@ -35,7 +34,6 @@ const CLIENTS = {
 
 const CLIENT_ORDER = ["doq", "dot", "doudp", "dotcp"];
 
-const PQC_ALGORITHMS = ALGORITHMS.filter((a) => a.pqc).map((a) => a.id);
 const CLASSICAL_ALGORITHMS = ALGORITHMS.filter((a) => !a.pqc).map((a) => a.id);
 
 const RESOLVERS = {
@@ -72,6 +70,7 @@ const state = {
 };
 
 const els = {
+  backend: document.getElementById("backend-status"),
   resolver: document.getElementById("resolver"),
   resolverInfo: document.getElementById("resolver-info"),
   algorithm: document.getElementById("algorithm"),
@@ -119,6 +118,16 @@ function renderResolverInfo() {
     <div class="tag-list">${clientTags}</div>`;
 }
 
+function cliCommand() {
+  const r = RESOLVERS[state.resolver];
+  const scheme = CLIENTS[state.client].scheme;
+  const server = scheme === "udp" || scheme === "tcp"
+    ? `@${r.ip}:${state.port}`
+    : `@${scheme}://${r.ip}:${state.port}`;
+  const tcpFlag = scheme === "tcp" ? " --tcp" : "";
+  return `q ${server} ${qname()} A -d${tcpFlag}`;
+}
+
 function renderPreview() {
   const r = RESOLVERS[state.resolver];
   const c = CLIENTS[state.client];
@@ -126,20 +135,12 @@ function renderPreview() {
     ["Resolver", `${r.name} — ${r.ip}:${state.port}`],
     ["Client / transport", `${c.label} (${c.scheme}://)`],
     ["QNAME", qname()],
-    ["QTYPE", "A (DNSSEC requested, DO bit set)"]
+    ["QTYPE", "A (DO bit set for DNSSEC)"]
   ];
   els.preview.innerHTML = rows
     .map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`)
     .join("");
-
-  const q = qname();
-  const cliByClient = {
-    doq: `doq @${r.ip} -p ${state.port} ${q} A +dnssec`,
-    dot: `dig +tls @${r.ip} -p ${state.port} ${q} A +dnssec`,
-    doudp: `dig @${r.ip} -p ${state.port} ${q} A +dnssec`,
-    dotcp: `dig +tcp @${r.ip} -p ${state.port} ${q} A +dnssec`
-  };
-  els.cli.textContent = cliByClient[state.client];
+  els.cli.textContent = cliCommand();
 }
 
 function validate() {
@@ -173,52 +174,67 @@ function updateAll() {
   validate();
 }
 
-function simulate() {
+async function checkBackend() {
+  try {
+    const res = await fetch("/api/status");
+    const data = await res.json();
+    const tools = Object.entries(data.tools)
+      .map(([t, ok]) => `${t} ${ok ? "✓" : "✗"}`)
+      .join(", ");
+    els.backend.innerHTML = `Local backend: <span class="status-ok">running</span> — DNS clients: ${tools}`;
+  } catch (e) {
+    els.backend.innerHTML = `Local backend: <span class="status-err">not running</span> — start it with <code>python3 demo-website/server.py</code>, then reload. Queries cannot be executed without it.`;
+  }
+}
+
+async function runQuery() {
+  if (!validate()) return;
   const r = RESOLVERS[state.resolver];
-  const c = CLIENTS[state.client];
-  const algo = ALGORITHMS.find((a) => a.id === state.algorithm);
+  els.run.disabled = true;
+  els.run.textContent = "Querying…";
+  els.results.classList.remove("hidden");
+  els.resultDetails.innerHTML = "<dt>Status</dt><dd>running…</dd>";
+  els.resultRaw.textContent = "";
 
-  const base = { ours: [35, 140], cloudflare: [8, 45], google: [10, 50] }[state.resolver];
-  const transportFactor = { doq: 1.15, dot: 1.25, doudp: 1.0, dotcp: 1.3 }[state.client];
-  const ms = Math.round((base[0] + Math.random() * (base[1] - base[0])) * transportFactor * 10) / 10;
+  const params = new URLSearchParams({
+    resolver: r.ip,
+    port: String(state.port),
+    transport: state.client,
+    qname: qname()
+  });
 
-  const ad = state.resolver === "ours" || !algo.pqc;
-  const validation = algo.pqc
-    ? `validated with ${algo.label} (post-quantum)`
-    : `validated with ${algo.label} (classical)`;
+  try {
+    const res = await fetch(`/api/query?${params}`);
+    const data = await res.json();
+    renderResult(data);
+  } catch (e) {
+    els.resultDetails.innerHTML = `<dt>Status</dt><dd><span class="status-err">backend unreachable</span></dd>
+      <dt>Hint</dt><dd>Start the local backend with <code>python3 demo-website/server.py</code> and reload this page.</dd>`;
+    els.resultRaw.textContent = String(e);
+  } finally {
+    els.run.disabled = false;
+    els.run.textContent = "Run query";
+    els.results.scrollIntoView({ behavior: "smooth" });
+  }
+}
 
-  const details = [
-    ["Status", `<span class="status-ok">NOERROR</span>`],
-    ["Response time", `${ms} ms`],
-    ["Resolver", `${r.name} — ${r.ip}:${state.port} over ${c.label}`],
-    ["Question", `${qname()} A`],
-    ["Answer", `${qname()} 604800 IN A ${TEST_ANSWER_IP}`],
-    ["DNSSEC", `AD=${ad ? "1" : "0"} — ${validation}`]
+function renderResult(data) {
+  const timeMs = data.query_time_ms != null ? data.query_time_ms : data.wall_time_ms;
+  const statusOk = data.ok && data.rcode === "NOERROR";
+  const rows = [
+    ["Status", data.error
+      ? `<span class="status-err">${data.error}</span>`
+      : `<span class="${statusOk ? "status-ok" : "status-err"}">${data.rcode || "no rcode"} (exit ${data.exit_code})</span>`],
+    ["Response time", timeMs != null ? `${timeMs} ms` : "n/a"],
+    ["DNS client", data.tool || "n/a"],
+    ["Command", data.command || cliCommand()],
+    ["Resolver", `${RESOLVERS[state.resolver].ip}:${state.port} via ${CLIENTS[state.client].label}`],
+    ["Question", `${qname()} A`]
   ];
-  els.resultDetails.innerHTML = details
+  els.resultDetails.innerHTML = rows
     .map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`)
     .join("");
-
-  els.resultRaw.textContent = [
-    `;; Query sent to ${r.ip}:${state.port} via ${c.scheme}:// — ${qname()} A +dnssec`,
-    `;; Got answer:`,
-    `;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: ${1000 + Math.floor(Math.random() * 9000)}`,
-    `;; flags: qr rd ra ${ad ? "ad" : ""}; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1`,
-    ``,
-    `;; QUESTION SECTION:`,
-    `;${qname()}.\t\tIN\tA`,
-    ``,
-    `;; ANSWER SECTION:`,
-    `${qname()}.\t604800\tIN\tA\t${TEST_ANSWER_IP}`,
-    ``,
-    `;; DNSSEC: ${validation}; AD bit ${ad ? "set" : "not set"}`,
-    `;; Query time: ${ms} ms`,
-    `;; SERVER: ${r.ip}#${state.port}(${c.scheme})`,
-    `;; WHEN: ${new Date().toUTCString()}`
-  ].join("\n");
-
-  els.results.classList.remove("hidden");
-  els.results.scrollIntoView({ behavior: "smooth" });
+  els.resultRaw.textContent = data.output || data.error || "(no output)";
 }
 
 function init() {
@@ -261,10 +277,9 @@ function init() {
     updateAll();
   });
 
-  els.run.addEventListener("click", () => {
-    if (validate()) simulate();
-  });
+  els.run.addEventListener("click", runQuery);
 
+  checkBackend();
   updateAll();
 }
 
