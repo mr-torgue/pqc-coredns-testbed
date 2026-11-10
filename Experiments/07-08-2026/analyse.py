@@ -86,7 +86,7 @@ def find_csv_and_calculate_stats(directory):
     return {"avg_query_time": avg, "std_dev_query_time": std_dev}
 
 def parse_cpu_log(directory):
-    """Parse the CPU log file in the 'Res' subdirectory and extract the average CPU usage."""
+    """Parse the CPU log file in the 'Res' subdirectory and extract all CPU usage values."""
     res_dir = os.path.join(directory, "Res")
     if not os.path.exists(res_dir):
         print(f"Error: 'Res' subdirectory not found in {directory}.")
@@ -102,11 +102,38 @@ def parse_cpu_log(directory):
     
     try:
         with open(cpu_file, 'r') as file:
+            cpu_values = []
             for line in file:
                 if line.startswith("Average:"):
                     parts = line.split()
                     if len(parts) >= 8:
-                        return float(parts[2])  
+                        avg_cpu = float(parts[2])
+                else:
+                    # Extract all CPU usage values (e.g., %us)
+                    parts = line.split()
+                    if len(parts) >= 2:
+                        try:
+                            cpu_values.append(float(parts[2]))
+                        except ValueError as e:
+                            print("cannot parse %s, error %s" % (parts[2], e))
+                            continue
+
+            if not cpu_values:
+                print(f"Error: No CPU values found in {cpu_file}.")
+                return None
+
+            # Calculate overall average
+            overall_avg = avg_cpu if 'avg_cpu' in locals() else statistics.mean(cpu_values)
+
+            # Calculate average of top 5 values
+            sorted_values = sorted(cpu_values, reverse=True)
+            top5_avg = statistics.mean(sorted_values[:5]) if len(sorted_values) >= 5 else overall_avg
+
+            return {
+                "avg_cpu_usage": overall_avg,
+                "top5_avg_cpu_usage": top5_avg,
+                "cpu_values": cpu_values
+            }
     except Exception as e:
         print(f"Error reading CPU log file {cpu_file}: {e}")
         return None
@@ -115,7 +142,7 @@ def parse_cpu_log(directory):
     return None
 
 def parse_mem_log(directory):
-    """Parse the memory log file in the 'Res' subdirectory and extract the % memused."""
+    """Parse the memory log file in the 'Res' subdirectory and extract all % memused values."""
     res_dir = os.path.join(directory, "Res")
     if not os.path.exists(res_dir):
         print(f"Error: 'Res' subdirectory not found in {directory}.")
@@ -131,12 +158,37 @@ def parse_mem_log(directory):
     
     try:
         with open(mem_file, 'r') as file:
+            mem_values = []
             for line in file:
                 if line.startswith("Average:"):
                     parts = line.split()
-                    # Average:       256867   1283596    375388     19.24      7290   1125802   1648426     84.50    807410    610530      1188
                     if len(parts) >= 10:
-                        return float(parts[4])  # Fourth number after "Average:"
+                        avg_mem = float(parts[4])
+                else:
+                    # Extract all %mem values (e.g., %mem)
+                    parts = line.split()
+                    if len(parts) >= 5:
+                        try:
+                            mem_values.append(float(parts[4]))
+                        except ValueError:
+                            continue
+
+            if not mem_values:
+                print(f"Error: No memory values found in {mem_file}.")
+                return None
+
+            # Calculate overall average
+            overall_avg = avg_mem if 'avg_mem' in locals() else statistics.mean(mem_values)
+
+            # Calculate average of top 5 values
+            sorted_values = sorted(mem_values, reverse=True)
+            top5_avg = statistics.mean(sorted_values[:5]) if len(sorted_values) >= 5 else overall_avg
+
+            return {
+                "avg_mem_usage": overall_avg,
+                "top5_avg_mem_usage": top5_avg,
+                "mem_values": mem_values
+            }
     except Exception as e:
         print(f"Error reading memory log file {mem_file}: {e}")
         return None
@@ -208,15 +260,19 @@ def analyse_directory(directory):
         stats.update(csv_stats)
     
     # Parse CPU log
-    cpu_usage = parse_cpu_log(directory)
-    if cpu_usage is not None:
-        stats["avg_cpu_usage"] = cpu_usage
-    
+    cpu_data = parse_cpu_log(directory)
+    if cpu_data is not None:
+        stats["avg_cpu_usage"] = cpu_data["avg_cpu_usage"]
+        stats["top5_avg_cpu_usage"] = cpu_data["top5_avg_cpu_usage"]
+        stats["cpu_values"] = cpu_data["cpu_values"]
+
     # Parse memory log
-    mem_usage = parse_mem_log(directory)
-    if mem_usage is not None:
-        stats["mem_usage_percent"] = mem_usage
-    
+    mem_data = parse_mem_log(directory)
+    if mem_data is not None:
+        stats["avg_mem_usage"] = mem_data["avg_mem_usage"]
+        stats["top5_avg_mem_usage"] = mem_data["top5_avg_mem_usage"]
+        stats["mem_values"] = mem_data["mem_values"]
+
     # Parse network log
     net_usage = parse_net_log(directory)
     if net_usage is not None:
@@ -260,7 +316,6 @@ def load_json(directory):
         sys.exit(1)
     # check 5
     return json_data
-
 def analyse_directories(keyword):
     """Find directories starting with the keyword and analyse them."""
     directories = [d for d in os.listdir(".") if os.path.isdir(d) and d.startswith(keyword)]
@@ -288,8 +343,10 @@ def analyse_directories(keyword):
             client_rtt_std_dev = stats.get('std_dev_query_time', 'N/A')
             res_rtt_avg = stats.get('res_rtt_avg', 'N/A')
             res_rtt_std_dev = stats.get('res_rtt_std_dev', 'N/A')
-            cpu = stats.get('avg_cpu_usage', 'N/A')
-            mem = stats.get('mem_usage_percent', 'N/A')
+            avg_cpu = stats.get('avg_cpu_usage', 'N/A')
+            top5_avg_cpu = stats.get('top5_avg_cpu_usage', 'N/A')
+            avg_mem = stats.get('avg_mem_usage', 'N/A')
+            top5_avg_mem = stats.get('top5_avg_mem_usage', 'N/A')
             net_rx, net_tx = stats.get('net_rx_tx', 'N/A/N/A').split('/') if 'net_rx_tx' in stats else ('N/A', 'N/A')
             results.append({
                 'directory': directory,
@@ -303,8 +360,10 @@ def analyse_directories(keyword):
                 'client_rtt_std_dev': client_rtt_std_dev,
                 'res_rtt_avg': res_rtt_avg,
                 'res_rtt_std_dev': res_rtt_std_dev,
-                'cpu': cpu,
-                'mem': mem,
+                'avg_cpu_usage': avg_cpu,
+                'top5_avg_cpu_usage': top5_avg_cpu,
+                'avg_mem_usage': avg_mem,
+                'top5_avg_mem_usage': top5_avg_mem,
                 'net_rx': net_rx,
                 'net_tx': net_tx
             })
@@ -318,34 +377,95 @@ def analyse_directories(keyword):
                 result['client'] = 'UDP-DoQ'
                 result['label'] = result['label'].replace('UDP-DoQ', '').replace('--', '-').strip('-')
         with open('results.csv', 'w', newline='') as csvfile:
-            fieldnames = ['directory', 'count', 'nodnssec', 'domain', 'algorithm', 'client', 'label',
+            fieldnames = [
+                'directory', 'count', 'nodnssec', 'domain', 'algorithm', 'client', 'label',
                          'client_rtt_avg', 'client_rtt_std_dev', 'res_rtt_avg', 'res_rtt_std_dev',
-                         'cpu', 'mem', 'net_rx', 'net_tx']
+                'avg_cpu_usage', 'top5_avg_cpu_usage', 'avg_mem_usage', 'top5_avg_mem_usage',
+                'net_rx', 'net_tx'
+            ]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             for result in results:
                 writer.writerow(result)
+
         # Convert CSV to LaTeX table
         if results:
+            # Big table with all results
             latex_content = r"""
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
 \hline
-Algorithm & Client & Mode & \textbf{Client RTT (ms)} & \textbf{Res RTT (ms)} & CPU (\%) & Mem (\%) & Network (rx/tx kBps) \\
+Algorithm & Client & Mode & \textbf{Client RTT Avg (ms)} & \textbf{Res RTT Avg (ms)} & \textbf{CPU Avg (\%)} & \textbf{CPU Top5 Avg (\%)} & \textbf{Mem Avg (\%)} & \textbf{Mem Top5 Avg (\%)} & Network (rx/tx kBps) \\
 \hline
 """
             for result in results:
                 client_rtt = f"{result['client_rtt_avg']:.2f} ({result['client_rtt_std_dev']:.2f})" if result['client_rtt_avg'] != 'N/A' else 'N/A'
                 res_rtt = f"{result['res_rtt_avg']:.2f} ({result['res_rtt_std_dev']:.2f})" if result['res_rtt_avg'] != 'N/A' else 'N/A'
                 net_rx_tx = f"{result['net_rx']}/{result['net_tx']}" if result['net_rx'] != 'N/A' else 'N/A'
+                avg_cpu = f"{result['avg_cpu_usage']:.2f}" if result['avg_cpu_usage'] != 'N/A' else 'N/A'
+                top5_avg_cpu = f"{result['top5_avg_cpu_usage']:.2f}" if result['top5_avg_cpu_usage'] != 'N/A' else 'N/A'
+                avg_mem = f"{result['avg_mem_usage']:.2f}" if result['avg_mem_usage'] != 'N/A' else 'N/A'
+                top5_avg_mem = f"{result['top5_avg_mem_usage']:.2f}" if result['top5_avg_mem_usage'] != 'N/A' else 'N/A'
 
-                latex_content += f"{result['algorithm'].replace('_', '\\_')} & {result['client'].replace('_', '\\_')} & {result['label'].replace('_', '\\_')} & {client_rtt} & {res_rtt} & {result['cpu']} & {result['mem']} & {net_rx_tx} \\\\\n"
+                latex_content += f"{result['algorithm'].replace('_', '\\_')} & {result['client'].replace('_', '\\_')} & {result['label'].replace('_', '\\_')} & {client_rtt} & {res_rtt} & {avg_cpu} & {top5_avg_cpu} & {avg_mem} & {top5_avg_mem} & {net_rx_tx} \\\n"
 
+            latex_content += r"""\hline
+\end{tabular}
+
+\newpage
+
+\section*{CPU Usage}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Algorithm & Client & Mode & \textbf{CPU Avg (\%)} & \textbf{CPU Top5 Avg (\%)} \\
+\hline
+"""
+            for result in results:
+                avg_cpu = f"{result['avg_cpu_usage']:.2f}" if result['avg_cpu_usage'] != 'N/A' else 'N/A'
+                top5_avg_cpu = f"{result['top5_avg_cpu_usage']:.2f}" if result['top5_avg_cpu_usage'] != 'N/A' else 'N/A'
+                latex_content += f"{result['algorithm'].replace('_', '\\_')} & {result['client'].replace('_', '\\_')} & {result['label'].replace('_', '\\_')} & {avg_cpu} & {top5_avg_cpu} \\\n"
+            latex_content += r"""\hline
+\end{tabular}
+
+\section*{Memory Usage}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Algorithm & Client & Mode & \textbf{Mem Avg (\%)} & \textbf{Mem Top5 Avg (\%)} \\
+\hline
+"""
+            for result in results:
+                avg_mem = f"{result['avg_mem_usage']:.2f}" if result['avg_mem_usage'] != 'N/A' else 'N/A'
+                top5_avg_mem = f"{result['top5_avg_mem_usage']:.2f}" if result['top5_avg_mem_usage'] != 'N/A' else 'N/A'
+                latex_content += f"{result['algorithm'].replace('_', '\\_')} & {result['client'].replace('_', '\\_')} & {result['label'].replace('_', '\\_')} & {avg_mem} & {top5_avg_mem} \\\n"
+            latex_content += r"""\hline
+\end{tabular}
+
+\section*{Network Usage}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Algorithm & Client & Mode & Network (rx/tx kBps) \\
+\hline
+"""
+            for result in results:
+                net_rx_tx = f"{result['net_rx']}/{result['net_tx']}" if result['net_rx'] != 'N/A' else 'N/A'
+                latex_content += f"{result['algorithm'].replace('_', '\\_')} & {result['client'].replace('_', '\\_')} & {result['label'].replace('_', '\\_')} & {net_rx_tx} \\\n"
+            latex_content += r"""\hline
+\end{tabular}
+
+\section*{RTT}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Algorithm & Client & Mode & \textbf{Client RTT Avg (ms)} & \textbf{Res RTT Avg (ms)} \\
+\hline
+"""
+            for result in results:
+                client_rtt = f"{result['client_rtt_avg']:.2f} ({result['client_rtt_std_dev']:.2f})" if result['client_rtt_avg'] != 'N/A' else 'N/A'
+                res_rtt = f"{result['res_rtt_avg']:.2f} ({result['res_rtt_std_dev']:.2f})" if result['res_rtt_avg'] != 'N/A' else 'N/A'
+                latex_content += f"{result['algorithm'].replace('_', '\\_')} & {result['client'].replace('_', '\\_')} & {result['label'].replace('_', '\\_')} & {client_rtt} & {res_rtt} \\\n"
             latex_content += r"""\hline
 \end{tabular}
 """
             with open('results.tex', 'w') as texfile:
                 texfile.write(latex_content)
-                
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -353,3 +473,4 @@ if __name__ == "__main__":
     else:
         keyword = sys.argv[1]
         analyse_directories(keyword)
+
